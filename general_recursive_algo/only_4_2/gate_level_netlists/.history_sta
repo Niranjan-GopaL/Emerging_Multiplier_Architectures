@@ -1,0 +1,13 @@
+exit
+read_liberty /home/yash-sengupta/Niranjan_file/Main_Workflow/lib/NangateOpenCellLibrary_typical.lib
+read_verilog r8x8__1nr4x4__3r4x4__B__4_nr2x2__B_gate_level.v
+exit
+read_liberty /home/yash-sengupta/Niranjan_file/Main_Workflow/lib/NangateOpenCellLibrary_typical.lib
+read_verilog r8x8__1nr4x4__3r4x4__B__4_nr2x2__B_gate_level.v
+link_design r8x8__1nr4x4__3r4x4__B__4_nr2x2__B
+set_input_delay 0 [all_inputs]
+set_output_delay 10 [all_outputs]
+report_checks -path_delay min_max  > report.txt
+report_checks -path_delay min_max  
+exit
+exit
