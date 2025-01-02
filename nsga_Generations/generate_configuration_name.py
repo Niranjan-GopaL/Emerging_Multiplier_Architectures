@@ -24,10 +24,10 @@ def generate_configuration_name(configuaration_array):
     
         if configuaration_array.shape == (4, 2):
             n_bits = configuaration_array[1][0] + configuaration_array[1][1]
-            config_name = f"1rr{n_bits}x{n_bits}__B__"
+            config_name = f"rr{n_bits}x{n_bits}__B__"
             
             for item in configuaration_array:
-                config_name += f"1nr{item[0]}x{item[1]}__"
+                config_name += f"nr{item[0]}x{item[1]}__"
                 
             config_name += "B__"
             
@@ -63,13 +63,13 @@ def generate_configuration_name(configuaration_array):
     
         if configuaration_array.shape == (4, 2):
             n_bits = configuaration_array[1][0] + configuaration_array[1][1]
-            config_name = f"1rr{n_bits}x{n_bits}__B__"
+            config_name = f"rr{n_bits}x{n_bits}__B__"
 
             
             for index, item in enumerate(configuaration_array):
                 
                 if index not in list_of_indices:
-                    config_name += f"1nr{item[0]}x{item[1]}__"
+                    config_name += f"nr{item[0]}x{item[1]}__"
                 else:
                     # print(f"List of names: {list_of_indices.index(index)}")
                     config_name += list_of_names[list_of_indices.index(index)]
@@ -84,8 +84,8 @@ def generate_configuration_name(configuaration_array):
             return (config_name, configuaration_array)
         else:
             return ("", configuaration_array.tolist())
-           
-   
+        
+
     
     
 def main():
@@ -96,7 +96,7 @@ def main():
             if line:                
                 configs.append(line)
 
-    with open("configs_name_new.dat", "w") as f:
+    with open("configs_name.dat", "w") as f:
         for config in configs:
             config = ast.literal_eval(config)
             # print(type(config).__name__)

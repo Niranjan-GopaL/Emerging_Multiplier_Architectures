@@ -10,14 +10,15 @@ r means recursive, and is always following by B...B, where B represents brackets
 1 recursive module will always have 4 sub-modules, that could be either non-recursive or recursive
 nr means non recursive multiplier.
 
+Example 1 :-
 
-1rr8x8__B__1nr6x6__1nr6x2__1nr2x6__1nr2x2__B__
+rr8x8__B__nr6x6__nr6x2__nr2x6__nr2x2__B__
 => so it's a recursive 8x8 multiplier that is built using 1 non-recursive 6x6, 1 non recursive 6x2 and 2x6, 1 non-recursive 2x2
 
 
 This is the dicitonary I want to make
 {
-    [8,8,r] : {
+    [8,8,rr] : {
             [6,6,nr] : {} ,
             [6,2,nr] : {} ,
             [2,6,nr] : {} ,
@@ -25,31 +26,30 @@ This is the dicitonary I want to make
     }
 }  
 
-Other examples :- 
+Example 2 :- 
 
-1rr8x8__B__1rr6x6__B__1nr3x3__1nr3x3__1nr3x3__1nr3x3__B__1nr6x2__1nr2x6__1nr2x2__B__
+rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__
 
 {
-    [8,8,r] : {
-
-        [6, 6,r] : {
+    [8,8,rr] : {
+        [6, 6,rr] : {
                     [3, 3,nr] : {} ,
                     [3, 3,nr] : {} ,
                     [3, 3,nr] : {} ,
                     [3, 3,nr] : {} ,                
-                  } ,  
+                } ,  
         [6, 2,nr] : {} , 
         [2, 6,nr] : {} , 
         [2, 2,nr] : {} ,
     }
 }
 
+Example 3 :- 
 
-1r8x8__B__1rr6x6__B__1nr1x1__1nr1x5__1nr5x1__1r5x5__B__1r4x4__B__1nr1x1__1nr1x3__1nr3x1__1r3x3__B__1nr1x1__1nr1x2__1nr2x1__1nr2x2__B___1nr4x1__1nr1x4__1nr1x1__B___B__1_nr_6x2_1_nr_2x6_1_nr_2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
 
 {
     [8,8,r] : {
-
         [6,6,r] : {
                 [1, 1, nr] : {} ,  
                 [1, 5, nr] : {} ,  
@@ -80,101 +80,94 @@ Other examples :-
 
 }
 
+Key point is that whenever you see a `rr` you need to open a new bracket in the dictionary corresponding that key 
+becuase it will be immediately be followed by the body of the the resursive module
+
+These are other examples of the name
+
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr4x4__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr2x2__nr2x3__nr3x2__nr3x3__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr3x3__nr3x2__nr2x3__nr2x2__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__nr4x4__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr2x2__nr2x2__nr2x2__nr2x2__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr3x3__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr2x2__nr2x3__nr3x2__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr2x2__nr2x3__nr3x2__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x2__nr2x3__nr2x2__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x2__nr2x3__nr2x2__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr2x2__nr2x2__nr2x2__nr2x2__B__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr3x3__nr3x1__nr1x3__nr1x1__B__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__B__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__B__B__B__nr6x2__nr2x6__nr2x2__B__
+rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__B__B__nr6x2__nr2x6__nr2x2__B__
+
 """
 
+from pprint import pprint
 
 
-# Main 
-def parse_multiplier_string(input_string):
 
-    def parse_module(module_str):
-        """
-        Parse a single module string (e.g., "1nr6x6" or "1rr8x8")
+
+def parse_multiplier_string(s):
+
+    def parse_module(tokens, index):
+
+        if index >= len(tokens):
+            return {}, index
         
-        Returns:
-            tuple: (count, is_recursive, dims) where dims is [width, height]
-        """
-        count = 1
-        is_recursive = module_str[1:2] == 'rr'
-        dims =[module_str[3], module_str[5] ] 
-        return count, is_recursive, dims
-
-
-    def create_module_dict(dims, is_recursive):
-        """
-        Create a key for the dictionary representing a module
-        
-        Returns:
-            tuple: (width, height, type) where type is 'r' or 'nr'
-        """
-        return tuple(dims + ['rr' if is_recursive else 'nr'])
-
-
-
-    # Recursive Constructing Engine 
-    def process_recursive_structure(s, start_idx):
-        """
-        Process a recursive structure starting from an opening bracket
-        
-        Returns:
-            tuple: (dictionary representing the structure, index after closing bracket)
-        """
-        result = {}
-        current_str = ""
-        i = start_idx
-        
-        # or <= ?
-        while i+2 <= len(s):
-            print(f"condition = {i+2} <= {len(s)-1}; i is {i}, string is '{current_str}' result is {result}")
-            if s[i:i+2] == '__':  # Found delimiter
-                if current_str:
-                    _ , is_recursive, dims = parse_module(current_str)
-                    key = create_module_dict(dims, is_recursive)
-                    
-                    if is_recursive:  # If recursive, we expect brackets after this
-                        print("Found recursive module at {i}")
-                        sub_dict, new_i = process_recursive_structure(s, i+5)  # Skip __B__
-                        print(f"ke {key} at {i}")
-                        result[key] = sub_dict
-                        i = new_i
-                    else:
-                        result[key] = {}
-                    
-                current_str = ""
-                i+=2
-                continue
-                
-            current_str += s[i]
-            i += 1
+        current_token = tokens[index]
+        if not (current_token.startswith('rr') or current_token.startswith('nr')):
+            return {}, index
             
-        return result, i
+        is_recursive = current_token.startswith('rr')
+        dims = current_token.split('x')
+        x = int(dims[0][2:]) 
+        y = int(dims[1])
+        key = [x, y, 'rr' if is_recursive else 'nr']
+        
+        result = {tuple(key): {}}
+        index += 1
+        
+        if is_recursive and index < len(tokens) and tokens[index] == 'B':
+            index += 1 
+            
+            for _ in range(4):
+                if index >= len(tokens):
+                    break
+                submodule, new_index = parse_module(tokens, index)
+                if submodule:
+                    result[tuple(key)].update(submodule)
+                index = new_index
+                
+            if index < len(tokens) and tokens[index] == 'B':
+                index += 1 
+                
+        return result, index
 
-    # Start processing from the first module
-    result, _ = process_recursive_structure(input_string, 0)
+    # Parse tokens
+    tokens = s.strip('_').split('__')
+    result, _ = parse_module(tokens, 0)
     return result
-
-
-
-# Example usage and testing
-def pretty_print_nested_dict(d, indent=0):
-    for key, value in d.items():
-        print("    " * indent + f"{list(key)}: {{")
-        if value:
-            pretty_print_nested_dict(value, indent + 1)
-        print("    " * indent + "}")
 
 
 
 
 test_strings = [
-    "1nr8x8__",
-    "1rr8x8__B__1nr6x6__1nr6x2__1nr2x6__1nr2x2__B__",
-    # "1_r_8x8__B__1_r_6x6__B__1_nr_3x3_1_nr_3x3_1_nr_3x3_1_nr_3x3__B__1_nr_6x2_1_nr_2x6_1_nr_2x2__B__"
+    "rr8x8__B__nr6x6__nr6x2__nr2x6__nr2x2__B__",
+    "rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__",
+    "rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__",
+    "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__",
+    "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__",
 ]
 
-for test_string in test_strings:
-    print("\nProcessing string:")
-    print(test_string)
-    print("\nResulting structure:")
-    result = parse_multiplier_string(test_string)
-    pretty_print_nested_dict(result)
+for test in test_strings:
+    result = parse_multiplier_string(test)
+    print(f"\nInput: {test}")
+    print("Output:\n")
+    pprint(result)

@@ -5,11 +5,8 @@ This code is used to generate any non-recursive multiplier configuration given t
 
 from __future__ import absolute_import
 from __future__ import print_function
-import sys
-import os
 import  pyverilog.vparser.ast as vast
 from    pyverilog.ast_code_generator.codegen import ASTCodeGenerator
-import math
 
 
 def generate_partial_product_array(a_width, b_width):
@@ -31,6 +28,8 @@ def generate_partial_product_array(a_width, b_width):
 
 def generate_multiplier(a_width, b_width):
     
+
+    print(f"RTL generated for exact_{a_width}_{b_width} architecutre ")
     params = vast.Paramlist( [] )
     
     max_width = max(a_width, b_width)
@@ -50,7 +49,7 @@ def generate_multiplier(a_width, b_width):
     a = vast.Ioport( vast.Input('A', width=a_width) )
     b = vast.Ioport( vast.Input('B', width=b_width) )
     
-    res_out = vast.Ioport( vast.Output('out', width=sum_width) )
+    res_out = vast.Ioport( vast.Output('P', width=sum_width) )
     
     # Create a list to hold the ports
     ports = vast.Portlist( [a, b, res_out] )
@@ -81,7 +80,7 @@ def generate_multiplier(a_width, b_width):
             
             a_0, b_0 = partial_product_array[i][0]
             first_assign = vast.Assign(
-                vast.Lvalue(vast.Identifier(f"out[{i}]")),
+                vast.Lvalue(vast.Identifier(f"P[{i}]")),
                 vast.Rvalue(vast.Identifier(f"PP_{a_0}{b_0}"))
             )
             
@@ -120,7 +119,7 @@ def generate_multiplier(a_width, b_width):
                 items.append(carry_assign)
             
             first_assign = vast.Assign(
-                vast.Lvalue(vast.Identifier(f"out[{i}]")),
+                vast.Lvalue(vast.Identifier(f"P[{i}]")),
                 vast.Rvalue(vast.Identifier(f"sum{i}_{len(carry_current_array) - 1}"))
             )
             
@@ -135,7 +134,7 @@ def generate_multiplier(a_width, b_width):
                 
                 # Create the assignment
                 assign_node = vast.Assign(
-                    vast.Lvalue(vast.Identifier(f"out[{i+1}]")),  # LHS of assignment
+                    vast.Lvalue(vast.Identifier(f"P[{i+1}]")),  # LHS of assignment
                     vast.Rvalue(or_expression)                   # RHS of assignment (OR expression)
                 )
                 
@@ -240,7 +239,7 @@ def generate_multiplier(a_width, b_width):
                 items.append(carry_assign)
             
             first_assign = vast.Assign(
-                vast.Lvalue(vast.Identifier(f"out[{i}]")),
+                vast.Lvalue(vast.Identifier(f"P[{i}]")),
                 vast.Rvalue(vast.Identifier(f"sum{i}_{len_of_sums + len_of_carry - 2}"))
             )
             
@@ -249,13 +248,14 @@ def generate_multiplier(a_width, b_width):
             carry_current_array = carry_next_array + []
             carry_next_array = []
         
-    ast = vast.ModuleDef(f"Exact_{a_width_1}x{b_width_1}", params, ports, items)   
+    ast = vast.ModuleDef(f"exact_{a_width_1}x{b_width_1}", params, ports, items)   
         
     
     
     codegen = ASTCodeGenerator()
     rslt = codegen.visit(ast)
-    print(rslt)
+    # print(rslt)
+    return str(rslt)
     
 def main():
     a_width = 6

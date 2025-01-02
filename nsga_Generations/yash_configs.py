@@ -3,7 +3,6 @@ import copy
 from pprint import pprint
 
 
-
 class Tee:
     def __init__(self, filename):
         self.file = open(filename, 'w')
@@ -30,7 +29,6 @@ STD_OUT_FILE = 'stdout.dat'
 
 def valid_configuration_for_further_decomposition(n_high_bits, n_low_bits):
     # We don't decompose MxN, 1x1 ,2x2 
-
     tval = True
     
     if n_high_bits != n_low_bits:
