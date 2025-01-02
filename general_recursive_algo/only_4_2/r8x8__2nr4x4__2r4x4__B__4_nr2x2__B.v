@@ -72,52 +72,6 @@ module nr4x4(
     input [3:0] A, B,   // 4-bit inputs
     output [7:0] P      // 8-bit product output
 );
-
-    // Column - 0
-    assign P[0] = A[0] & B[0];  // product LSB
-
-
-    // Column - 1
-    wire S1_1, C_12_1;
-
-
-    HA ha_1_1(.A(A[1] & B[0]), .B(A[0] & B[1]), .sum(S1_1), .carry(C_12_1));
-    assign P[1] = S1_1;
-
-
-    // Column - 2
-    wire S2_1, C23_1, S2_2, C23_2;
-
-
-    FA fa_2_1(.A(A[2] & B[0]), .B(A[1] & B[1]), .cin(A[0] & B[2]), .sum(S2_1), .carry(C23_1));
-    HA ha_2_2(.A(S2_1), .B(C_12_1), .sum(S2_2), .carry(C23_2));
-    assign P[2] = S2_2;
-
-
-    // Column - 3
-    wire S3_1, C34_1, S3_2, C34_2;
-    FA fa_3_1(.A(A[3] & B[0]), .B(A[2] & B[1]), .cin(A[1] & B[2]), .sum(S3_1), .carry(C34_1));
-    FA fa_3_2(.A(S3_1), .B(C23_1), .cin(A[0] & B[3]), .sum(S3_2), .carry(C34_2) );
-
-
-    // Column - 4
-    wire S4_1, C45_1, S4_2, C45_2;
-    FA fa_4_1(.A(A[3] & B[1]), .B(A[2] & B[2]), .cin(A[1] & B[3]), .sum(S4_1), .carry(C45_1));
-    HA ha_4_2(.A(S4_1), .B(C34_1), .sum(S4_2), .carry(C45_2));
-    
-
-    // Column - 5
-    wire S5_2, C56_2;
-    FA fa_5_2(.A(A[3] & B[2]), .B(A[2] & B[3]), .cin(C45_1), .sum(S5_2), .carry(C56_2));
-
-    // Carry Propogation Adder ( to get P[3]..P[7] ) => 4 bit adder ??
-    wire carry_3, carry_4, carry_5, carry_6;
-    HA cpa_3(.A(S3_2), .B(C23_2), .sum(P[3]), .carry(carry_3) ) ;
-    FA cpa_4(.A(S4_2), .B(C34_2), .cin(carry_3), .sum(P[4]), .carry(carry_4) ) ;
-    FA cpa_5(.A(S5_2), .B(C45_2), .cin(carry_4), .sum(P[5]), .carry(carry_5) ) ;
-    FA cpa_6(.A(A[3] & B[3]), .B(C56_2), .cin(carry_5), .sum(P[6]), .carry(carry_6) ) ;
-    assign P[7] = carry_6 ;
-
 endmodule
 
 

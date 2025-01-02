@@ -188,8 +188,7 @@ endmodule
     module exact_assymetric__8x8__5_3(
     input [7:0] A, 
     input [7:0] B, 
-    input clk,               // Clock signal
-    output reg [15:0] P      // Registered output for synchronization
+    output [15:0] P      // Registered output for synchronization
 );
 
     wire [4:0] A_H, B_H; 
@@ -210,16 +209,7 @@ endmodule
     exact_5x3 M3(.A(B_H), .B(A_L), .P(P3));
     exact_5x5 M4(.A(B_H), .B(A_H), .P(P4));
 
-    // Registers for intermediate results
-    reg [15:0] P1_shifted, P2_shifted, P3_shifted;
-
-    // Sequential logic for synchronization
-    always @(posedge clk) begin
-        P1_shifted <= {10'b0, P1};                // P1 << 0
-        P2_shifted <= {P2, 3'b0};                 // P2 << 3
-        P3_shifted <= {P3, 3'b0};                 // P3 << 3
-        P <= {P4, 6'b0} + P3_shifted + P2_shifted + P1_shifted;  // Final result
-    end
+    assign P = (P4 << 4) + (P3 << 2 )  +  (P2 << 2 ) + P1 ;
 
 endmodule
 

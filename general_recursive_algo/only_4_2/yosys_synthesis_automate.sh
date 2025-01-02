@@ -21,15 +21,20 @@ for DESIGN in *.v; do
     # Read the Verilog file
     read_verilog ./$DESIGN
 
+    hierarchy -check -top $BASENAME 
+    flatten
     # Synthesize the design
     synth -top $BASENAME
 
-    # Write the synthesized design to JSON and dot format
-    write_json ./netlists/${BASENAME}_netlist.json
+
 
     # Map to a standard cell library
     dfflibmap -liberty $LIB_PATH
     abc -liberty $LIB_PATH
+
+
+    # Write the synthesized design to JSON and dot format
+    write_json ./netlists/${BASENAME}_netlist.json
 
     # Write the gate-level netlist
     write_verilog -noattr $GATE_LEVEL_DIR/${BASENAME}_gate_level.v
