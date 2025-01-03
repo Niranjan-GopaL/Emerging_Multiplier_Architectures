@@ -12,12 +12,14 @@ import numpy as np
 
 name = ""
 final_name = ""
+list_of_nr_multipliers = []
 
 
 def generate_configuration_name(configuaration_array):
     
     global name
     global final_name
+    global list_of_nr_multipliers
     
     try:
         configuaration_array = np.array(configuaration_array)
@@ -28,6 +30,7 @@ def generate_configuration_name(configuaration_array):
             
             for item in configuaration_array:
                 config_name += f"nr{item[0]}x{item[1]}__"
+                list_of_nr_multipliers.append([int(item[0]), int(item[1])])
                 
             config_name += "B__"
             
@@ -70,6 +73,7 @@ def generate_configuration_name(configuaration_array):
                 
                 if index not in list_of_indices:
                     config_name += f"nr{item[0]}x{item[1]}__"
+                    list_of_nr_multipliers.append([int(item[0]), int(item[1])])
                 else:
                     # print(f"List of names: {list_of_indices.index(index)}")
                     config_name += list_of_names[list_of_indices.index(index)]
@@ -81,6 +85,7 @@ def generate_configuration_name(configuaration_array):
             # print(f"Adding Name: {config_name}")
             name += config_name
             final_name = config_name
+            
             return (config_name, configuaration_array)
         else:
             return ("", configuaration_array.tolist())

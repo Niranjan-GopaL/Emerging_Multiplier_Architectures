@@ -12,7 +12,7 @@ nr means non recursive multiplier.
 
 Example 1 :-
 
-rr8x8__B__nr6x6__nr6x2__nr2x6__nr2x2__B__
+rr8x8,__B__nr6x6__nr6x2__nr2x6__nr2x2__B__
 => so it's a recursive 8x8 multiplier that is built using 1 non-recursive 6x6, 1 non recursive 6x2 and 2x6, 1 non-recursive 2x2
 
 
@@ -38,9 +38,9 @@ rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__
                     [3, 3,nr] : {} ,
                     [3, 3,nr] : {} ,                
                 } ,  
-        [6, 2,nr] : {} , 
-        [2, 6,nr] : {} , 
-        [2, 2,nr] : {} ,
+        [6, 2, nr] : {} , 
+        [2, 6, nr] : {} , 
+        [2, 2, nr] : {} ,
     }
 }
 
@@ -55,7 +55,7 @@ rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1
                 [1, 5, nr] : {} ,  
                 [5, 1, nr] : {} , 
                 [5, 5, r] : {
-                    [4,4,r] : {
+                    [4, 4, r] : {
                         [1, 1, nr] : {} ,
                         [1, 3, nr] : {} ,
                         [3, 1, nr] : {} ,
@@ -66,9 +66,9 @@ rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1
                             [2, 2 , nr] : {},
                         } ,
                     }
-                    [4, 1] : {} , 
-                    [1, 4] : {} , 
-                    [1, 1] : {} ,
+                    [4, 1, nr] : {} , 
+                    [1, 4, nr] : {} , 
+                    [1, 1, nr] : {} ,
                 } ,
         [6, 2, r] : {} , 
         [2, 6, r] : {} , 
@@ -156,18 +156,21 @@ def parse_multiplier_string(s):
     return result
 
 
+def main():
 
+    test_strings = [
+        "rr4x4__B__nr2x2__nr2x2__nr2x2__nr2x2__B__",
+        "rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__",
+        "rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__",
+        "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__",
+        "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__",
+    ]
 
-test_strings = [
-    "rr8x8__B__nr6x6__nr6x2__nr2x6__nr2x2__B__",
-    "rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__",
-    "rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__",
-    "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__",
-    "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__",
-]
-
-for test in test_strings:
-    result = parse_multiplier_string(test)
-    print(f"\nInput: {test}")
-    print("Output:\n")
-    pprint(result)
+    for test in test_strings:
+        result = parse_multiplier_string(test)
+        print(f"\nInput: {test}")
+        print("Output:\n")
+        pprint(result)
+        
+if __name__=="__main__":
+    main()

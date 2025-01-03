@@ -248,7 +248,7 @@ def generate_multiplier(a_width, b_width):
             carry_current_array = carry_next_array + []
             carry_next_array = []
         
-    ast = vast.ModuleDef(f"exact_{a_width_1}x{b_width_1}", params, ports, items)   
+    ast = vast.ModuleDef(f"exact_nr_{a_width_1}x{b_width_1}", params, ports, items)   
         
     
     
