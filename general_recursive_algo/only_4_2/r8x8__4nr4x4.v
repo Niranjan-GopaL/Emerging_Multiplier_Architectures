@@ -81,7 +81,6 @@ endmodule
 module r8x8__4nr4x4(
     input [7:0] A, 
     input [7:0] B, 
-    input clk,               // Clock signal
     output [15:0] P      // Registered output for synchronization
 );
 

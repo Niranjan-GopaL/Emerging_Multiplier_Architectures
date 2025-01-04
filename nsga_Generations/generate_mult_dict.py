@@ -111,12 +111,13 @@ rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B
 
 from pprint import pprint
 
-
+dummy_value = 0
 
 
 def parse_multiplier_string(s):
 
     def parse_module(tokens, index):
+        global dummy_value
 
         if index >= len(tokens):
             return {}, index
@@ -129,7 +130,8 @@ def parse_multiplier_string(s):
         dims = current_token.split('x')
         x = int(dims[0][2:]) 
         y = int(dims[1])
-        key = [x, y, 'rr' if is_recursive else 'nr']
+        key = [x, y, 'rr' if is_recursive else 'nr', dummy_value]
+        dummy_value += 1
         
         result = {tuple(key): {}}
         index += 1

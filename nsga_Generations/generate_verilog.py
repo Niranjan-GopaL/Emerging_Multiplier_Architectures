@@ -29,7 +29,7 @@ def generate_partial_product_array(a_width, b_width):
 def generate_multiplier(a_width, b_width):
     
 
-    print(f"RTL generated for exact_{a_width}_{b_width} architecutre ")
+    # print(f"RTL generated for exact_{a_width}_{b_width} architecutre ")
     params = vast.Paramlist( [] )
     
     max_width = max(a_width, b_width)
@@ -44,7 +44,11 @@ def generate_multiplier(a_width, b_width):
     
     a_width = vast.Width( vast.IntConst(f'{a_width - 1}'), vast.IntConst('0') )
     b_width = vast.Width( vast.IntConst(f'{b_width - 1}'), vast.IntConst('0') )
-    sum_width = vast.Width( vast.IntConst(f'{sum_width - 1}'), vast.IntConst('0') )
+    
+    if a_width_1 == 1 or b_width_1 == 1:
+        sum_width = vast.Width( vast.IntConst(f'{sum_width - 2}'), vast.IntConst('0') )
+    else:
+        sum_width = vast.Width( vast.IntConst(f'{sum_width - 1}'), vast.IntConst('0') )
     
     a = vast.Ioport( vast.Input('A', width=a_width) )
     b = vast.Ioport( vast.Input('B', width=b_width) )
@@ -85,6 +89,7 @@ def generate_multiplier(a_width, b_width):
             )
             
             items.append(first_assign)
+            
             
         elif ((len(partial_product_array_Wires) == 1) and (len(carry_current_array) != 0)):
 

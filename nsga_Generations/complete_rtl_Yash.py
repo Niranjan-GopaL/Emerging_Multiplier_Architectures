@@ -10,7 +10,7 @@ import os
 
 def main():
     
-    n_bits = 4 # This means you want to construct all possible (n_bit x n_bit) multipliers
+    n_bits = 8 # This means you want to construct all possible (n_bit x n_bit) multipliers
     os.makedirs(f"{n_bits}x{n_bits}", exist_ok=True)
     
     gc.generate_configurations(n_bits=n_bits)
@@ -55,8 +55,10 @@ def main():
             data = line.strip()  # Reads the first line and removes any extra whitespace
             data = eval(data)
             module_name = gcn.generate_configuration_name(data)
+            # print("generating", module_name)
             
             mult_dict = gmd.parse_multiplier_string(module_name[0])
+            # print(mult_dict)
             
             code = ""   
             topflag = True                                 
@@ -74,42 +76,23 @@ def main():
                         hi = new_config[key][0][0]
                         lo = size_x - hi
                         
-                        if len(new_config[key]) != 1:
-                            M1_nature = new_config[key][0][2]
-                            M2_nature = new_config[key][1][2]
-                            M3_nature = new_config[key][2][2]
-                            M4_nature = new_config[key][3][2]
-                            
-                            size_11 = new_config[key][0][0]
-                            size_12 = new_config[key][0][1]
-                            
-                            size_21 = new_config[key][1][0]
-                            size_22 = new_config[key][1][1]
-                            
-                            size_31 = new_config[key][2][0]
-                            size_32 = new_config[key][2][1]
-                            
-                            size_41 = new_config[key][3][0]
-                            size_42 = new_config[key][3][1]
+                        # if len(new_config[key]) != 1:
+                        M1_nature = new_config[key][0][2]
+                        M2_nature = new_config[key][1][2]
+                        M3_nature = new_config[key][2][2]
+                        M4_nature = new_config[key][3][2]
                         
-                        else:
-                            M1_nature = new_config[key][0][2]
-                            M2_nature = new_config[key][0][2]
-                            M3_nature = new_config[key][0][2]
-                            M4_nature = new_config[key][0][2]
-                            
-                            size_11 = new_config[key][0][0]
-                            size_12 = new_config[key][0][1]
-                            
-                            size_21 = new_config[key][0][0]
-                            size_22 = new_config[key][0][1]
-                            
-                            size_31 = new_config[key][0][0]
-                            size_32 = new_config[key][0][1]
-                            
-                            size_41 = new_config[key][0][0]
-                            size_42 = new_config[key][0][1]
-                            
+                        size_11 = new_config[key][0][0]
+                        size_12 = new_config[key][0][1]
+                        
+                        size_21 = new_config[key][1][0]
+                        size_22 = new_config[key][1][1]
+                        
+                        size_31 = new_config[key][2][0]
+                        size_32 = new_config[key][2][1]
+                        
+                        size_41 = new_config[key][3][0]
+                        size_42 = new_config[key][3][1]                            
                         
                         code += oc.write_main_verilog(top_nature, size_x, hi, lo, M1_nature, M2_nature, M3_nature, M4_nature, size_11, size_12, size_21, size_22, size_31, size_32, size_41, size_42, topflag, module_name[0])
                         topflag = False
