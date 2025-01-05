@@ -1,0 +1,50 @@
+Startpoint: B[7] (input port clocked by CLK)
+Endpoint: P[15] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 v input external delay
+   0.00    5.00 v B[7] (in)
+   0.08    5.08 v _1400_/ZN (AND4_X1)
+   0.07    5.16 v _1404_/ZN (OR3_X1)
+   0.06    5.22 ^ _1408_/ZN (AOI22_X1)
+   0.05    5.27 ^ _1410_/ZN (OR3_X1)
+   0.03    5.30 v _1412_/ZN (AOI21_X1)
+   0.09    5.38 v _1414_/ZN (OR3_X1)
+   0.04    5.42 v _1416_/ZN (AND3_X1)
+   0.10    5.52 v _1418_/ZN (OR3_X1)
+   0.05    5.58 v _1479_/ZN (XNOR2_X1)
+   0.12    5.70 v _1505_/ZN (OR4_X1)
+   0.04    5.74 v _1527_/ZN (AND3_X1)
+   0.13    5.87 v _1529_/ZN (OR4_X1)
+   0.05    5.92 v _1531_/ZN (AND4_X1)
+   0.13    6.05 v _1534_/ZN (OR4_X1)
+   0.05    6.10 v _1536_/ZN (AND4_X1)
+   0.08    6.18 v _1540_/ZN (OR3_X1)
+   0.05    6.22 v _1542_/ZN (AND3_X1)
+   0.09    6.31 v _1544_/ZN (OR3_X1)
+   0.04    6.35 v _1548_/ZN (AND3_X1)
+   0.05    6.40 ^ _1551_/ZN (OAI21_X1)
+   0.05    6.45 ^ _1552_/ZN (AND3_X1)
+   0.03    6.49 ^ _1555_/ZN (OR3_X1)
+   0.03    6.52 v _1557_/ZN (NAND3_X1)
+   0.56    7.08 ^ _1607_/ZN (OAI221_X1)
+   0.00    7.08 ^ P[15] (out)
+           7.08   data arrival time
+
+1000.00 1000.00   clock CLK (rise edge)
+   0.00 1000.00   clock network delay (ideal)
+   0.00 1000.00   clock reconvergence pessimism
+  -5.00  995.00   output external delay
+         995.00   data required time
+---------------------------------------------------------
+         995.00   data required time
+          -7.08   data arrival time
+---------------------------------------------------------
+         987.92   slack (MET)
+
+

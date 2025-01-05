@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-LIB_PATH = "/home/yash-sengupta/Niranjan_file/Main_Workflow/lib/NangateOpenCellLibrary_typical.lib"
+LIB_PATH = "/NangateOpenCellLibrary_typical.lib"
 GATE_LEVEL_DIR = "./gate_level_netlists"
 SCRIPT_DIR = "./scripts/synth_scripts"
 NETLIST_DIR = "./netlists"
@@ -18,7 +18,7 @@ def create_directories():
 def create_synth_script(script_path, design, basename):
     with open(script_path, "w") as script_file:
         script_file.write(f"""
-read_verilog ./{design}
+read_verilog ./../../{design}
 hierarchy -check -top {basename}
 flatten
 synth -top {basename}

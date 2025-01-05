@@ -1,0 +1,60 @@
+Startpoint: A[2] (input port clocked by CLK)
+Endpoint: P[14] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 v input external delay
+   0.00    5.00 v A[2] (in)
+   0.08    5.08 v _609_/ZN (AND4_X1)
+   0.09    5.17 v _612_/ZN (OR3_X1)
+   0.04    5.22 v _615_/ZN (AND3_X1)
+   0.05    5.26 ^ _631_/ZN (AOI21_X1)
+   0.05    5.32 ^ _633_/ZN (XNOR2_X1)
+   0.07    5.38 ^ _636_/Z (XOR2_X1)
+   0.07    5.45 ^ _638_/Z (XOR2_X1)
+   0.03    5.47 v _639_/ZN (NAND2_X1)
+   0.05    5.52 ^ _672_/ZN (OAI21_X1)
+   0.07    5.59 ^ _677_/Z (XOR2_X1)
+   0.05    5.64 ^ _680_/ZN (XNOR2_X1)
+   0.07    5.71 ^ _681_/Z (XOR2_X1)
+   0.07    5.77 ^ _683_/Z (XOR2_X1)
+   0.03    5.80 v _708_/ZN (OAI21_X1)
+   0.05    5.85 ^ _739_/ZN (AOI21_X1)
+   0.07    5.92 ^ _744_/Z (XOR2_X1)
+   0.07    5.98 ^ _747_/Z (XOR2_X1)
+   0.06    6.05 ^ _748_/Z (XOR2_X1)
+   0.07    6.11 ^ _750_/Z (XOR2_X1)
+   0.03    6.14 v _771_/ZN (AOI21_X1)
+   0.06    6.20 v _781_/Z (XOR2_X1)
+   0.06    6.26 v _784_/Z (XOR2_X1)
+   0.06    6.32 v _785_/Z (XOR2_X1)
+   0.05    6.37 v _787_/ZN (XNOR2_X1)
+   0.05    6.41 ^ _798_/ZN (OAI21_X1)
+   0.03    6.44 v _825_/ZN (AOI21_X1)
+   0.05    6.49 ^ _849_/ZN (OAI21_X1)
+   0.05    6.54 ^ _853_/ZN (XNOR2_X1)
+   0.05    6.59 ^ _856_/ZN (XNOR2_X1)
+   0.07    6.66 ^ _857_/Z (XOR2_X1)
+   0.05    6.71 ^ _859_/ZN (XNOR2_X1)
+   0.03    6.74 v _861_/ZN (OAI21_X1)
+   0.05    6.79 ^ _872_/ZN (AOI21_X1)
+   0.55    7.34 ^ _876_/Z (XOR2_X1)
+   0.00    7.34 ^ P[14] (out)
+           7.34   data arrival time
+
+1000.00 1000.00   clock CLK (rise edge)
+   0.00 1000.00   clock network delay (ideal)
+   0.00 1000.00   clock reconvergence pessimism
+  -5.00  995.00   output external delay
+         995.00   data required time
+---------------------------------------------------------
+         995.00   data required time
+          -7.34   data arrival time
+---------------------------------------------------------
+         987.66   slack (MET)
+
+

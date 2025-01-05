@@ -1,0 +1,1332 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:s="https://github.com/nturley/netlistsvg" width="1608" height="1526">
+  <style>svg {
+    stroke:#000;
+    fill:none;
+  }
+  text {
+    fill:#000;
+    stroke:none;
+    font-size:10px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+  }
+  .nodelabel {
+    text-anchor: middle;
+  }
+  .inputPortLabel {
+    text-anchor: end;
+  }
+  .splitjoinBody {
+    fill:#000;
+  }</style>
+  <g s:type="generic" transform="translate(138,22)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3693">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3693" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3693"/>
+  </g>
+  <g s:type="generic" transform="translate(432,22)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3694">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3694" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3694"/>
+  </g>
+  <g s:type="generic" transform="translate(726,22)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3695">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3695" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3695"/>
+  </g>
+  <g s:type="generic" transform="translate(1020,22)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3696">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3696" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3696"/>
+  </g>
+  <g s:type="generic" transform="translate(1314,22)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3697">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3697" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3697"/>
+  </g>
+  <g s:type="generic" transform="translate(12,64)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3698">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3698" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3698"/>
+  </g>
+  <g s:type="generic" transform="translate(306,64)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3699">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3699" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3699"/>
+  </g>
+  <g s:type="generic" transform="translate(600,64)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3700">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3700" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3700"/>
+  </g>
+  <g s:type="generic" transform="translate(894,64)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3701">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3701" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3701"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,64)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3702">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3702" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3702"/>
+  </g>
+  <g s:type="generic" transform="translate(12,87)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3703">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3703" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3703"/>
+  </g>
+  <g s:type="generic" transform="translate(306,87)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3704">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3704" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3704"/>
+  </g>
+  <g s:type="generic" transform="translate(600,87)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3705">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3705" s:attribute="ref">AND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3705"/>
+  </g>
+  <g s:type="generic" transform="translate(894,87)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3706">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3706" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3706"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,87)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3707">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3707" s:attribute="ref">AND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3707"/>
+  </g>
+  <g s:type="generic" transform="translate(12,110)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3708">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3708" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3708"/>
+  </g>
+  <g s:type="generic" transform="translate(306,110)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3709">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3709" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3709"/>
+  </g>
+  <g s:type="generic" transform="translate(600,110)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3710">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3710" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3710"/>
+  </g>
+  <g s:type="generic" transform="translate(894,110)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3711">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3711" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3711"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,110)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3712">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3712" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3712"/>
+  </g>
+  <g s:type="generic" transform="translate(12,133)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3713">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3713" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3713"/>
+  </g>
+  <g s:type="generic" transform="translate(306,133)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3714">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3714" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3714"/>
+  </g>
+  <g s:type="generic" transform="translate(600,133)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3715">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3715" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3715"/>
+  </g>
+  <g s:type="generic" transform="translate(894,133)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3716">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3716" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3716"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,133)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3717">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3717" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3717"/>
+  </g>
+  <g s:type="generic" transform="translate(12,156)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3718">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3718" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3718"/>
+  </g>
+  <g s:type="generic" transform="translate(306,156)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3719">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3719" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3719"/>
+  </g>
+  <g s:type="generic" transform="translate(600,156)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3720">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3720" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3720"/>
+  </g>
+  <g s:type="generic" transform="translate(894,156)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3721">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3721" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3721"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,156)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3722">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3722" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3722"/>
+  </g>
+  <g s:type="generic" transform="translate(12,179)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3723">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3723" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3723"/>
+  </g>
+  <g s:type="generic" transform="translate(306,179)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3724">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3724" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3724"/>
+  </g>
+  <g s:type="generic" transform="translate(600,179)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3725">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3725" s:attribute="ref">AND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3725"/>
+  </g>
+  <g s:type="generic" transform="translate(894,179)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3726">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3726" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3726"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,179)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3727">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3727" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3727"/>
+  </g>
+  <g s:type="generic" transform="translate(12,202)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3728">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3728" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3728"/>
+  </g>
+  <g s:type="generic" transform="translate(306,202)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3729">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3729" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3729"/>
+  </g>
+  <g s:type="generic" transform="translate(600,202)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3730">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3730" s:attribute="ref">AND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3730"/>
+  </g>
+  <g s:type="generic" transform="translate(894,202)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3731">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3731" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3731"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,202)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3732">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3732" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3732"/>
+  </g>
+  <g s:type="generic" transform="translate(12,225)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3733">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3733" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3733"/>
+  </g>
+  <g s:type="generic" transform="translate(306,225)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3734">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3734" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3734"/>
+  </g>
+  <g s:type="generic" transform="translate(600,225)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3735">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3735" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3735"/>
+  </g>
+  <g s:type="generic" transform="translate(894,225)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3736">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3736" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3736"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,225)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3737">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3737" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3737"/>
+  </g>
+  <g s:type="generic" transform="translate(12,248)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3738">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3738" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3738"/>
+  </g>
+  <g s:type="generic" transform="translate(306,248)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3739">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3739" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3739"/>
+  </g>
+  <g s:type="generic" transform="translate(600,248)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3740">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3740" s:attribute="ref">AND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3740"/>
+  </g>
+  <g s:type="generic" transform="translate(894,248)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3741">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3741" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3741"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,248)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3742">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3742" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3742"/>
+  </g>
+  <g s:type="generic" transform="translate(12,271)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3743">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3743" s:attribute="ref">OR4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3743"/>
+  </g>
+  <g s:type="generic" transform="translate(306,271)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3744">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3744" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3744"/>
+  </g>
+  <g s:type="generic" transform="translate(600,271)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3745">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3745" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3745"/>
+  </g>
+  <g s:type="generic" transform="translate(894,271)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3746">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3746" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3746"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,271)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3747">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3747" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3747"/>
+  </g>
+  <g s:type="generic" transform="translate(12,294)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3748">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3748" s:attribute="ref">OAI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3748"/>
+  </g>
+  <g s:type="generic" transform="translate(306,294)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3749">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3749" s:attribute="ref">NAND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3749"/>
+  </g>
+  <g s:type="generic" transform="translate(600,294)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3750">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3750" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3750"/>
+  </g>
+  <g s:type="generic" transform="translate(894,294)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3751">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3751" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3751"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,294)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3752">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3752" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3752"/>
+  </g>
+  <g s:type="generic" transform="translate(12,317)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3753">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3753" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3753"/>
+  </g>
+  <g s:type="generic" transform="translate(306,317)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3754">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3754" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3754"/>
+  </g>
+  <g s:type="generic" transform="translate(600,317)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3755">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3755" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3755"/>
+  </g>
+  <g s:type="generic" transform="translate(894,317)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3756">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3756" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3756"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,317)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3757">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3757" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3757"/>
+  </g>
+  <g s:type="generic" transform="translate(12,340)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3758">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3758" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3758"/>
+  </g>
+  <g s:type="generic" transform="translate(306,340)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3759">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3759" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3759"/>
+  </g>
+  <g s:type="generic" transform="translate(600,340)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3760">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3760" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3760"/>
+  </g>
+  <g s:type="generic" transform="translate(894,340)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3761">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3761" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3761"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,340)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3762">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3762" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3762"/>
+  </g>
+  <g s:type="generic" transform="translate(12,363)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3763">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3763" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3763"/>
+  </g>
+  <g s:type="generic" transform="translate(306,363)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3764">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3764" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3764"/>
+  </g>
+  <g s:type="generic" transform="translate(600,363)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3765">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3765" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3765"/>
+  </g>
+  <g s:type="generic" transform="translate(894,363)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3766">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3766" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3766"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,363)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3767">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3767" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3767"/>
+  </g>
+  <g s:type="generic" transform="translate(12,386)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3768">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3768" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3768"/>
+  </g>
+  <g s:type="generic" transform="translate(306,386)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3769">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3769" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3769"/>
+  </g>
+  <g s:type="generic" transform="translate(600,386)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3770">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3770" s:attribute="ref">AND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3770"/>
+  </g>
+  <g s:type="generic" transform="translate(894,386)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3771">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3771" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3771"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,386)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3772">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3772" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3772"/>
+  </g>
+  <g s:type="generic" transform="translate(12,409)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3773">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3773" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3773"/>
+  </g>
+  <g s:type="generic" transform="translate(306,409)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3774">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3774" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3774"/>
+  </g>
+  <g s:type="generic" transform="translate(600,409)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3775">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3775" s:attribute="ref">NAND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3775"/>
+  </g>
+  <g s:type="generic" transform="translate(894,409)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3776">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3776" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3776"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,409)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3777">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3777" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3777"/>
+  </g>
+  <g s:type="generic" transform="translate(12,432)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3778">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3778" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3778"/>
+  </g>
+  <g s:type="generic" transform="translate(306,432)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3779">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3779" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3779"/>
+  </g>
+  <g s:type="generic" transform="translate(600,432)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3780">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3780" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3780"/>
+  </g>
+  <g s:type="generic" transform="translate(894,432)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3781">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3781" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3781"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,432)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3782">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3782" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3782"/>
+  </g>
+  <g s:type="generic" transform="translate(12,455)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3783">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3783" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3783"/>
+  </g>
+  <g s:type="generic" transform="translate(306,455)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3784">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3784" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3784"/>
+  </g>
+  <g s:type="generic" transform="translate(600,455)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3785">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3785" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3785"/>
+  </g>
+  <g s:type="generic" transform="translate(894,455)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3786">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3786" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3786"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,455)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3787">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3787" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3787"/>
+  </g>
+  <g s:type="generic" transform="translate(12,478)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3788">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3788" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3788"/>
+  </g>
+  <g s:type="generic" transform="translate(306,478)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3789">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3789" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3789"/>
+  </g>
+  <g s:type="generic" transform="translate(600,478)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3790">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3790" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3790"/>
+  </g>
+  <g s:type="generic" transform="translate(894,478)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3791">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3791" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3791"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,478)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3792">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3792" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3792"/>
+  </g>
+  <g s:type="generic" transform="translate(12,501)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3793">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3793" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3793"/>
+  </g>
+  <g s:type="generic" transform="translate(306,501)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3794">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3794" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3794"/>
+  </g>
+  <g s:type="generic" transform="translate(600,501)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3795">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3795" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3795"/>
+  </g>
+  <g s:type="generic" transform="translate(894,501)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3796">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3796" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3796"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,501)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3797">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3797" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3797"/>
+  </g>
+  <g s:type="generic" transform="translate(12,524)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3798">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3798" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3798"/>
+  </g>
+  <g s:type="generic" transform="translate(306,524)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3799">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3799" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3799"/>
+  </g>
+  <g s:type="generic" transform="translate(600,524)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3800">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3800" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3800"/>
+  </g>
+  <g s:type="generic" transform="translate(894,524)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3801">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3801" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3801"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,524)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3802">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3802" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3802"/>
+  </g>
+  <g s:type="generic" transform="translate(12,547)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3803">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3803" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3803"/>
+  </g>
+  <g s:type="generic" transform="translate(306,547)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3804">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3804" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3804"/>
+  </g>
+  <g s:type="generic" transform="translate(600,547)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3805">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3805" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3805"/>
+  </g>
+  <g s:type="generic" transform="translate(894,547)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3806">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3806" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3806"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,547)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3807">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3807" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3807"/>
+  </g>
+  <g s:type="generic" transform="translate(12,570)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3808">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3808" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3808"/>
+  </g>
+  <g s:type="generic" transform="translate(306,570)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3809">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3809" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3809"/>
+  </g>
+  <g s:type="generic" transform="translate(600,570)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3810">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3810" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3810"/>
+  </g>
+  <g s:type="generic" transform="translate(894,570)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3811">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3811" s:attribute="ref">OAI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3811"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,570)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3812">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3812" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3812"/>
+  </g>
+  <g s:type="generic" transform="translate(12,593)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3813">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3813" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3813"/>
+  </g>
+  <g s:type="generic" transform="translate(306,593)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3814">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3814" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3814"/>
+  </g>
+  <g s:type="generic" transform="translate(600,593)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3815">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3815" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3815"/>
+  </g>
+  <g s:type="generic" transform="translate(894,593)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3816">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3816" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3816"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,593)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3817">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3817" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3817"/>
+  </g>
+  <g s:type="generic" transform="translate(12,616)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3818">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3818" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3818"/>
+  </g>
+  <g s:type="generic" transform="translate(306,616)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3819">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3819" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3819"/>
+  </g>
+  <g s:type="generic" transform="translate(600,616)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3820">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3820" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3820"/>
+  </g>
+  <g s:type="generic" transform="translate(894,616)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3821">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3821" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3821"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,616)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3822">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3822" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3822"/>
+  </g>
+  <g s:type="generic" transform="translate(12,639)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3823">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3823" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3823"/>
+  </g>
+  <g s:type="generic" transform="translate(306,639)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3824">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3824" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3824"/>
+  </g>
+  <g s:type="generic" transform="translate(600,639)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3825">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3825" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3825"/>
+  </g>
+  <g s:type="generic" transform="translate(894,639)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3826">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3826" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3826"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,639)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3827">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3827" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3827"/>
+  </g>
+  <g s:type="generic" transform="translate(12,662)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3828">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3828" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3828"/>
+  </g>
+  <g s:type="generic" transform="translate(306,662)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3829">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3829" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3829"/>
+  </g>
+  <g s:type="generic" transform="translate(600,662)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3830">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3830" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3830"/>
+  </g>
+  <g s:type="generic" transform="translate(894,662)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3831">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3831" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3831"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,662)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3832">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3832" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3832"/>
+  </g>
+  <g s:type="generic" transform="translate(12,685)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3833">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3833" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3833"/>
+  </g>
+  <g s:type="generic" transform="translate(306,685)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3834">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3834" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3834"/>
+  </g>
+  <g s:type="generic" transform="translate(600,685)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3835">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3835" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3835"/>
+  </g>
+  <g s:type="generic" transform="translate(894,685)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3836">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3836" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3836"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,685)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3837">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3837" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3837"/>
+  </g>
+  <g s:type="generic" transform="translate(12,708)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3838">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3838" s:attribute="ref">OAI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3838"/>
+  </g>
+  <g s:type="generic" transform="translate(306,708)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3839">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3839" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3839"/>
+  </g>
+  <g s:type="generic" transform="translate(600,708)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3840">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3840" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3840"/>
+  </g>
+  <g s:type="generic" transform="translate(894,708)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3841">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3841" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3841"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,708)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3842">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3842" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3842"/>
+  </g>
+  <g s:type="generic" transform="translate(12,731)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3843">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3843" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3843"/>
+  </g>
+  <g s:type="generic" transform="translate(306,731)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3844">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3844" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3844"/>
+  </g>
+  <g s:type="generic" transform="translate(600,731)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3845">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3845" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3845"/>
+  </g>
+  <g s:type="generic" transform="translate(894,731)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3846">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3846" s:attribute="ref">OR4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3846"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,731)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3847">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3847" s:attribute="ref">OAI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3847"/>
+  </g>
+  <g s:type="generic" transform="translate(12,754)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3848">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3848" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3848"/>
+  </g>
+  <g s:type="generic" transform="translate(306,754)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3849">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3849" s:attribute="ref">NAND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3849"/>
+  </g>
+  <g s:type="generic" transform="translate(600,754)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3850">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3850" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3850"/>
+  </g>
+  <g s:type="generic" transform="translate(894,754)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3851">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3851" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3851"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,754)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3852">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3852" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3852"/>
+  </g>
+  <g s:type="generic" transform="translate(12,777)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3853">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3853" s:attribute="ref">AND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3853"/>
+  </g>
+  <g s:type="generic" transform="translate(306,777)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3854">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3854" s:attribute="ref">NAND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3854"/>
+  </g>
+  <g s:type="generic" transform="translate(600,777)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3855">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3855" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3855"/>
+  </g>
+  <g s:type="generic" transform="translate(894,777)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3856">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3856" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3856"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,777)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3857">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3857" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3857"/>
+  </g>
+  <g s:type="generic" transform="translate(12,800)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3858">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3858" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3858"/>
+  </g>
+  <g s:type="generic" transform="translate(306,800)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3859">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3859" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3859"/>
+  </g>
+  <g s:type="generic" transform="translate(600,800)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3860">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3860" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3860"/>
+  </g>
+  <g s:type="generic" transform="translate(894,800)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3861">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3861" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3861"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,800)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3862">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3862" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3862"/>
+  </g>
+  <g s:type="generic" transform="translate(12,823)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3863">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3863" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3863"/>
+  </g>
+  <g s:type="generic" transform="translate(306,823)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3864">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3864" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3864"/>
+  </g>
+  <g s:type="generic" transform="translate(600,823)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3865">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3865" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3865"/>
+  </g>
+  <g s:type="generic" transform="translate(894,823)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3866">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3866" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3866"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,823)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3867">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3867" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3867"/>
+  </g>
+  <g s:type="generic" transform="translate(12,846)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3868">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3868" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3868"/>
+  </g>
+  <g s:type="generic" transform="translate(306,846)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3869">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3869" s:attribute="ref">OAI211_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3869"/>
+  </g>
+  <g s:type="generic" transform="translate(600,846)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3870">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3870" s:attribute="ref">AOI211_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3870"/>
+  </g>
+  <g s:type="generic" transform="translate(894,846)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3871">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3871" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3871"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,846)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3872">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3872" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3872"/>
+  </g>
+  <g s:type="generic" transform="translate(12,869)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3873">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3873" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3873"/>
+  </g>
+  <g s:type="generic" transform="translate(306,869)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3874">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3874" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3874"/>
+  </g>
+  <g s:type="generic" transform="translate(600,869)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3875">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3875" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3875"/>
+  </g>
+  <g s:type="generic" transform="translate(894,869)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3876">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3876" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3876"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,869)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3877">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3877" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3877"/>
+  </g>
+  <g s:type="generic" transform="translate(12,892)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3878">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3878" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3878"/>
+  </g>
+  <g s:type="generic" transform="translate(306,892)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3879">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3879" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3879"/>
+  </g>
+  <g s:type="generic" transform="translate(600,892)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3880">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3880" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3880"/>
+  </g>
+  <g s:type="generic" transform="translate(894,892)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3881">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3881" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3881"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,892)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3882">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3882" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3882"/>
+  </g>
+  <g s:type="generic" transform="translate(12,915)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3883">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3883" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3883"/>
+  </g>
+  <g s:type="generic" transform="translate(306,915)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3884">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3884" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3884"/>
+  </g>
+  <g s:type="generic" transform="translate(600,915)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3885">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3885" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3885"/>
+  </g>
+  <g s:type="generic" transform="translate(894,915)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3886">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3886" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3886"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,915)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3887">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3887" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3887"/>
+  </g>
+  <g s:type="generic" transform="translate(12,938)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3888">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3888" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3888"/>
+  </g>
+  <g s:type="generic" transform="translate(306,938)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3889">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3889" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3889"/>
+  </g>
+  <g s:type="generic" transform="translate(600,938)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3890">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3890" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3890"/>
+  </g>
+  <g s:type="generic" transform="translate(894,938)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3891">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3891" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3891"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,938)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3892">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3892" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3892"/>
+  </g>
+  <g s:type="generic" transform="translate(12,961)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3893">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3893" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3893"/>
+  </g>
+  <g s:type="generic" transform="translate(306,961)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3894">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3894" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3894"/>
+  </g>
+  <g s:type="generic" transform="translate(600,961)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3895">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3895" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3895"/>
+  </g>
+  <g s:type="generic" transform="translate(894,961)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3896">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3896" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3896"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,961)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3897">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3897" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3897"/>
+  </g>
+  <g s:type="generic" transform="translate(12,984)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3898">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3898" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3898"/>
+  </g>
+  <g s:type="generic" transform="translate(306,984)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3899">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3899" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3899"/>
+  </g>
+  <g s:type="generic" transform="translate(600,984)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3900">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3900" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3900"/>
+  </g>
+  <g s:type="generic" transform="translate(894,984)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3901">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3901" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3901"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,984)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3902">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3902" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3902"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1007)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3903">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3903" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3903"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1007)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3904">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3904" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3904"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1007)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3905">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3905" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3905"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1007)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3906">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3906" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3906"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1007)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3907">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3907" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3907"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1030)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3908">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3908" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3908"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1030)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3909">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3909" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3909"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1030)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3910">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3910" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3910"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1030)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3911">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3911" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3911"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1030)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3912">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3912" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3912"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1053)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3913">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3913" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3913"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1053)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3914">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3914" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3914"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1053)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3915">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3915" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3915"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1053)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3916">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3916" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3916"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1053)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3917">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3917" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3917"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1076)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3918">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3918" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3918"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1076)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3919">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3919" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3919"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1076)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3920">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3920" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3920"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1076)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3921">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3921" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3921"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1076)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3922">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3922" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3922"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1099)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3923">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3923" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3923"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1099)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3924">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3924" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3924"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1099)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3925">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3925" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3925"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1099)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3926">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3926" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3926"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1099)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3927">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3927" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3927"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1122)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3928">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3928" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3928"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1122)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3929">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3929" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3929"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1122)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3930">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3930" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3930"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1122)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3931">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3931" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3931"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1122)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3932">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3932" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3932"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1145)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3933">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3933" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3933"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1145)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3934">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3934" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3934"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1145)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3935">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3935" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3935"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1145)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3936">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3936" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3936"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1145)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3937">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3937" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3937"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1168)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3938">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3938" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3938"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1168)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3939">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3939" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3939"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1168)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3940">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3940" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3940"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1168)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3941">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3941" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3941"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1168)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3942">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3942" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3942"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1191)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3943">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3943" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3943"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1191)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3944">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3944" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3944"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1191)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3945">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3945" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3945"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1191)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3946">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3946" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3946"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1191)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3947">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3947" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3947"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1214)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3948">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3948" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3948"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1214)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3949">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3949" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3949"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1214)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3950">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3950" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3950"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1214)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3951">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3951" s:attribute="ref">NAND4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3951"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1214)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3952">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3952" s:attribute="ref">NOR4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3952"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1237)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3953">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3953" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3953"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1237)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3954">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3954" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3954"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1237)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3955">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3955" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3955"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1237)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3956">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3956" s:attribute="ref">NOR4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3956"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1237)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3957">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3957" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3957"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1260)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3958">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3958" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3958"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1260)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3959">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3959" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3959"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1260)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3960">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3960" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3960"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1260)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3961">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3961" s:attribute="ref">NOR4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3961"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1260)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3962">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3962" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3962"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1283)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3963">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3963" s:attribute="ref">NOR4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3963"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1283)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3964">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3964" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3964"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1283)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3965">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3965" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3965"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1283)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3966">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3966" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3966"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1283)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3967">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3967" s:attribute="ref">NOR4_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3967"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1306)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3968">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3968" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3968"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1306)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3969">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3969" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3969"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1306)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3970">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3970" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3970"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1306)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3971">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3971" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3971"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1306)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3972">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3972" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3972"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1329)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3973">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3973" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3973"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1329)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3974">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3974" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3974"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1329)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3975">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3975" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3975"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1329)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3976">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3976" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3976"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1329)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3977">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3977" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3977"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1352)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3978">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3978" s:attribute="ref">NAND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3978"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1352)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3979">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3979" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3979"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1352)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3980">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3980" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3980"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1352)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3981">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3981" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3981"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1352)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3982">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3982" s:attribute="ref">NAND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3982"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1375)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3983">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3983" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3983"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1375)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3984">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3984" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3984"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1375)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3985">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3985" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3985"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1375)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3986">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3986" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3986"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1375)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3987">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3987" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3987"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1398)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3988">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3988" s:attribute="ref">OR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3988"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1398)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3989">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3989" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3989"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1398)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3990">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3990" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3990"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1398)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3991">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3991" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3991"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1398)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3992">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3992" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3992"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1421)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3993">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3993" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3993"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1421)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3994">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3994" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3994"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1421)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3995">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3995" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3995"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1421)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3996">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3996" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3996"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1421)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3997">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3997" s:attribute="ref">AOI22_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3997"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1444)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3998">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3998" s:attribute="ref">NOR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3998"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1444)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3999">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3999" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$3999"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1444)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4000">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4000" s:attribute="ref">OR3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4000"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1444)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4001">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4001" s:attribute="ref">AND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4001"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1444)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4002">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4002" s:attribute="ref">INV_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4002"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1467)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4003">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4003" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4003"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1467)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4004">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4004" s:attribute="ref">AND3_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4004"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1467)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4005">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4005" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4005"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1467)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4006">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4006" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4006"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1467)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4007">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4007" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4007"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1490)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4008">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4008" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4008"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1490)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4009">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4009" s:attribute="ref">OAI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4009"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1490)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4010">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4010" s:attribute="ref">AOI21_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4010"/>
+  </g>
+  <g s:type="generic" transform="translate(894,1490)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4011">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4011" s:attribute="ref">NAND2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4011"/>
+  </g>
+  <g s:type="generic" transform="translate(1188,1490)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4012">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4012" s:attribute="ref">NOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4012"/>
+  </g>
+  <g s:type="generic" transform="translate(12,1513)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4013">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4013" s:attribute="ref">XOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4013"/>
+  </g>
+  <g s:type="generic" transform="translate(306,1513)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4014">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4014" s:attribute="ref">XNOR2_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4014"/>
+  </g>
+  <g s:type="generic" transform="translate(600,1513)" s:width="30" s:height="40" id="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4015">
+    <text x="15" y="-4" class="nodelabel cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4015" s:attribute="ref">OAI221_X1</text>
+    <rect width="30" height="0" s:generic="body" class="cell_$abc$3692$auto$blifparse.cc:371:parse_blif$4015"/>
+  </g>
+  <g s:type="inputExt" transform="translate(12,22)" s:width="30" s:height="20" id="cell_A">
+    <text x="15" y="-4" class="nodelabel cell_A" s:attribute="ref">A</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_A"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(54,22)" s:width="30" s:height="20" id="cell_B">
+    <text x="15" y="-4" class="nodelabel cell_B" s:attribute="ref">B</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_B"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="outputExt" transform="translate(96,22)" s:width="30" s:height="20" id="cell_P">
+    <text x="15" y="-4" class="nodelabel cell_P" s:attribute="ref">P</text>
+    <s:alias val="$_outputExt_"/>
+    <path d="M30,0 L30,20 L15,20 L0,10 L15,0 Z" class="cell_P"/>
+    <g s:x="0" s:y="10" s:pid="A"/>
+  </g>
+</svg>

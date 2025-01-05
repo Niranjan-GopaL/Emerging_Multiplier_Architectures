@@ -1,0 +1,674 @@
+
+8. Printing statistics.
+
+=== nr_1x1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     AND2_X1                         1
+
+=== nr_1x3 ===
+
+   Number of wires:                 13
+   Number of wire bits:             17
+   Number of public wires:           6
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     AND2_X1                         3
+
+=== nr_2x2 ===
+
+   Number of wires:                 21
+   Number of wire bits:             26
+   Number of public wires:          11
+   Number of public wire bits:      16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     AND2_X1                         1
+     AND4_X1                         1
+     AOI22_X1                        1
+     NAND2_X1                        1
+     NOR2_X1                         2
+
+=== nr_2x4 ===
+
+   Number of wires:                 59
+   Number of wire bits:             68
+   Number of public wires:          29
+   Number of public wire bits:      38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     AND2_X1                         1
+     AOI211_X1                       1
+     AOI21_X1                        2
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                        6
+     NAND3_X1                        1
+     NAND4_X1                        1
+     NOR2_X1                         2
+     OAI22_X1                        1
+     OR3_X1                          1
+     XNOR2_X1                        3
+     XOR2_X1                         1
+
+=== nr_2x6 ===
+
+   Number of wires:                112
+   Number of wire bits:            125
+   Number of public wires:          55
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     AND2_X1                         2
+     AND3_X1                         2
+     AND4_X1                         1
+     AOI211_X1                       2
+     AOI21_X1                        4
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                       12
+     NAND4_X1                        1
+     NOR2_X1                         1
+     NOR3_X1                         1
+     NOR4_X1                         1
+     OAI211_X1                       1
+     OAI21_X1                        2
+     OAI22_X1                        1
+     OR2_X1                          1
+     OR4_X1                          1
+     XNOR2_X1                        6
+     XOR2_X1                         4
+
+=== nr_3x1 ===
+
+   Number of wires:                 13
+   Number of wire bits:             17
+   Number of public wires:           6
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     AND2_X1                         3
+
+=== nr_3x3 ===
+
+   Number of wires:                 76
+   Number of wire bits:             85
+   Number of public wires:          36
+   Number of public wire bits:      45
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     AND2_X1                         1
+     AND3_X1                         3
+     AND4_X1                         1
+     AOI211_X1                       3
+     AOI21_X1                        1
+     AOI22_X1                        2
+     NAND2_X1                        5
+     NAND3_X1                        2
+     NAND4_X1                        1
+     NOR2_X1                         3
+     NOR3_X1                         1
+     OAI21_X1                        2
+     OAI22_X1                        1
+     OR2_X1                          1
+     OR3_X1                          1
+     XNOR2_X1                        3
+     XOR2_X1                         1
+
+=== nr_4x2 ===
+
+   Number of wires:                 59
+   Number of wire bits:             68
+   Number of public wires:          29
+   Number of public wire bits:      38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     AND2_X1                         1
+     AOI211_X1                       1
+     AOI21_X1                        2
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                        6
+     NAND3_X1                        1
+     NAND4_X1                        1
+     NOR2_X1                         2
+     OAI22_X1                        1
+     OR3_X1                          1
+     XNOR2_X1                        3
+     XOR2_X1                         1
+
+=== nr_6x2 ===
+
+   Number of wires:                112
+   Number of wire bits:            125
+   Number of public wires:          55
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     AND2_X1                         2
+     AND3_X1                         2
+     AND4_X1                         1
+     AOI211_X1                       2
+     AOI21_X1                        4
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                       12
+     NAND4_X1                        1
+     NOR2_X1                         1
+     NOR3_X1                         1
+     NOR4_X1                         1
+     OAI211_X1                       1
+     OAI21_X1                        2
+     OAI22_X1                        1
+     OR2_X1                          1
+     OR4_X1                          1
+     XNOR2_X1                        6
+     XOR2_X1                         4
+
+=== rr8x8__B__nr2x2__nr2x6__nr6x2__rr6x6__B__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__nr4x2__nr2x4__nr2x2__B__B__ ===
+
+   Number of wires:                163
+   Number of wire bits:            397
+   Number of public wires:          11
+   Number of public wire bits:      80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 84
+     AND2_X1                         3
+     AND3_X1                         1
+     AOI21_X1                        8
+     INV_X1                          3
+     NAND2_X1                       13
+     NOR2_X1                         8
+     NOR3_X1                         1
+     OAI21_X1                        7
+     OR2_X1                          1
+     XNOR2_X1                       20
+     XOR2_X1                        15
+     nr_2x2                          1
+     nr_2x6                          1
+     nr_6x2                          1
+     rr_6x6                          1
+
+=== rr_4x4 ===
+
+   Number of wires:                 69
+   Number of wire bits:            144
+   Number of public wires:          11
+   Number of public wire bits:      37
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     AND2_X1                         1
+     AOI21_X1                        2
+     INV_X1                          1
+     NAND2_X1                        5
+     NAND3_X1                        1
+     NOR2_X1                         4
+     NOR3_X1                         1
+     OAI21_X1                        4
+     XNOR2_X1                        7
+     XOR2_X1                         5
+     nr_1x1                          1
+     nr_1x3                          1
+     nr_3x1                          1
+     nr_3x3                          1
+
+=== rr_6x6 ===
+
+   Number of wires:                151
+   Number of wire bits:            321
+   Number of public wires:          11
+   Number of public wire bits:      60
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 84
+     AND2_X1                         7
+     AND3_X1                         1
+     AOI21_X1                        4
+     INV_X1                          2
+     NAND2_X1                       13
+     NAND3_X1                        1
+     NAND4_X1                        1
+     NOR2_X1                         8
+     OAI211_X1                       1
+     OAI21_X1                        8
+     OR2_X1                          1
+     OR3_X1                          1
+     XNOR2_X1                       17
+     XOR2_X1                        15
+     nr_2x2                          1
+     nr_2x4                          1
+     nr_4x2                          1
+     rr_4x4                          1
+
+=== design hierarchy ===
+
+   rr8x8__B__nr2x2__nr2x6__nr6x2__rr6x6__B__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__nr4x2__nr2x4__nr2x2__B__B__      1
+     nr_2x2                          1
+     nr_2x6                          1
+     nr_6x2                          1
+     rr_6x6                          1
+       nr_2x2                        1
+       nr_2x4                        1
+       nr_4x2                        1
+       rr_4x4                        1
+         nr_1x1                      1
+         nr_1x3                      1
+         nr_3x1                      1
+         nr_3x3                      1
+
+   Number of wires:                876
+   Number of wire bits:           1426
+   Number of public wires:         275
+   Number of public wire bits:     490
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                380
+     AND2_X1                        27
+     AND3_X1                         9
+     AND4_X1                         5
+     AOI211_X1                       9
+     AOI21_X1                       27
+     AOI22_X1                       12
+     INV_X1                         10
+     NAND2_X1                       74
+     NAND3_X1                        6
+     NAND4_X1                        6
+     NOR2_X1                        33
+     NOR3_X1                         5
+     NOR4_X1                         2
+     OAI211_X1                       3
+     OAI21_X1                       25
+     OAI22_X1                        5
+     OR2_X1                          5
+     OR3_X1                          4
+     OR4_X1                          2
+     XNOR2_X1                       65
+     XOR2_X1                        46
+
+9. Printing statistics.
+
+=== nr_1x1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     AND2_X1                         1
+
+   Chip area for module '\nr_1x1': 1.064000
+
+=== nr_1x3 ===
+
+   Number of wires:                 13
+   Number of wire bits:             17
+   Number of public wires:           6
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     AND2_X1                         3
+
+   Chip area for module '\nr_1x3': 3.192000
+
+=== nr_2x2 ===
+
+   Number of wires:                 21
+   Number of wire bits:             26
+   Number of public wires:          11
+   Number of public wire bits:      16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     AND2_X1                         1
+     AND4_X1                         1
+     AOI22_X1                        1
+     NAND2_X1                        1
+     NOR2_X1                         2
+
+   Chip area for module '\nr_2x2': 6.384000
+
+=== nr_2x4 ===
+
+   Number of wires:                 59
+   Number of wire bits:             68
+   Number of public wires:          29
+   Number of public wire bits:      38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     AND2_X1                         1
+     AOI211_X1                       1
+     AOI21_X1                        2
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                        6
+     NAND3_X1                        1
+     NAND4_X1                        1
+     NOR2_X1                         2
+     OAI22_X1                        1
+     OR3_X1                          1
+     XNOR2_X1                        3
+     XOR2_X1                         1
+
+   Chip area for module '\nr_2x4': 25.536000
+
+=== nr_2x6 ===
+
+   Number of wires:                112
+   Number of wire bits:            125
+   Number of public wires:          55
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     AND2_X1                         2
+     AND3_X1                         2
+     AND4_X1                         1
+     AOI211_X1                       2
+     AOI21_X1                        4
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                       12
+     NAND4_X1                        1
+     NOR2_X1                         1
+     NOR3_X1                         1
+     NOR4_X1                         1
+     OAI211_X1                       1
+     OAI21_X1                        2
+     OAI22_X1                        1
+     OR2_X1                          1
+     OR4_X1                          1
+     XNOR2_X1                        6
+     XOR2_X1                         4
+
+   Chip area for module '\nr_2x6': 53.998000
+
+=== nr_3x1 ===
+
+   Number of wires:                 13
+   Number of wire bits:             17
+   Number of public wires:           6
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     AND2_X1                         3
+
+   Chip area for module '\nr_3x1': 3.192000
+
+=== nr_3x3 ===
+
+   Number of wires:                 76
+   Number of wire bits:             85
+   Number of public wires:          36
+   Number of public wire bits:      45
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     AND2_X1                         1
+     AND3_X1                         3
+     AND4_X1                         1
+     AOI211_X1                       3
+     AOI21_X1                        1
+     AOI22_X1                        2
+     NAND2_X1                        5
+     NAND3_X1                        2
+     NAND4_X1                        1
+     NOR2_X1                         3
+     NOR3_X1                         1
+     OAI21_X1                        2
+     OAI22_X1                        1
+     OR2_X1                          1
+     OR3_X1                          1
+     XNOR2_X1                        3
+     XOR2_X1                         1
+
+   Chip area for module '\nr_3x3': 37.506000
+
+=== nr_4x2 ===
+
+   Number of wires:                 59
+   Number of wire bits:             68
+   Number of public wires:          29
+   Number of public wire bits:      38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     AND2_X1                         1
+     AOI211_X1                       1
+     AOI21_X1                        2
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                        6
+     NAND3_X1                        1
+     NAND4_X1                        1
+     NOR2_X1                         2
+     OAI22_X1                        1
+     OR3_X1                          1
+     XNOR2_X1                        3
+     XOR2_X1                         1
+
+   Chip area for module '\nr_4x2': 25.536000
+
+=== nr_6x2 ===
+
+   Number of wires:                112
+   Number of wire bits:            125
+   Number of public wires:          55
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     AND2_X1                         2
+     AND3_X1                         2
+     AND4_X1                         1
+     AOI211_X1                       2
+     AOI21_X1                        4
+     AOI22_X1                        2
+     INV_X1                          1
+     NAND2_X1                       12
+     NAND4_X1                        1
+     NOR2_X1                         1
+     NOR3_X1                         1
+     NOR4_X1                         1
+     OAI211_X1                       1
+     OAI21_X1                        2
+     OAI22_X1                        1
+     OR2_X1                          1
+     OR4_X1                          1
+     XNOR2_X1                        6
+     XOR2_X1                         4
+
+   Chip area for module '\nr_6x2': 53.998000
+
+=== rr8x8__B__nr2x2__nr2x6__nr6x2__rr6x6__B__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__nr4x2__nr2x4__nr2x2__B__B__ ===
+
+   Number of wires:                163
+   Number of wire bits:            397
+   Number of public wires:          11
+   Number of public wire bits:      80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 84
+     AND2_X1                         3
+     AND3_X1                         1
+     AOI21_X1                        8
+     INV_X1                          3
+     NAND2_X1                       13
+     NOR2_X1                         8
+     NOR3_X1                         1
+     OAI21_X1                        7
+     OR2_X1                          1
+     XNOR2_X1                       20
+     XOR2_X1                        15
+     nr_2x2                          1
+     nr_2x6                          1
+     nr_6x2                          1
+     rr_6x6                          1
+
+   Area for cell type \nr_2x2 is unknown!
+   Area for cell type \nr_6x2 is unknown!
+   Area for cell type \nr_2x6 is unknown!
+   Area for cell type \rr_6x6 is unknown!
+
+   Chip area for module '\rr8x8__B__nr2x2__nr2x6__nr6x2__rr6x6__B__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__nr4x2__nr2x4__nr2x2__B__B__': 96.824000
+
+=== rr_4x4 ===
+
+   Number of wires:                 69
+   Number of wire bits:            144
+   Number of public wires:          11
+   Number of public wire bits:      37
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     AND2_X1                         1
+     AOI21_X1                        2
+     INV_X1                          1
+     NAND2_X1                        5
+     NAND3_X1                        1
+     NOR2_X1                         4
+     NOR3_X1                         1
+     OAI21_X1                        4
+     XNOR2_X1                        7
+     XOR2_X1                         5
+     nr_1x1                          1
+     nr_1x3                          1
+     nr_3x1                          1
+     nr_3x3                          1
+
+   Area for cell type \nr_3x1 is unknown!
+   Area for cell type \nr_1x3 is unknown!
+   Area for cell type \nr_3x3 is unknown!
+   Area for cell type \nr_1x1 is unknown!
+
+   Chip area for module '\rr_4x4': 36.442000
+
+=== rr_6x6 ===
+
+   Number of wires:                151
+   Number of wire bits:            321
+   Number of public wires:          11
+   Number of public wire bits:      60
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 84
+     AND2_X1                         7
+     AND3_X1                         1
+     AOI21_X1                        4
+     INV_X1                          2
+     NAND2_X1                       13
+     NAND3_X1                        1
+     NAND4_X1                        1
+     NOR2_X1                         8
+     OAI211_X1                       1
+     OAI21_X1                        8
+     OR2_X1                          1
+     OR3_X1                          1
+     XNOR2_X1                       17
+     XOR2_X1                        15
+     nr_2x2                          1
+     nr_2x4                          1
+     nr_4x2                          1
+     rr_4x4                          1
+
+   Area for cell type \nr_2x2 is unknown!
+   Area for cell type \nr_4x2 is unknown!
+   Area for cell type \nr_2x4 is unknown!
+   Area for cell type \rr_4x4 is unknown!
+
+   Chip area for module '\rr_6x6': 96.558000
+
+=== design hierarchy ===
+
+   rr8x8__B__nr2x2__nr2x6__nr6x2__rr6x6__B__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__nr4x2__nr2x4__nr2x2__B__B__      1
+     nr_2x2                          1
+     nr_2x6                          1
+     nr_6x2                          1
+     rr_6x6                          1
+       nr_2x2                        1
+       nr_2x4                        1
+       nr_4x2                        1
+       rr_4x4                        1
+         nr_1x1                      1
+         nr_1x3                      1
+         nr_3x1                      1
+         nr_3x3                      1
+
+   Number of wires:                876
+   Number of wire bits:           1426
+   Number of public wires:         275
+   Number of public wire bits:     490
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                380
+     AND2_X1                        27
+     AND3_X1                         9
+     AND4_X1                         5
+     AOI211_X1                       9
+     AOI21_X1                       27
+     AOI22_X1                       12
+     INV_X1                         10
+     NAND2_X1                       74
+     NAND3_X1                        6
+     NAND4_X1                        6
+     NOR2_X1                        33
+     NOR3_X1                         5
+     NOR4_X1                         2
+     OAI211_X1                       3
+     OAI21_X1                       25
+     OAI22_X1                        5
+     OR2_X1                          5
+     OR3_X1                          4
+     OR4_X1                          2
+     XNOR2_X1                       65
+     XOR2_X1                        46
+
+   Chip area for top module '\rr8x8__B__nr2x2__nr2x6__nr6x2__rr6x6__B__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__nr4x2__nr2x4__nr2x2__B__B__': 446.614000
+

@@ -1,5 +1,5 @@
 
-module exact_nr_6x2
+module nr_6x2
 (
   input [5:0] A,
   input [1:0] B,
@@ -69,7 +69,7 @@ module exact_nr_6x2
 
 endmodule
 
-module exact_nr_5x5
+module nr_5x5
 (
   input [4:0] A,
   input [4:0] B,
@@ -274,7 +274,7 @@ module exact_nr_5x5
 
 endmodule
 
-module exact_nr_5x3
+module nr_5x3
 (
   input [4:0] A,
   input [2:0] B,
@@ -371,7 +371,7 @@ module exact_nr_5x3
 
 endmodule
 
-module exact_nr_3x3
+module nr_3x3
 (
   input [2:0] A,
   input [2:0] B,
@@ -420,7 +420,7 @@ module exact_nr_3x3
 
 endmodule
 
-module exact_nr_2x6
+module nr_2x6
 (
   input [1:0] A,
   input [5:0] B,
@@ -490,7 +490,7 @@ module exact_nr_2x6
 
 endmodule
 
-module exact_nr_2x2
+module nr_2x2
 (
   input [1:0] A,
   input [1:0] B,
@@ -512,7 +512,7 @@ module exact_nr_2x2
 
 endmodule
 
-module exact_nr_6x6
+module nr_6x6
 (
   input [5:0] A,
   input [5:0] B,
@@ -870,7 +870,7 @@ module exact_nr_6x6
 
 endmodule
 
-module exact_nr_3x5
+module nr_3x5
 (
   input [2:0] A,
   input [4:0] B,
@@ -967,7 +967,7 @@ module exact_nr_3x5
 
 endmodule
 
-        module exact_rr8x8__B__nr5x5__nr5x3__nr3x5__nr3x3__B__(
+        module rr8x8__B__nr5x5__nr5x3__nr3x5__nr3x3__B__(
             input [7:0] A, 
             input [7:0] B, 
             output [15:0] P
@@ -983,14 +983,15 @@ endmodule
             assign A_L = A[2:0];
             assign B_L = B[2:0];
             
+            
             wire [9:0] P1;
             wire [7:0] P2, P3;
             wire [5:0] P4;
             
-            exact_nr_5x5 M1(.A(A_H), .B(B_H), .P(P1));
-            exact_nr_5x3 M2(.A(A_H), .B(B_L), .P(P2));
-            exact_nr_3x5 M3(.A(A_L), .B(B_H), .P(P3));
-            exact_nr_3x3 M4(.A(A_L), .B(B_L), .P(P4));
+            nr_5x5 M1(.A(A_H), .B(B_H), .P(P1));
+            nr_5x3 M2(.A(A_H), .B(B_L), .P(P2));
+            nr_3x5 M3(.A(A_L), .B(B_H), .P(P3));
+            nr_3x3 M4(.A(A_L), .B(B_L), .P(P4));
             
             assign P = (P1 << 6) + (P3 << 3) + (P2 << 3) + P4;
         endmodule

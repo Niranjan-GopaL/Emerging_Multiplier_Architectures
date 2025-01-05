@@ -1,0 +1,42 @@
+Startpoint: A[3] (input port clocked by CLK)
+Endpoint: P[15] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 v input external delay
+   0.00    5.00 v A[3] (in)
+   0.08    5.08 v _0792_/ZN (AND4_X1)
+   0.09    5.17 v _0794_/ZN (OR3_X1)
+   0.05    5.22 v _0796_/ZN (AND3_X1)
+   0.09    5.31 v _0800_/ZN (OR3_X1)
+   0.06    5.37 ^ _0835_/ZN (AOI211_X1)
+   0.03    5.40 v _0839_/ZN (OAI21_X1)
+   0.05    5.45 v _0840_/ZN (AND3_X1)
+   0.09    5.54 v _0843_/ZN (OR3_X1)
+   0.05    5.59 v _0846_/ZN (AND4_X1)
+   0.06    5.64 v _0854_/ZN (OR2_X1)
+   0.04    5.69 v _0889_/ZN (XNOR2_X1)
+   0.04    5.73 ^ _0891_/ZN (OAI21_X1)
+   0.03    5.77 v _0939_/ZN (AOI21_X1)
+   0.10    5.87 ^ _1046_/ZN (NOR4_X1)
+   0.04    5.92 v _1082_/ZN (NAND3_X1)
+   0.54    6.46 ^ _1095_/ZN (OAI211_X1)
+   0.00    6.46 ^ P[15] (out)
+           6.46   data arrival time
+
+1000.00 1000.00   clock CLK (rise edge)
+   0.00 1000.00   clock network delay (ideal)
+   0.00 1000.00   clock reconvergence pessimism
+  -5.00  995.00   output external delay
+         995.00   data required time
+---------------------------------------------------------
+         995.00   data required time
+          -6.46   data arrival time
+---------------------------------------------------------
+         988.54   slack (MET)
+
+

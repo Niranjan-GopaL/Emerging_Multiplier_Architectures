@@ -3,9 +3,13 @@
 
 def write_main_verilog(top_nature, size_x, hi, lo, M1_nature, M2_nature, M3_nature, M4_nature, size_11, size_12, size_21, size_22, size_31, size_32, size_41, size_42, topflag, name):
     
+    
+    p1 = 2*hi-1 if hi != 1 else 2*hi-2
+    p2_3 = hi+lo-1 if hi != 1 and lo != 1 else hi+lo-2
+    p4 = 2*lo-1 if lo != 1 else 2*lo-2
     if topflag == False:
         template = f'''
-        module exact_{top_nature}_{size_x}x{size_x}(
+        module {top_nature}_{size_x}x{size_x}(
             input [{size_x-1}:0] A, 
             input [{size_x-1}:0] B, 
             output [{2*size_x-1}:0] P
@@ -21,21 +25,21 @@ def write_main_verilog(top_nature, size_x, hi, lo, M1_nature, M2_nature, M3_natu
             assign A_L = A[{lo-1}:0];
             assign B_L = B[{lo-1}:0];
             
-            wire [{2*hi-1}:0] P1;
-            wire [{hi+lo-1}:0] P2, P3;
-            wire [{2*lo-1}:0] P4;
+            wire [{p1}:0] P1;
+            wire [{p2_3}:0] P2, P3;
+            wire [{p4}:0] P4;
             
-            exact_{M1_nature}_{size_11}x{size_12} M1(.A(A_H), .B(B_H), .P(P1));
-            exact_{M2_nature}_{size_21}x{size_22} M2(.A(A_H), .B(B_L), .P(P2));
-            exact_{M3_nature}_{size_31}x{size_32} M3(.A(A_L), .B(B_H), .P(P3));
-            exact_{M4_nature}_{size_41}x{size_42} M4(.A(A_L), .B(B_L), .P(P4));
+            {M1_nature}_{size_11}x{size_12} M1(.A(A_H), .B(B_H), .P(P1));
+            {M2_nature}_{size_21}x{size_22} M2(.A(A_H), .B(B_L), .P(P2));
+            {M3_nature}_{size_31}x{size_32} M3(.A(A_L), .B(B_H), .P(P3));
+            {M4_nature}_{size_41}x{size_42} M4(.A(A_L), .B(B_L), .P(P4));
             
             assign P = (P1 << {2*lo}) + (P3 << {lo}) + (P2 << {lo}) + P4;
         endmodule
         '''
     else:
         template = f'''
-        module exact_{name}(
+        module {name}(
             input [{size_x-1}:0] A, 
             input [{size_x-1}:0] B, 
             output [{2*size_x-1}:0] P
@@ -51,14 +55,15 @@ def write_main_verilog(top_nature, size_x, hi, lo, M1_nature, M2_nature, M3_natu
             assign A_L = A[{lo-1}:0];
             assign B_L = B[{lo-1}:0];
             
-            wire [{2*hi-1}:0] P1;
-            wire [{hi+lo-1}:0] P2, P3;
-            wire [{2*lo-1}:0] P4;
             
-            exact_{M1_nature}_{size_11}x{size_12} M1(.A(A_H), .B(B_H), .P(P1));
-            exact_{M2_nature}_{size_21}x{size_22} M2(.A(A_H), .B(B_L), .P(P2));
-            exact_{M3_nature}_{size_31}x{size_32} M3(.A(A_L), .B(B_H), .P(P3));
-            exact_{M4_nature}_{size_41}x{size_42} M4(.A(A_L), .B(B_L), .P(P4));
+            wire [{p1}:0] P1;
+            wire [{p2_3}:0] P2, P3;
+            wire [{p4}:0] P4;
+            
+            {M1_nature}_{size_11}x{size_12} M1(.A(A_H), .B(B_H), .P(P1));
+            {M2_nature}_{size_21}x{size_22} M2(.A(A_H), .B(B_L), .P(P2));
+            {M3_nature}_{size_31}x{size_32} M3(.A(A_L), .B(B_H), .P(P3));
+            {M4_nature}_{size_41}x{size_42} M4(.A(A_L), .B(B_L), .P(P4));
             
             assign P = (P1 << {2*lo}) + (P3 << {lo}) + (P2 << {lo}) + P4;
         endmodule

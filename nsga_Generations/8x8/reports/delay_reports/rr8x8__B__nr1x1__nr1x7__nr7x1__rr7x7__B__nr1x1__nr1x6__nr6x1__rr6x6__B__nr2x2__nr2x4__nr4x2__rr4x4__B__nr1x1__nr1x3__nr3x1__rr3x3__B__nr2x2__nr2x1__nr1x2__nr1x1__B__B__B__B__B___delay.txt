@@ -1,0 +1,56 @@
+Startpoint: B[0] (input port clocked by CLK)
+Endpoint: P[15] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 v input external delay
+   0.00    5.00 v B[0] (in)
+   0.11    5.11 ^ _654_/ZN (AOI22_X1)
+   0.02    5.13 v _655_/ZN (NOR2_X1)
+   0.07    5.20 ^ _667_/ZN (NOR3_X1)
+   0.03    5.23 v _681_/ZN (AOI21_X1)
+   0.05    5.28 ^ _704_/ZN (AOI21_X1)
+   0.05    5.34 ^ _706_/ZN (XNOR2_X1)
+   0.07    5.40 ^ _709_/Z (XOR2_X1)
+   0.03    5.43 v _711_/ZN (XNOR2_X1)
+   0.04    5.48 ^ _729_/ZN (AOI21_X1)
+   0.07    5.55 ^ _735_/Z (XOR2_X1)
+   0.05    5.60 ^ _737_/ZN (XNOR2_X1)
+   0.05    5.65 ^ _744_/ZN (XNOR2_X1)
+   0.07    5.72 ^ _746_/Z (XOR2_X1)
+   0.03    5.75 v _754_/ZN (AOI21_X1)
+   0.05    5.80 ^ _786_/ZN (OAI21_X1)
+   0.03    5.82 v _818_/ZN (AOI21_X1)
+   0.05    5.87 ^ _854_/ZN (OAI21_X1)
+   0.07    5.94 ^ _859_/Z (XOR2_X1)
+   0.06    6.00 ^ _862_/Z (XOR2_X1)
+   0.07    6.07 ^ _864_/Z (XOR2_X1)
+   0.05    6.12 ^ _866_/ZN (XNOR2_X1)
+   0.03    6.15 v _879_/ZN (OAI21_X1)
+   0.04    6.19 ^ _906_/ZN (AOI21_X1)
+   0.06    6.25 ^ _910_/Z (XOR2_X1)
+   0.07    6.32 ^ _912_/Z (XOR2_X1)
+   0.07    6.39 ^ _914_/Z (XOR2_X1)
+   0.03    6.41 v _916_/Z (XOR2_X1)
+   0.04    6.46 ^ _918_/ZN (OAI21_X1)
+   0.03    6.48 v _931_/ZN (AOI21_X1)
+   0.53    7.02 ^ _947_/ZN (OAI21_X1)
+   0.00    7.02 ^ P[15] (out)
+           7.02   data arrival time
+
+1000.00 1000.00   clock CLK (rise edge)
+   0.00 1000.00   clock network delay (ideal)
+   0.00 1000.00   clock reconvergence pessimism
+  -5.00  995.00   output external delay
+         995.00   data required time
+---------------------------------------------------------
+         995.00   data required time
+          -7.02   data arrival time
+---------------------------------------------------------
+         987.98   slack (MET)
+
+

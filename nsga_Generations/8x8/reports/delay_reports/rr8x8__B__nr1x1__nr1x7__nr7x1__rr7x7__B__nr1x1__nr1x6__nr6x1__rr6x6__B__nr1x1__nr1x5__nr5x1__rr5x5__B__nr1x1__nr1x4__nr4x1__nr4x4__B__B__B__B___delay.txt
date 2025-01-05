@@ -1,0 +1,57 @@
+Startpoint: B[3] (input port clocked by CLK)
+Endpoint: P[15] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 v input external delay
+   0.00    5.00 v B[3] (in)
+   0.08    5.08 v _714_/ZN (AND4_X1)
+   0.09    5.18 v _717_/ZN (OR3_X1)
+   0.05    5.23 v _719_/ZN (AND3_X1)
+   0.06    5.29 ^ _721_/ZN (OAI22_X1)
+   0.03    5.32 v _722_/ZN (AOI21_X1)
+   0.10    5.42 v _726_/ZN (OR3_X1)
+   0.05    5.46 v _729_/ZN (AND3_X1)
+   0.04    5.50 ^ _762_/ZN (XNOR2_X1)
+   0.02    5.52 v _766_/ZN (NOR3_X1)
+   0.09    5.61 ^ _768_/ZN (AOI211_X1)
+   0.03    5.64 v _812_/ZN (AOI21_X1)
+   0.05    5.69 ^ _848_/ZN (OAI21_X1)
+   0.05    5.74 ^ _853_/ZN (XNOR2_X1)
+   0.07    5.81 ^ _854_/Z (XOR2_X1)
+   0.07    5.88 ^ _856_/Z (XOR2_X1)
+   0.05    5.93 ^ _858_/ZN (XNOR2_X1)
+   0.03    5.95 v _881_/ZN (OAI21_X1)
+   0.05    6.00 ^ _910_/ZN (AOI21_X1)
+   0.06    6.07 ^ _915_/Z (XOR2_X1)
+   0.07    6.13 ^ _918_/Z (XOR2_X1)
+   0.06    6.19 ^ _920_/Z (XOR2_X1)
+   0.07    6.26 ^ _922_/Z (XOR2_X1)
+   0.03    6.29 v _935_/ZN (AOI21_X1)
+   0.05    6.34 ^ _959_/ZN (OAI21_X1)
+   0.05    6.39 ^ _965_/ZN (XNOR2_X1)
+   0.07    6.46 ^ _967_/Z (XOR2_X1)
+   0.08    6.53 ^ _969_/Z (XOR2_X1)
+   0.01    6.55 v _971_/ZN (NOR2_X1)
+   0.04    6.59 ^ _974_/ZN (OAI21_X1)
+   0.03    6.62 v _987_/ZN (AOI21_X1)
+   0.53    7.15 ^ _995_/ZN (OAI21_X1)
+   0.00    7.15 ^ P[15] (out)
+           7.15   data arrival time
+
+1000.00 1000.00   clock CLK (rise edge)
+   0.00 1000.00   clock network delay (ideal)
+   0.00 1000.00   clock reconvergence pessimism
+  -5.00  995.00   output external delay
+         995.00   data required time
+---------------------------------------------------------
+         995.00   data required time
+          -7.15   data arrival time
+---------------------------------------------------------
+         987.85   slack (MET)
+
+

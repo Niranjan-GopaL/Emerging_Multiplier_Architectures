@@ -1,0 +1,56 @@
+Startpoint: A[0] (input port clocked by CLK)
+Endpoint: P[15] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 v input external delay
+   0.00    5.00 v A[0] (in)
+   0.06    5.06 ^ _650_/ZN (NAND2_X1)
+   0.14    5.21 v _651_/ZN (INV_X1)
+   0.12    5.33 v _665_/ZN (OR3_X1)
+   0.04    5.37 ^ _670_/ZN (OAI21_X1)
+   0.08    5.45 ^ _687_/ZN (AND4_X1)
+   0.03    5.48 v _711_/ZN (OAI211_X1)
+   0.06    5.54 v _712_/ZN (AND4_X1)
+   0.08    5.61 v _715_/ZN (OR3_X1)
+   0.03    5.65 v _717_/ZN (AND2_X1)
+   0.04    5.69 v _718_/ZN (XNOR2_X1)
+   0.06    5.75 v _719_/Z (XOR2_X1)
+   0.08    5.84 ^ _726_/ZN (OAI33_X1)
+   0.07    5.91 ^ _750_/Z (XOR2_X1)
+   0.03    5.94 v _758_/ZN (AOI21_X1)
+   0.05    5.99 ^ _791_/ZN (OAI21_X1)
+   0.03    6.02 v _823_/ZN (AOI21_X1)
+   0.04    6.05 ^ _861_/ZN (OAI21_X1)
+   0.06    6.12 ^ _867_/Z (XOR2_X1)
+   0.07    6.19 ^ _870_/Z (XOR2_X1)
+   0.07    6.25 ^ _871_/Z (XOR2_X1)
+   0.05    6.31 ^ _873_/ZN (XNOR2_X1)
+   0.03    6.33 v _885_/ZN (OAI21_X1)
+   0.05    6.38 ^ _911_/ZN (AOI21_X1)
+   0.07    6.45 ^ _915_/Z (XOR2_X1)
+   0.07    6.51 ^ _917_/Z (XOR2_X1)
+   0.07    6.58 ^ _919_/Z (XOR2_X1)
+   0.03    6.61 v _921_/Z (XOR2_X1)
+   0.04    6.65 ^ _923_/ZN (OAI21_X1)
+   0.03    6.68 v _936_/ZN (AOI21_X1)
+   0.53    7.21 ^ _950_/ZN (OAI21_X1)
+   0.00    7.21 ^ P[15] (out)
+           7.21   data arrival time
+
+1000.00 1000.00   clock CLK (rise edge)
+   0.00 1000.00   clock network delay (ideal)
+   0.00 1000.00   clock reconvergence pessimism
+  -5.00  995.00   output external delay
+         995.00   data required time
+---------------------------------------------------------
+         995.00   data required time
+          -7.21   data arrival time
+---------------------------------------------------------
+         987.79   slack (MET)
+
+
