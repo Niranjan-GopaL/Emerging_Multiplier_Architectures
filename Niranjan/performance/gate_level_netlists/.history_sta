@@ -1,0 +1,12 @@
+source ./sta_delay_power.tcl 
+exit
+source sta_delay_power.tcl 
+exit
+source sta_delay_power.tcl 
+source sta_delay_power.tcl 
+exit
+source set_input_delay 
+exit
+sourcce sta_delay_power.tcl 
+source sta_delay_power.tcl 
+exit

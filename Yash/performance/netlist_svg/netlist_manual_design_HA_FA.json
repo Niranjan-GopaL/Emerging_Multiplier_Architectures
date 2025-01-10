@@ -1,0 +1,547 @@
+{
+  "creator": "Yosys 0.33 (git sha1 2584903a060)",
+  "modules": {
+    "FA": {
+      "attributes": {
+        "src": "./multiply_operator.v:13.1-22.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "sum": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "carry": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$abc$105$auto$blifparse.cc:386:parse_blif$106": {
+          "hide_name": 1,
+          "type": "$_XNOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$105$auto$blifparse.cc:386:parse_blif$107": {
+          "hide_name": 1,
+          "type": "$_XNOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 4 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$abc$105$auto$blifparse.cc:386:parse_blif$108": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$abc$105$auto$blifparse.cc:386:parse_blif$109": {
+          "hide_name": 1,
+          "type": "$_ANDNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 7 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$abc$105$auto$blifparse.cc:386:parse_blif$110": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 8 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$105$new_n6_": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$abc$105$new_n8_": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$abc$105$new_n9_": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "./multiply_operator.v:14.11-14.12"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "./multiply_operator.v:14.14-14.15"
+          }
+        },
+        "carry": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "./multiply_operator.v:15.17-15.22"
+          }
+        },
+        "cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "./multiply_operator.v:14.17-14.20"
+          }
+        },
+        "sum": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "./multiply_operator.v:15.12-15.15"
+          }
+        }
+      }
+    },
+    "HA": {
+      "attributes": {
+        "src": "./multiply_operator.v:3.1-9.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "sum": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "carry": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$abc$111$auto$blifparse.cc:386:parse_blif$112": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$abc$111$auto$blifparse.cc:386:parse_blif$113": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "./multiply_operator.v:4.11-4.12"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "./multiply_operator.v:4.14-4.15"
+          }
+        },
+        "carry": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "./multiply_operator.v:5.17-5.22"
+          }
+        },
+        "sum": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "./multiply_operator.v:5.12-5.15"
+          }
+        }
+      }
+    },
+    "exact_3x2": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "./multiply_operator.v:24.1-45.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2, 3, 4 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 5, 6 ]
+        },
+        "P": {
+          "direction": "output",
+          "bits": [ 7, 8, 9, 10, 11 ]
+        }
+      },
+      "cells": {
+        "$abc$114$auto$blifparse.cc:386:parse_blif$115": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 2 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$114$auto$blifparse.cc:386:parse_blif$116": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 5 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$abc$114$auto$blifparse.cc:386:parse_blif$117": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$abc$114$auto$blifparse.cc:386:parse_blif$118": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 2 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$abc$114$auto$blifparse.cc:386:parse_blif$119": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 3 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$abc$114$auto$blifparse.cc:386:parse_blif$120": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 4 ],
+            "Y": [ 16 ]
+          }
+        },
+        "fa": {
+          "hide_name": 0,
+          "type": "FA",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./multiply_operator.v:42.8-42.64"
+          },
+          "port_directions": {
+            "a": "input",
+            "b": "input",
+            "carry": "output",
+            "cin": "input",
+            "sum": "output"
+          },
+          "connections": {
+            "a": [ 13 ],
+            "b": [ 15 ],
+            "carry": [ 17 ],
+            "cin": [ 18 ],
+            "sum": [ 9 ]
+          }
+        },
+        "ha1": {
+          "hide_name": 0,
+          "type": "HA",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./multiply_operator.v:41.8-41.54"
+          },
+          "port_directions": {
+            "a": "input",
+            "b": "input",
+            "carry": "output",
+            "sum": "output"
+          },
+          "connections": {
+            "a": [ 12 ],
+            "b": [ 14 ],
+            "carry": [ 18 ],
+            "sum": [ 8 ]
+          }
+        },
+        "ha2": {
+          "hide_name": 0,
+          "type": "HA",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./multiply_operator.v:43.8-43.56"
+          },
+          "port_directions": {
+            "a": "input",
+            "b": "input",
+            "carry": "output",
+            "sum": "output"
+          },
+          "connections": {
+            "a": [ 17 ],
+            "b": [ 16 ],
+            "carry": [ 11 ],
+            "sum": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4 ],
+          "attributes": {
+            "src": "./multiply_operator.v:25.17-25.18"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 5, 6 ],
+          "attributes": {
+            "src": "./multiply_operator.v:26.17-26.18"
+          }
+        },
+        "P": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "./multiply_operator.v:27.18-27.19"
+          }
+        },
+        "c1": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "./multiply_operator.v:30.14-30.16"
+          }
+        },
+        "c2": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "./multiply_operator.v:30.22-30.24"
+          }
+        },
+        "pp0": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "./multiply_operator.v:29.10-29.13"
+          }
+        },
+        "pp1": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "./multiply_operator.v:29.15-29.18"
+          }
+        },
+        "pp2": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "./multiply_operator.v:29.20-29.23"
+          }
+        },
+        "pp3": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "./multiply_operator.v:29.25-29.28"
+          }
+        },
+        "pp4": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "./multiply_operator.v:29.30-29.33"
+          }
+        },
+        "pp5": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "./multiply_operator.v:29.35-29.38"
+          }
+        }
+      }
+    }
+  }
+}
