@@ -12,7 +12,7 @@ nr means non recursive multiplier.
 
 Example 1 :-
 
-rr8x8__B__nr6x6__nr6x2__nr2x6__nr2x2__B__
+rr8x8,__B__nr6x6__nr6x2__nr2x6__nr2x2__B__
 => so it's a recursive 8x8 multiplier that is built using 1 non-recursive 6x6, 1 non recursive 6x2 and 2x6, 1 non-recursive 2x2
 
 
@@ -38,9 +38,9 @@ rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__
                     [3, 3,nr] : {} ,
                     [3, 3,nr] : {} ,                
                 } ,  
-        [6, 2,nr] : {} , 
-        [2, 6,nr] : {} , 
-        [2, 2,nr] : {} ,
+        [6, 2, nr] : {} , 
+        [2, 6, nr] : {} , 
+        [2, 2, nr] : {} ,
     }
 }
 
@@ -55,7 +55,7 @@ rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1
                 [1, 5, nr] : {} ,  
                 [5, 1, nr] : {} , 
                 [5, 5, r] : {
-                    [4,4,r] : {
+                    [4, 4, r] : {
                         [1, 1, nr] : {} ,
                         [1, 3, nr] : {} ,
                         [3, 1, nr] : {} ,
@@ -66,9 +66,9 @@ rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__nr1x1__nr1x3__nr3x1
                             [2, 2 , nr] : {},
                         } ,
                     }
-                    [4, 1] : {} , 
-                    [1, 4] : {} , 
-                    [1, 1] : {} ,
+                    [4, 1, nr] : {} , 
+                    [1, 4, nr] : {} , 
+                    [1, 1, nr] : {} ,
                 } ,
         [6, 2, r] : {} , 
         [2, 6, r] : {} , 
@@ -110,13 +110,16 @@ rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B
 """
 
 from pprint import pprint
+import json
 
 
+dummy_value = 0
 
 
 def parse_multiplier_string(s):
 
     def parse_module(tokens, index):
+        global dummy_value
 
         if index >= len(tokens):
             return {}, index
@@ -129,7 +132,8 @@ def parse_multiplier_string(s):
         dims = current_token.split('x')
         x = int(dims[0][2:]) 
         y = int(dims[1])
-        key = [x, y, 'rr' if is_recursive else 'nr']
+        key = [x, y, 'rr' if is_recursive else 'nr', dummy_value]
+        dummy_value += 1
         
         result = {tuple(key): {}}
         index += 1
@@ -156,18 +160,74 @@ def parse_multiplier_string(s):
     return result
 
 
+def convert_keys_to_strings(d):
+    if isinstance(d, dict):
+        return {str(k): convert_keys_to_strings(v) for k, v in d.items()}
+    elif isinstance(d, list):
+        return [convert_keys_to_strings(i) for i in d]
+    else:
+        return d
 
 
-test_strings = [
-    "rr8x8__B__nr6x6__nr6x2__nr2x6__nr2x2__B__",
-    "rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__",
-    "rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__",
-    "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__",
-    "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__",
-]
+def main_():
 
-for test in test_strings:
-    result = parse_multiplier_string(test)
-    print(f"\nInput: {test}")
-    print("Output:\n")
-    pprint(result)
+    test_strings = [
+        "rr4x4__B__nr2x2__nr2x2__nr2x2__nr2x2__B__",
+        "rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__",
+        "rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__",
+        "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__",
+        "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__",
+    ]
+
+
+    for test in test_strings:
+        result = parse_multiplier_string(test)
+        print(f"\nInput: {test}")
+        print("Output:\n")
+        pprint(result)
+
+
+
+def main():
+    input_file = 'configs_name.dat'
+    output_file = 'configs_mult_dict.dat'
+
+    with open(input_file, 'r') as file:
+        test_strings = file.read().splitlines()
+
+
+    results = {}
+
+    for s in test_strings:
+        result = parse_multiplier_string(s)
+        results[s] = convert_keys_to_strings(result)
+
+    # Write the results to output file
+    with open(output_file, 'w') as file:
+        json.dump(results, file, indent=4)
+
+    print(f"Output written to {output_file}")
+
+def main__():
+    input_file = 'configs_name.dat'
+    output_file = 'config_mult_dict.dat'
+
+    with open(input_file, 'r') as file:
+        test_strings = file.read().splitlines()
+    
+    results = []
+
+    print(test_strings)
+    for s in test_strings:
+        result = parse_multiplier_string(s)
+        results.append(result) 
+
+    for result in results :
+        with open(output_file, 'a') as file:
+            file.write(f"{str(result)}\n")
+
+    print(f"Output written to {output_file}")
+
+
+if __name__=="__main__":
+    main()

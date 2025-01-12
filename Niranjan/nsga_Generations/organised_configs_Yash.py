@@ -1,7 +1,4 @@
-
-
-
-def write_main_verilog(top_nature, size_x, hi, lo, M1_nature, M2_nature, M3_nature, M4_nature, size_11, size_12, size_21, size_22, size_31, size_32, size_41, size_42, topflag, name="lol"):
+def write_main_verilog(top_nature, size_x, hi, lo, M1_nature, M2_nature, M3_nature, M4_nature, size_11, size_12, size_21, size_22, size_31, size_32, size_41, size_42, topflag, name):
     
     
     p1 = 2*hi-1 if hi != 1 else 2*hi-2
