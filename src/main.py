@@ -88,15 +88,19 @@ def main():
     print((multiplier))
     write_complete_verilog(multiplier, n_bits)
 
-    # run yosys script here
     subprocess.run(["python3", "yosys_synth_automate.py", f"{n_bits}", str(VERBOSE)], check=True)
     subprocess.run(["python3", "yosys_area_automate.py",  f"{n_bits}", str(VERBOSE)], check=True)
-        
-    # run opensta script here
+    # subprocess.run(["python3", "sta_delay_power_automate.py",  f"{n_bits}", str(VERBOSE)], check=True)
 
     with open("area.txt", 'r') as f:
         area = f.read().strip()
         print(area)
+    with open("power.txt", 'r') as f:
+        power = f.read().strip()
+        print(power)
+    with open("delay.txt", 'r') as f:
+        delay = f.read().strip()
+        print(delay)
 
     # remove the folder 8x8
     if not VERBOSE :

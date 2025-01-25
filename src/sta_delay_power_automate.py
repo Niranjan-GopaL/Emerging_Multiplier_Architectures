@@ -1,23 +1,26 @@
 import re
 import os
 import subprocess
+import sys
 
-LIB_PATH = "./../global/NangateOpenCellLibrary_typical.lib"
-POWER_REPORTS_DIR = "./reports/power_reports"
-DELAY_REPORTS_DIR = "./reports/delay_reports"
-SUMMARY_FILE = "./summary/summary_timing.txt"
-SCRIPT_DIR = "./scripts/delay_power_scripts"
-GATE_LEVEL_NETLIST_DIR = "./gate_level_netlists"
-SDC_FILE = "./test.sdc"
+n_bits = int(sys.argv[1])
+verbose = int(sys.argv[2])
+
+LIB_PATH = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+POWER_REPORTS_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/src/{n_bits}x{n_bits}/reports/power_reports"
+DELAY_REPORTS_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/src/{n_bits}x{n_bits}/reports/delay_reports"
+SUMMARY_FILE = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/src/{n_bits}x{n_bits}/summary/summary_timing.txt"
+SCRIPT_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/src/{n_bits}x{n_bits}/scripts/delay_power_scripts"
+GATE_LEVEL_NETLIST_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/src/{n_bits}x{n_bits}/gate_level_netlists"
+SDC_FILE = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/test.sdc"
 
 
 def create_directories():
     for directory in [POWER_REPORTS_DIR, DELAY_REPORTS_DIR, SCRIPT_DIR, os.path.dirname(SUMMARY_FILE)]:
         os.makedirs(directory, exist_ok=True)
 
-
-
 def create_timing_script(basename, design):
+    basename = basename.split("-")[1] # the name of the module does not have VERBOSE
     script_content = f"""
 read_liberty {LIB_PATH}
 read_verilog ./gate_level_netlists/{design}
@@ -44,6 +47,9 @@ def extract_metrics(power_file, delay_file):
             if match:
                 total_power = float(match.group(1))
 
+    with open('power.txt' , 'r') as f:
+        f.write(total_power)
+
     # Extract Slack
     slack = None
     if os.path.exists(delay_file):
@@ -55,17 +61,17 @@ def extract_metrics(power_file, delay_file):
             else:
                 with open("./logs/error_logs.txt", "a") as error_log:
                     error_log.write(f"Error extracting slack for {delay_file}\n")
-
-    return slack, total_power
+    max_delay = round((995.0 - slack) - 5.000, 3) if slack else None
+    with open('delay.txt' , 'r') as f:
+        f.write(max_delay)
+    return slack, max_delay
 
 
 def main():
     create_directories()
 
-    for design in os.listdir(GATE_LEVEL_NETLIST_DIR):
-        if not design.endswith("_gate_level.v"):
-            continue
-            
+    design = next((f for f in os.listdir(GATE_LEVEL_NETLIST_DIR) if f.startswith(f"{verbose}") ), None)
+    if design:
         basename = design.replace("_gate_level.v", "")
         print(f"Running static timing analysis for {design}...")
 
@@ -98,6 +104,8 @@ def main():
         max_delay = round((995.0 - slack) - 5.000, 3) if slack else None
         with open(SUMMARY_FILE, "a") as summary:
             summary.write(f"{basename} | {(max_delay) or 'N/A'} | {total_power or 'N/A'}\n")
+    else:
+        print("No matching design file found.")
 
     print(f"Static timing analysis complete! Summary available in {SUMMARY_FILE}")
 
