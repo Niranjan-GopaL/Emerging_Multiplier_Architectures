@@ -1,0 +1,149 @@
+"""
+This code basically takes a configuration and checks if it is a valid configuration or not.
+The idea for this code is that we will generate the config dict list and verify if the configurations there are correct or not.
+
+The validator function follows a recursion. We pass the bit to check if the mxm multiplier exists in the circuit or not.
+At the end of the recursion if some number still has positive count that means it never occured in the multplier.
+"""
+
+import generate_list_config as glc
+
+flag = True
+
+def config_validator(n_bits, config_array):
+    
+    global flag
+    if flag == False:
+        return False
+    
+    # try:
+    #     # Generate configuration dictionaries
+    #     x, y = glc.generate_config_dict(n_bits, config_array)
+        
+    #     # Print the contents of the dictionaries for debugging
+    #     for key in x:
+    #         print(key, x[key])
+        
+    #     for key in y:
+    #         print(key, y[key])
+        
+    #     Tval = True
+        
+    #     # Check 1: Validate the lengths in y against x
+    #     for key in y:
+    #         if y[key] != 0 and len(x[key]) != 0:
+    #             if y[key] == len(x[key]):
+    #                 continue
+    #             else: 
+    #                 Tval = False
+    #                 # print("False in 1")
+        
+    #     # Check 2: Validate specific conditions for each config in x
+    #     if Tval:
+    #         for key in y:
+    #             if y[key] != 0:
+    #                 for config in x[key]:
+    #                     if (key > config[0][0]) and (key > config[3][0]) and (config[0][0] + config[3][0] == key):
+    #                         # print(key, config[0][0], config[3][0])
+    #                         continue
+    #                     else: 
+    #                         Tval = False
+        
+    #     return Tval
+    
+    # except Exception as e:
+    #     print(f"An error occurred: {e}")
+    #     return False
+    
+    # Generate configuration dictionaries
+    x, y = glc.generate_config_dict(n_bits, config_array)
+    
+    if y[n_bits] != 1:
+        return False
+    
+    for i in range (0, n_bits):
+        repeating_value = config_array[i] # To check if the repeating_value is actually repeating or not
+        if n_bits - i > 1:
+            # print(y[n_bits - i], repeating_value, n_bits - i)
+            if repeating_value == -1:
+                if y[n_bits - i] > 1:
+                    return False
+    
+    # Print the contents of the dictionaries for debugging
+    # for key in x:
+    #     print(key, x[key])
+    
+    # for key in y:
+    #     print(key, y[key])
+        
+    config_validator_recursive(n_bits, x, y)
+    
+    # Print the contents of the dictionaries for debugging
+    # for key in x:
+    #     print(key, x[key])
+    
+    # for key in y:
+    #     print(key, y[key])
+    
+    for key in y:
+        if y[key] > 0:
+            return False
+    else:
+        return True
+
+def config_validator_recursive(n_bits, config_dict, config_count_dict):
+    
+    global flag
+    if flag == False:
+        return
+    
+    # print("Printing", n_bits)
+    # for key in config_count_dict:
+    #     print(key, config_count_dict[key])
+    
+    if n_bits < 2:
+        return
+    
+    index = config_count_dict[n_bits] - 1
+    
+    config_count_dict[n_bits] -= 1
+    if len(config_dict[n_bits]) == 0:
+        return
+    if index < 0:
+        # print("Returning")
+        return
+    
+    config = config_dict[n_bits][0]
+    # if len(config) == 0:
+    #     return
+    
+    H = config[0][0]
+    L = config[3][0]
+    
+    if L <= 0 or H <= 0 or L >= n_bits or H >= n_bits:
+        flag = False
+    
+    del config_dict[n_bits][0]
+    
+    # print(f"H={H}, L={L}")
+    
+    if H == L:
+        config_validator_recursive(H, config_dict, config_count_dict)
+        config_validator_recursive(H, config_dict, config_count_dict)
+        config_validator_recursive(H, config_dict, config_count_dict)
+        config_validator_recursive(H, config_dict, config_count_dict)
+    
+    else:
+        config_validator_recursive(H, config_dict, config_count_dict)
+        config_validator_recursive(L, config_dict, config_count_dict)
+        
+        
+
+def main():
+
+    x = config_validator(8, [3, -1, -1, 3, -1, 0, -1, -1, 1, 1, -1, -1, -1, -1, -1, -1])
+    print(x)
+    
+if __name__ == "__main__":
+    main()
+    
