@@ -1,9 +1,0 @@
-
-read_verilog /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/8x8/rtl/6-temp.v
-hierarchy -check -top rr8x8__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x5__nr5x3__rr5x5__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x2__nr2x3__nr2x2__B__B__
-flatten
-synth -top rr8x8__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x5__nr5x3__rr5x5__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x2__nr2x3__nr2x2__B__B__
-dfflibmap -liberty /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib
-abc -liberty /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib
-write_json /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/8x8/netlists/6-temp_netlist.json
-write_verilog -noattr /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/8x8/gate_level_netlists/6-temp_gate_level.v

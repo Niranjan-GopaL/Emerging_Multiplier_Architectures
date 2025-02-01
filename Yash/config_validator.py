@@ -15,6 +15,7 @@ def config_validator(n_bits, config_array):
     
     config_array = config_array.tolist()
     global flag
+    flag = True
     if flag == False:
         return False
     
@@ -147,7 +148,7 @@ def config_validator_recursive(n_bits, config_dict, config_count_dict):
 
 def main():
 
-    x = config_validator(8, np.array([ 5, -1, -1,  2, -1,  0, -1, -1,  1, -1, -1, -1, -1, -1, -1, -1]))
+    x = config_validator(8, np.array([ 5,  6, -1, -1,  0,  0, -1, -1,  2,  3,  2, -1,  3,  4, -1, -1]))
     print(x)
     
 if __name__ == "__main__":

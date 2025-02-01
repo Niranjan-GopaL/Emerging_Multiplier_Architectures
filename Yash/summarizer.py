@@ -156,7 +156,7 @@ class CustomProblemClass(Problem):
 
     #this function is used to evaluate each solution independently and should return objectives and constraints
     def evaluateProblem(self,x,Z):
-        global VERBOSE_NUMBER_RIGHT_NOW
+        
         # x: Single solution 
         # Z: Which thread?
         
@@ -168,30 +168,30 @@ class CustomProblemClass(Problem):
         
         
         
-        # if cv.config_validator(N_BITS, x):
+        if cv.config_validator(N_BITS, x):
         #     # final_configuration = gfc.generate_final_config(n_bits=N_BITS, array=x)
         #     # print("this is ",VERBOSE_NUMBER_RIGHT_NOW)
         #     # f1, f2, f3 = gv.get_values(final_configuration, Z)
         #     # VERBOSE_NUMBER_RIGHT_NOW += 1
-        print(f"Config={x}")
-        final_configuration = gfc.generate_final_config(n_bits=N_BITS, array=x)
-        f1, f2, f3 = gv.get_values(final_configuration, Z)
+            print(f"Config={x}")
+            final_configuration = gfc.generate_final_config(n_bits=N_BITS, array=x)
+            f1, f2, f3 = gv.get_values(final_configuration, Z)
         # f1 = np.sum(x)
         # f2 = np.prod(x)
         # f3 = 0
         
-        # else:
+        else:
             
-        #     print("Invalid Config=",x)
-        #     f1, f2, f3 = -1, -1, -1
+            print("Invalid Config=",x)
+            f1, f2, f3 = 10000, 10000, 100000
 
         #constraint/violation evaluation
         g1=0
-        # if cv.config_validator(N_BITS, x):
-        #     print("Valid")
-        #     g1 = 0
-        # else:
-        #     g1 = 1
+        if cv.config_validator(N_BITS, x):
+            print("Valid")
+            g1 = 0
+        else:
+            g1 = 1
         # for i in x:
         #     if (i%2==1):
         #         g1 = g1 + 1
