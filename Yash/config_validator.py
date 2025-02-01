@@ -7,11 +7,13 @@ At the end of the recursion if some number still has positive count that means i
 """
 
 import generate_list_config as glc
+import numpy as np
 
 flag = True
 
 def config_validator(n_bits, config_array):
     
+    config_array = config_array.tolist()
     global flag
     if flag == False:
         return False
@@ -58,7 +60,15 @@ def config_validator(n_bits, config_array):
     # Generate configuration dictionaries
     x, y = glc.generate_config_dict(n_bits, config_array)
     
+    # Print the contents of the dictionaries for debugging
+    # for key in x:
+    #     print(key, x[key])
+    
+    # for key in y:
+    #     print(key, y[key])
+        
     if y[n_bits] != 1:
+        # print("False 1")
         return False
     
     for i in range (0, n_bits):
@@ -66,15 +76,11 @@ def config_validator(n_bits, config_array):
         if n_bits - i > 1:
             # print(y[n_bits - i], repeating_value, n_bits - i)
             if repeating_value == -1:
-                if y[n_bits - i] > 1:
+                if y[n_bits - i] > 1 and (n_bits - i) > int(n_bits/2):
+                    # print("False 2", n_bits-i)
                     return False
     
-    # Print the contents of the dictionaries for debugging
-    # for key in x:
-    #     print(key, x[key])
     
-    # for key in y:
-    #     print(key, y[key])
         
     config_validator_recursive(n_bits, x, y)
     
@@ -141,7 +147,7 @@ def config_validator_recursive(n_bits, config_dict, config_count_dict):
 
 def main():
 
-    x = config_validator(8, [3, -1, -1, 3, -1, 0, -1, -1, 1, 1, -1, -1, -1, -1, -1, -1])
+    x = config_validator(8, np.array([ 5, -1, -1,  2, -1,  0, -1, -1,  1, -1, -1, -1, -1, -1, -1, -1]))
     print(x)
     
 if __name__ == "__main__":

@@ -82,6 +82,9 @@ dummy_value = 0
 
 def parse_multiplier_string(s):
 
+    global dummy_value
+    dummy_value = 0
+    
     def parse_module(tokens, index):
         global dummy_value
 
@@ -132,12 +135,15 @@ def main():
         "rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__",
         "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__",
         "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__",
+        "rr8x8__B__rr5x5__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x2__nr2x3__nr2x2__B__nr5x3__nr3x5__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__B__"
     ]
+    
+    test_strings = ["rr8x8__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__B__"]
 
     for test in test_strings:
         result = parse_multiplier_string(test)
-        print(f"\nInput: {test}")
-        print("Output:\n")
+        # print(f"\nInput: {test}")
+        # print("Output:\n")
         pprint(result)
         
 if __name__=="__main__":

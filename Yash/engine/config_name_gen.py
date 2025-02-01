@@ -95,22 +95,22 @@ def generate_configuration_name(configuaration_array):
     
 def main():
     configs = []
-    with open("configs.dat","r") as f:
-        for line in f:
-            line = line.strip()     
-            if line:                
-                configs.append(line)
+    # with open("configs.dat","r") as f:
+    #     for line in f:
+    #         line = line.strip()     
+    #         if line:                
+    #             configs.append(line)
 
-    with open("configs_name.dat", "w") as f:
-        for config in configs:
-            config = ast.literal_eval(config)
-            # print(type(config).__name__)
-            name = generate_configuration_name(list(config))[0]
-            # print(name)
-            f.write(f"{name}\n")
+    # with open("configs_name.dat", "w") as f:
+    #     for config in configs:
+    #         config = ast.literal_eval(config)
+    #         # print(type(config).__name__)
+    #         name = generate_configuration_name(list(config))[0]
+    #         # print(name)
+    #         f.write(f"{name}\n")
 
-    # config = [[6, 6], [6, 2], [2, 6], [2, 2]]
-    # print(generate_configuration_name(config)[0])
+    config = [[[[2, 2], [2, 1], [1, 2], [1, 1]], [3, 2], [2, 3], [2, 2]], [5, 3], [3, 5], [[2, 2], [2, 1], [1, 2], [1, 1]]]
+    print(generate_configuration_name(config)[0])
 
     
 if __name__=="__main__":

@@ -42,6 +42,7 @@ from pymoo.core.problem import Problem
 from pymoo.operators.crossover.pntx import PointCrossover
 from pymoo.operators.sampling.rnd import IntegerRandomSampling
 from pymoo.operators.mutation.inversion import InversionMutation
+from pymoo.core.mutation import Mutation
 from pymoo.operators.mutation.pm import PolynomialMutation
 from pymoo.operators.repair.rounding import RoundingRepair
 from pymoo.operators.mutation.bitflip import BitflipMutation
@@ -59,10 +60,19 @@ import re
 import config_validator as cv
 import generate_final_config as gfc
 import get_values as gv
+import custom_mutation as cm
 
+#--------------- custom mutation  --------------------------
+class CustomMutation(Mutation):
 
+    def _do(self, problem, X, params=None, **kwargs):
+        X = X.astype(float)
+
+        Xp = cm.custom_mutation(X)
+        
+        return Xp
 #--------------- global variables --------------------------
-THREADS=20
+THREADS=1
 pool=ThreadPool(THREADS)
 
 GENERATIONS=100
@@ -72,7 +82,7 @@ SEED=0
 N_BITS = 8
 #----------------global variables --------------------------
 
-
+VERBOSE_NUMBER_RIGHT_NOW = 0
 
 #this class is used to get data of entire evolution
 class MyCallback:
@@ -112,7 +122,7 @@ class CustomProblemClass(Problem):
         print("Over")
         print(self.xu)
         
-        super().__init__(n_var=16, n_obj=3, n_ieq_constr=1,n_constr=0,elementwise_evaluation=True, xl=self.xl, xu=self.xu,vtype=int,**kwargs)
+        super().__init__(n_var=16, n_obj=3, n_ieq_constr=1,n_constr=0,elementwise_evaluation=False, xl=self.xl, xu=self.xu,vtype=int,**kwargs)
 
         # elementwise_evaluation=True: At each time it will give 1 solution instead of all 10 solutions.
         # n_var: each solution should have 10 numbers
@@ -146,7 +156,7 @@ class CustomProblemClass(Problem):
 
     #this function is used to evaluate each solution independently and should return objectives and constraints
     def evaluateProblem(self,x,Z):
-
+        global VERBOSE_NUMBER_RIGHT_NOW
         # x: Single solution 
         # Z: Which thread?
         
@@ -156,16 +166,32 @@ class CustomProblemClass(Problem):
         # Find a solution so that product of odd numbers is minimized and sum=200
         # print(type(x))
         
-        print("Config=",x)
+        
+        
+        # if cv.config_validator(N_BITS, x):
+        #     # final_configuration = gfc.generate_final_config(n_bits=N_BITS, array=x)
+        #     # print("this is ",VERBOSE_NUMBER_RIGHT_NOW)
+        #     # f1, f2, f3 = gv.get_values(final_configuration, Z)
+        #     # VERBOSE_NUMBER_RIGHT_NOW += 1
+        print(f"Config={x}")
         final_configuration = gfc.generate_final_config(n_bits=N_BITS, array=x)
-        f1, f2, f3 = gv.get_values(final_configuration)
+        f1, f2, f3 = gv.get_values(final_configuration, Z)
+        # f1 = np.sum(x)
+        # f2 = np.prod(x)
+        # f3 = 0
+        
+        # else:
+            
+        #     print("Invalid Config=",x)
+        #     f1, f2, f3 = -1, -1, -1
 
         #constraint/violation evaluation
         g1=0
-        if cv.config_validator(N_BITS, x):
-            g1 = 0
-        else:
-            g1 = 1
+        # if cv.config_validator(N_BITS, x):
+        #     print("Valid")
+        #     g1 = 0
+        # else:
+        #     g1 = 1
         # for i in x:
         #     if (i%2==1):
         #         g1 = g1 + 1
@@ -229,7 +255,7 @@ def runFramework():
 
     
     algorithm = NSGA2(pop_size=POPULATION,sampling=sampling,crossover=PointCrossover(n_points=5, prob=0),
-        mutation=InversionMutation()) 
+        mutation=CustomMutation()) 
     
     # Termination in possible ways?
     # We know till what value we want to converge to?

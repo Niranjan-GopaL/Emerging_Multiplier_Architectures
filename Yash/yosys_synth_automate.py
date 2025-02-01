@@ -4,6 +4,7 @@ import subprocess
 
 n_bits = int(sys.argv[1])
 verbose = int(sys.argv[2])
+module_name = sys.argv[3]
 
 LIB_PATH = "/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
 GATE_LEVEL_DIR = f"./{n_bits}x{n_bits}/gate_level_netlists"
@@ -25,13 +26,13 @@ def create_synth_script(script_path, design, basename:str):
     with open(script_path, "w") as script_file:
         script_file.write(f"""
 read_verilog /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/rtl/{design}
-hierarchy -check -top {basename}
+hierarchy -check -top {module_name}
 flatten
-synth -top {basename}
+synth -top {module_name}
 dfflibmap -liberty {LIB_PATH}
 abc -liberty {LIB_PATH}
 write_json /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/netlists/{verbose}-{basename}_netlist.json
-write_verilog -noattr /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists/{verbose}-{basename}_gate_level.v
+write_verilog -noattr /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists/{verbose}-temp_gate_level.v
 """)
 
 
@@ -44,10 +45,14 @@ def main():
         print(f"Running Yosys for {hdl}...")
 
         # Yosys script is created
-        script_path = os.path.join(SCRIPT_DIR, f"{verbose}_{basename}_yosys_script.tcl")
+        script_path = os.path.join(SCRIPT_DIR, f"{basename}_yosys_script.tcl")
         create_synth_script(script_path, hdl, basename)
 
-        subprocess.run(["yosys", "-s", script_path], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["yosys", "-s", script_path], check=True, 
+                       stdout=subprocess.DEVNULL, 
+                       stderr=subprocess.DEVNULL
+                       )
+        
         # This npm package converts netlist.json to SVG
         # subprocess.run(["netlistsvg", 
         #                 os.path.join(NETLIST_DIR, f"{basename}_netlist.json"), 

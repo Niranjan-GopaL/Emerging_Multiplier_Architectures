@@ -266,8 +266,10 @@ def main():
     a_width = 6
     b_width = 6
     
+    index = 19
+    
     # print(generate_partial_product_array(a_width, b_width))
-    generate_multiplier(a_width, b_width)
+    generate_multiplier(a_width, b_width, index)
     
 if __name__=="__main__":
     main()

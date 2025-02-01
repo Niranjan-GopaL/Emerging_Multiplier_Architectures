@@ -31,8 +31,8 @@ def generate_final_config(n_bits, array):
     
     config_dict, repeated_config_count = glc.generate_config_dict(n_bits, array)
     
-    print(config_dict)
-    print(repeated_config_count)
+    # print(config_dict)
+    # print(repeated_config_count)
     
     final_configuration = generate_final_config_recursive(n_bits=n_bits, config_dict=config_dict, repeated_config_count=repeated_config_count, array=array)
     
@@ -52,16 +52,20 @@ def generate_final_config_recursive(n_bits, config_dict, repeated_config_count, 
         return None
     
     else:
-        if repeated_config_count[n_bits] > 0:
-            # print(f"COUNT={COUNT}")
-            if array[COUNT] == 0:
+        # print("In Else", n_bits)
+        try:
+            if repeated_config_count[n_bits] > 1:
+                if array[COUNT] == 0:
+                    COUNT += 1
+                    return None
                 COUNT += 1
-                # print("Returning None as COUNT")
-                return None
-            COUNT += 1
+        except Exception as e:
+            print(array)
+            return None
         # print(repeated_config_count)
         index = repeated_config_count[n_bits] - 1
         repeated_config_count[n_bits] -= 1
+        
         
         # print(repeated_config_count)
         # print(n_bits, index)
@@ -114,7 +118,8 @@ def generate_final_config_recursive(n_bits, config_dict, repeated_config_count, 
         
 def main():
     n_bits = 8
-    array = np.array([6, -1, 4, -1, 3, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    array = np.array([4, 4, -1, -1, -1, 3, 0, -1, -1, 2, 2, 2, -1, -1, 4, -1])
+   
     
     final_configuration = generate_final_config(n_bits=8, array=array)
     

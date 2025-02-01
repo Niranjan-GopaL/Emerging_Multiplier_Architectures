@@ -6,6 +6,7 @@ import sys
 
 n_bits = int(sys.argv[1])
 verbose = int(sys.argv[2])
+module_name = sys.argv[3]
 
 class AreaAnalyzer:
     def __init__(self):
@@ -22,7 +23,7 @@ class AreaAnalyzer:
         script_content = f"""
 # Read design and library
 read_verilog {design_file}
-hierarchy -check -top {basename}
+hierarchy -check -top {module_name}
 
 # Basic synthesis and optimization
 proc; opt; 
@@ -31,8 +32,8 @@ techmap; opt
 # Map to standard cells
 abc -liberty {self.LIB_PATH}
 # Generate area report
-tee -o {self.AREA_REPORTS_DIR}/{verbose}-{basename}_area.txt stat
-tee -a {self.AREA_REPORTS_DIR}/{verbose}-{basename}_area.txt stat -liberty {self.LIB_PATH}
+tee -o {self.AREA_REPORTS_DIR}/{verbose}-temp_area.txt stat
+tee -a {self.AREA_REPORTS_DIR}/{verbose}-temp_area.txt stat -liberty {self.LIB_PATH}
         """
         return script_content
 
@@ -54,13 +55,16 @@ tee -a {self.AREA_REPORTS_DIR}/{verbose}-{basename}_area.txt stat -liberty {self
             f.write(script_content)
 
         try:
-            subprocess.run(["yosys", "-s", str(script_path)], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            subprocess.run(["yosys", "-s", str(script_path)], check=True, 
+                           stdout=subprocess.DEVNULL, 
+                           stderr=subprocess.DEVNULL
+                           )
             chip_area = self.extract_area(basename)
             
-            with open("./area.txt", "a") as f:
+            with open("./area.txt", "w") as f:
                 f.write(chip_area)
                 
-            with open(self.SUMMARY_FILE, "a") as f:
+            with open(self.SUMMARY_FILE, "w") as f:
                 f.write(f"{basename} | {chip_area}\n")
 
             print(f"Area analysis for {basename} completed")
