@@ -1,0 +1,252 @@
+
+8. Printing statistics.
+
+=== FA ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     carryOut                        1
+     sumOut                          1
+
+=== HA ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     outCarry                        1
+     outSum                          1
+
+=== carryOut ===
+
+   Number of wires:                 14
+   Number of wire bits:             14
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     NAND2_X1                        2
+     OAI21_X1                        1
+
+=== outCarry ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     AND2_X1                         1
+
+=== outSum ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     XOR2_X1                         1
+
+=== sumOut ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     XNOR2_X1                        2
+
+=== wallace_multiplier_8 ===
+
+   Number of wires:                191
+   Number of wire bits:            338
+   Number of public wires:         111
+   Number of public wire bits:     258
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                120
+     AND2_X1                        64
+     FA                             48
+     HA                              8
+
+=== design hierarchy ===
+
+   wallace_multiplier_8              1
+     FA                             48
+       carryOut                      1
+       sumOut                        1
+     HA                              8
+       outCarry                      1
+       outSum                        1
+
+   Number of wires:               1711
+   Number of wire bits:           1858
+   Number of public wires:         815
+   Number of public wire bits:     962
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                320
+     AND2_X1                        72
+     NAND2_X1                       96
+     OAI21_X1                       48
+     XNOR2_X1                       96
+     XOR2_X1                         8
+
+9. Printing statistics.
+
+=== FA ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     carryOut                        1
+     sumOut                          1
+
+   Area for cell type \carryOut is unknown!
+   Area for cell type \sumOut is unknown!
+
+=== HA ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     outCarry                        1
+     outSum                          1
+
+   Area for cell type \outSum is unknown!
+   Area for cell type \outCarry is unknown!
+
+=== carryOut ===
+
+   Number of wires:                 14
+   Number of wire bits:             14
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     NAND2_X1                        2
+     OAI21_X1                        1
+
+   Chip area for module '\carryOut': 2.660000
+
+=== outCarry ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     AND2_X1                         1
+
+   Chip area for module '\outCarry': 1.064000
+
+=== outSum ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     XOR2_X1                         1
+
+   Chip area for module '\outSum': 1.596000
+
+=== sumOut ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     XNOR2_X1                        2
+
+   Chip area for module '\sumOut': 3.192000
+
+=== wallace_multiplier_8 ===
+
+   Number of wires:                191
+   Number of wire bits:            338
+   Number of public wires:         111
+   Number of public wire bits:     258
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                120
+     AND2_X1                        64
+     FA                             48
+     HA                              8
+
+   Area for cell type \FA is unknown!
+   Area for cell type \HA is unknown!
+
+   Chip area for module '\wallace_multiplier_8': 68.096000
+
+=== design hierarchy ===
+
+   wallace_multiplier_8              1
+     FA                             48
+       carryOut                      1
+       sumOut                        1
+     HA                              8
+       outCarry                      1
+       outSum                        1
+
+   Number of wires:               1711
+   Number of wire bits:           1858
+   Number of public wires:         815
+   Number of public wire bits:     962
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                320
+     AND2_X1                        72
+     NAND2_X1                       96
+     OAI21_X1                       48
+     XNOR2_X1                       96
+     XOR2_X1                         8
+
+   Chip area for top module '\wallace_multiplier_8': 370.272000
+

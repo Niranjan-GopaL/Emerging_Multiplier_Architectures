@@ -1,1 +1,5 @@
 genetic_algo_opt
+**/__pycache__/
+**/8x8
+**/16x16
+.vscode

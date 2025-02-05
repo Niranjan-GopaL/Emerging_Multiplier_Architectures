@@ -1,0 +1,138 @@
+
+8. Printing statistics.
+
+=== CSA ===
+
+   Number of wires:                 18
+   Number of wire bits:             18
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     AOI21_X1                        1
+     NOR2_X1                         2
+     XNOR2_X1                        2
+
+=== HA ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     XOR2_X1                         1
+
+=== dadda_8 ===
+
+   Number of wires:                156
+   Number of wire bits:            274
+   Number of public wires:          76
+   Number of public wire bits:     194
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                120
+     AND2_X1                        64
+     CSA                            48
+     HA                              8
+
+=== design hierarchy ===
+
+   dadda_8                           1
+     CSA                            48
+     HA                              8
+
+   Number of wires:               1084
+   Number of wire bits:           1202
+   Number of public wires:         348
+   Number of public wire bits:     466
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                320
+     AND2_X1                        72
+     AOI21_X1                       48
+     NOR2_X1                        96
+     XNOR2_X1                       96
+     XOR2_X1                         8
+
+9. Printing statistics.
+
+=== CSA ===
+
+   Number of wires:                 18
+   Number of wire bits:             18
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     AOI21_X1                        1
+     NOR2_X1                         2
+     XNOR2_X1                        2
+
+   Chip area for module '\CSA': 5.852000
+
+=== HA ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     XOR2_X1                         1
+
+   Chip area for module '\HA': 2.660000
+
+=== dadda_8 ===
+
+   Number of wires:                156
+   Number of wire bits:            274
+   Number of public wires:          76
+   Number of public wire bits:     194
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                120
+     AND2_X1                        64
+     CSA                            48
+     HA                              8
+
+   Area for cell type \HA is unknown!
+   Area for cell type \CSA is unknown!
+
+   Chip area for module '\dadda_8': 68.096000
+
+=== design hierarchy ===
+
+   dadda_8                           1
+     CSA                            48
+     HA                              8
+
+   Number of wires:               1084
+   Number of wire bits:           1202
+   Number of public wires:         348
+   Number of public wire bits:     466
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                320
+     AND2_X1                        72
+     AOI21_X1                       48
+     NOR2_X1                        96
+     XNOR2_X1                       96
+     XOR2_X1                         8
+
+   Chip area for top module '\dadda_8': 370.272000
+

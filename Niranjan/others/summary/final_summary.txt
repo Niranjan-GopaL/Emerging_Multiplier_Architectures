@@ -1,0 +1,3 @@
+wallace_multiplier_8 | 370.272 | 5.12 | 1.24e-05
+dadda_8 | 370.272 | 1.28 | 1e-05
+EightBitArrayMultiplier | 357.504 | 1.74 | 1.24e-05

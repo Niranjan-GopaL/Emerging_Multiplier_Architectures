@@ -1,0 +1,1126 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x617c6a962b80 .scope module, "tb_wallace_multiplier" "tb_wallace_multiplier" 2 190;
+ .timescale -9 -12;
+P_0x617c6a97f9f0 .param/l "M" 0 2 192, +C4<00000000000000000000000000001000>;
+P_0x617c6a97fa30 .param/l "N" 0 2 193, +C4<00000000000000000000000000001000>;
+v0x617c6a9ac810_0 .var "A", 7 0;
+v0x617c6a9ac8b0_0 .var "B", 7 0;
+v0x617c6a9ac950_0 .net "P", 15 0, L_0x617c6a9c9120;  1 drivers
+v0x617c6a9ac9f0_0 .var "correct", 15 0;
+v0x617c6a9aca90_0 .var/i "i", 31 0;
+v0x617c6a9acb80_0 .var/i "j", 31 0;
+v0x617c6a9acc20_0 .var/i "mismatches", 31 0;
+v0x617c6a9accc0_0 .var/i "total_tests", 31 0;
+S_0x617c6a951790 .scope module, "uut" "wallace_multiplier_8" 2 201, 2 74 0, S_0x617c6a962b80;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 16 "P";
+    .port_info 1 /INPUT 8 "A";
+    .port_info 2 /INPUT 8 "B";
+L_0x617c6a9c91c0 .functor BUFZ 1, L_0x617c6a9c8cc0, C4<0>, C4<0>, C4<0>;
+v0x617c6a9a6050_0 .net "A", 7 0, v0x617c6a9ac810_0;  1 drivers
+v0x617c6a9a6150_0 .net "B", 7 0, v0x617c6a9ac8b0_0;  1 drivers
+v0x617c6a9a6230_0 .net "P", 15 0, L_0x617c6a9c9120;  alias, 1 drivers
+v0x617c6a9a62f0_0 .net "P10_c", 0 0, L_0x617c6a9c6550;  1 drivers
+v0x617c6a9a63e0_0 .net "P10_c_temp_1", 0 0, L_0x617c6a9c5230;  1 drivers
+v0x617c6a9a6520_0 .net "P10_c_temp_2", 0 0, L_0x617c6a9c57c0;  1 drivers
+v0x617c6a9a6610_0 .net "P10_c_temp_3", 0 0, L_0x617c6a9c5c70;  1 drivers
+v0x617c6a9a6700_0 .net "P10_c_temp_4", 0 0, L_0x617c6a9c5f70;  1 drivers
+v0x617c6a9a67f0_0 .net "P10_temp_1", 0 0, L_0x617c6a9c50a0;  1 drivers
+v0x617c6a9a6890_0 .net "P10_temp_2", 0 0, L_0x617c6a9c56c0;  1 drivers
+v0x617c6a9a6980_0 .net "P10_temp_3", 0 0, L_0x617c6a9c5ab0;  1 drivers
+v0x617c6a9a6a70_0 .net "P10_temp_4", 0 0, L_0x617c6a9c5db0;  1 drivers
+v0x617c6a9a6b60_0 .net "P11_c", 0 0, L_0x617c6a9c75b0;  1 drivers
+v0x617c6a9a6c50_0 .net "P11_c_temp_1", 0 0, L_0x617c6a9c6780;  1 drivers
+v0x617c6a9a6d40_0 .net "P11_c_temp_2", 0 0, L_0x617c6a9c6d40;  1 drivers
+v0x617c6a9a6e30_0 .net "P11_c_temp_3", 0 0, L_0x617c6a9c7040;  1 drivers
+v0x617c6a9a6f20_0 .net "P11_temp_1", 0 0, L_0x617c6a9c65f0;  1 drivers
+v0x617c6a9a7010_0 .net "P11_temp_2", 0 0, L_0x617c6a9c6c40;  1 drivers
+v0x617c6a9a7100_0 .net "P11_temp_3", 0 0, L_0x617c6a9c6e80;  1 drivers
+v0x617c6a9a71f0_0 .net "P12_c", 0 0, L_0x617c6a9c8150;  1 drivers
+v0x617c6a9a72e0_0 .net "P12_c_temp_1", 0 0, L_0x617c6a9c77e0;  1 drivers
+v0x617c6a9a73d0_0 .net "P12_c_temp_2", 0 0, L_0x617c6a9c7dc0;  1 drivers
+v0x617c6a9a74c0_0 .net "P12_temp_1", 0 0, L_0x617c6a9c7650;  1 drivers
+v0x617c6a9a75b0_0 .net "P12_temp_2", 0 0, L_0x617c6a9c7cc0;  1 drivers
+v0x617c6a9a76a0_0 .net "P13_c", 0 0, L_0x617c6a9c8a00;  1 drivers
+v0x617c6a9a7790_0 .net "P13_c_temp_1", 0 0, L_0x617c6a9c8380;  1 drivers
+v0x617c6a9a7880_0 .net "P13_temp_1", 0 0, L_0x617c6a9c81f0;  1 drivers
+v0x617c6a9a7970_0 .net "P14_c", 0 0, L_0x617c6a9c8cc0;  1 drivers
+v0x617c6a9a7a10_0 .net "P1_c", 0 0, L_0x617c6a9bd310;  1 drivers
+v0x617c6a9a7b00_0 .net "P2_c", 0 0, L_0x617c6a9bdaa0;  1 drivers
+v0x617c6a9a7bf0_0 .net "P2_c_temp_1", 0 0, L_0x617c6a9bd720;  1 drivers
+v0x617c6a9a7ce0_0 .net "P2_temp_1", 0 0, L_0x617c6a9bd620;  1 drivers
+v0x617c6a9a7dd0_0 .net "P3_c", 0 0, L_0x617c6a9be2e0;  1 drivers
+v0x617c6a9a80d0_0 .net "P3_c_temp_1", 0 0, L_0x617c6a9bdc60;  1 drivers
+v0x617c6a9a81c0_0 .net "P3_c_temp_2", 0 0, L_0x617c6a9be0d0;  1 drivers
+v0x617c6a9a82b0_0 .net "P3_temp_1", 0 0, L_0x617c6a9bdbf0;  1 drivers
+v0x617c6a9a83a0_0 .net "P3_temp_2", 0 0, L_0x617c6a9bdf40;  1 drivers
+v0x617c6a9a8490_0 .net "P4_c", 0 0, L_0x617c6a9bee50;  1 drivers
+v0x617c6a9a8580_0 .net "P4_c_temp_1", 0 0, L_0x617c6a9be550;  1 drivers
+v0x617c6a9a8670_0 .net "P4_c_temp_2", 0 0, L_0x617c6a9be990;  1 drivers
+v0x617c6a9a8760_0 .net "P4_c_temp_3", 0 0, L_0x617c6a9bec30;  1 drivers
+v0x617c6a9a8850_0 .net "P4_temp_1", 0 0, L_0x617c6a9be450;  1 drivers
+v0x617c6a9a8940_0 .net "P4_temp_2", 0 0, L_0x617c6a9be800;  1 drivers
+v0x617c6a9a8a30_0 .net "P4_temp_3", 0 0, L_0x617c6a9beaa0;  1 drivers
+v0x617c6a9a8b20_0 .net "P5_c", 0 0, L_0x617c6a9bfcd0;  1 drivers
+v0x617c6a9a8c10_0 .net "P5_c_temp_1", 0 0, L_0x617c6a9bf060;  1 drivers
+v0x617c6a9a8d00_0 .net "P5_c_temp_2", 0 0, L_0x617c6a9bf430;  1 drivers
+v0x617c6a9a8df0_0 .net "P5_c_temp_3", 0 0, L_0x617c6a9bf770;  1 drivers
+v0x617c6a9a8ee0_0 .net "P5_c_temp_4", 0 0, L_0x617c6a9bfa10;  1 drivers
+v0x617c6a9a8fd0_0 .net "P5_temp_1", 0 0, L_0x617c6a9bef60;  1 drivers
+v0x617c6a9a90c0_0 .net "P5_temp_2", 0 0, L_0x617c6a9bf2a0;  1 drivers
+v0x617c6a9a91b0_0 .net "P5_temp_3", 0 0, L_0x617c6a9bf670;  1 drivers
+v0x617c6a9a92a0_0 .net "P5_temp_4", 0 0, L_0x617c6a9bf880;  1 drivers
+v0x617c6a9a9390_0 .net "P6_c", 0 0, L_0x617c6a9c0e70;  1 drivers
+v0x617c6a9a9480_0 .net "P6_c_temp_1", 0 0, L_0x617c6a9bfe40;  1 drivers
+v0x617c6a9a9570_0 .net "P6_c_temp_2", 0 0, L_0x617c6a9c0240;  1 drivers
+v0x617c6a9a9660_0 .net "P6_c_temp_3", 0 0, L_0x617c6a9c05b0;  1 drivers
+v0x617c6a9a9750_0 .net "P6_c_temp_4", 0 0, L_0x617c6a9c08e0;  1 drivers
+v0x617c6a9a9840_0 .net "P6_c_temp_5", 0 0, L_0x617c6a9c0c60;  1 drivers
+v0x617c6a9a9930_0 .net "P6_temp_1", 0 0, L_0x617c6a9bfd40;  1 drivers
+v0x617c6a9a9a20_0 .net "P6_temp_2", 0 0, L_0x617c6a9c00b0;  1 drivers
+v0x617c6a9a9b10_0 .net "P6_temp_3", 0 0, L_0x617c6a9c0420;  1 drivers
+v0x617c6a9a9c00_0 .net "P6_temp_4", 0 0, L_0x617c6a9c0750;  1 drivers
+v0x617c6a9a9cf0_0 .net "P6_temp_5", 0 0, L_0x617c6a9c0ad0;  1 drivers
+v0x617c6a9a9de0_0 .net "P7_c", 0 0, L_0x617c6a9c2470;  1 drivers
+v0x617c6a9aa2e0_0 .net "P7_c_temp_1", 0 0, L_0x617c6a9c1170;  1 drivers
+v0x617c6a9aa3d0_0 .net "P7_c_temp_2", 0 0, L_0x617c6a9c1520;  1 drivers
+v0x617c6a9aa4c0_0 .net "P7_c_temp_3", 0 0, L_0x617c6a9c17c0;  1 drivers
+v0x617c6a9aa5b0_0 .net "P7_c_temp_4", 0 0, L_0x617c6a9c1b70;  1 drivers
+v0x617c6a9aa6a0_0 .net "P7_c_temp_5", 0 0, L_0x617c6a9c1ea0;  1 drivers
+v0x617c6a9aa790_0 .net "P7_c_temp_6", 0 0, L_0x617c6a9c2260;  1 drivers
+v0x617c6a9aa880_0 .net "P7_temp_1", 0 0, L_0x617c6a9c1070;  1 drivers
+v0x617c6a9aa970_0 .net "P7_temp_2", 0 0, L_0x617c6a9c1420;  1 drivers
+v0x617c6a9aaa60_0 .net "P7_temp_3", 0 0, L_0x617c6a9c1630;  1 drivers
+v0x617c6a9aab50_0 .net "P7_temp_4", 0 0, L_0x617c6a9c19e0;  1 drivers
+v0x617c6a9aac40_0 .net "P7_temp_5", 0 0, L_0x617c6a9c1d10;  1 drivers
+v0x617c6a9aad30_0 .net "P7_temp_6", 0 0, L_0x617c6a9c20d0;  1 drivers
+v0x617c6a9aae20_0 .net "P8_c", 0 0, L_0x617c6a9c3b00;  1 drivers
+v0x617c6a9aaf10_0 .net "P8_c_temp_1", 0 0, L_0x617c6a9c26b0;  1 drivers
+v0x617c6a9ab000_0 .net "P8_c_temp_2", 0 0, L_0x617c6a9c2aa0;  1 drivers
+v0x617c6a9ab0f0_0 .net "P8_c_temp_3", 0 0, L_0x617c6a9c2d40;  1 drivers
+v0x617c6a9ab1e0_0 .net "P8_c_temp_4", 0 0, L_0x617c6a9c3130;  1 drivers
+v0x617c6a9ab2d0_0 .net "P8_c_temp_5", 0 0, L_0x617c6a9c3460;  1 drivers
+v0x617c6a9ab3c0_0 .net "P8_c_temp_6", 0 0, L_0x617c6a9c3860;  1 drivers
+v0x617c6a9ab4b0_0 .net "P8_temp_1", 0 0, L_0x617c6a9c1fb0;  1 drivers
+v0x617c6a9ab5a0_0 .net "P8_temp_2", 0 0, L_0x617c6a9c29a0;  1 drivers
+v0x617c6a9ab690_0 .net "P8_temp_3", 0 0, L_0x617c6a9c2bb0;  1 drivers
+v0x617c6a9ab780_0 .net "P8_temp_4", 0 0, L_0x617c6a9c2fa0;  1 drivers
+v0x617c6a9ab870_0 .net "P8_temp_5", 0 0, L_0x617c6a9c32d0;  1 drivers
+v0x617c6a9ab960_0 .net "P8_temp_6", 0 0, L_0x617c6a9c36d0;  1 drivers
+v0x617c6a9aba50_0 .net "P9_c", 0 0, L_0x617c6a9c5000;  1 drivers
+v0x617c6a9abb40_0 .net "P9_c_temp_1", 0 0, L_0x617c6a9c3c70;  1 drivers
+v0x617c6a9abc30_0 .net "P9_c_temp_2", 0 0, L_0x617c6a9c4090;  1 drivers
+v0x617c6a9abd20_0 .net "P9_c_temp_3", 0 0, L_0x617c6a9c44b0;  1 drivers
+v0x617c6a9abe10_0 .net "P9_c_temp_4", 0 0, L_0x617c6a9c4750;  1 drivers
+v0x617c6a9abf00_0 .net "P9_c_temp_5", 0 0, L_0x617c6a9c4c70;  1 drivers
+v0x617c6a9abff0_0 .net "P9_temp_1", 0 0, L_0x617c6a9c3b70;  1 drivers
+v0x617c6a9ac0e0_0 .net "P9_temp_2", 0 0, L_0x617c6a9c3f90;  1 drivers
+v0x617c6a9ac1d0_0 .net "P9_temp_3", 0 0, L_0x617c6a9c4320;  1 drivers
+v0x617c6a9ac2c0_0 .net "P9_temp_4", 0 0, L_0x617c6a9c45c0;  1 drivers
+v0x617c6a9ac3b0_0 .net "P9_temp_5", 0 0, L_0x617c6a9c4ab0;  1 drivers
+v0x617c6a9ac4a0_0 .net *"_ivl_226", 0 0, L_0x617c6a9c91c0;  1 drivers
+v0x617c6a9ac540_0 .net *"_ivl_4", 0 0, L_0x617c6a9acd60;  1 drivers
+v0x617c6a9ac5e0_0 .var/i "i", 31 0;
+v0x617c6a9ac680_0 .var/i "j", 31 0;
+v0x617c6a9ac720 .array "wallaceTree", 0 7, 7 0;
+E_0x617c6a8fd8f0 .event anyedge, v0x617c6a9a6150_0, v0x617c6a9a6050_0;
+v0x617c6a9ac720_0 .array/port v0x617c6a9ac720, 0;
+L_0x617c6a9acd60 .part v0x617c6a9ac720_0, 0, 1;
+L_0x617c6a9bd490 .part v0x617c6a9ac720_0, 1, 1;
+v0x617c6a9ac720_1 .array/port v0x617c6a9ac720, 1;
+L_0x617c6a9bd580 .part v0x617c6a9ac720_1, 0, 1;
+L_0x617c6a9bd8a0 .part v0x617c6a9ac720_0, 2, 1;
+L_0x617c6a9bd940 .part v0x617c6a9ac720_1, 1, 1;
+v0x617c6a9ac720_2 .array/port v0x617c6a9ac720, 2;
+L_0x617c6a9bdb10 .part v0x617c6a9ac720_2, 0, 1;
+L_0x617c6a9bdd20 .part v0x617c6a9ac720_0, 3, 1;
+L_0x617c6a9bde50 .part v0x617c6a9ac720_1, 2, 1;
+L_0x617c6a9be140 .part v0x617c6a9ac720_2, 1, 1;
+v0x617c6a9ac720_3 .array/port v0x617c6a9ac720, 3;
+L_0x617c6a9be350 .part v0x617c6a9ac720_3, 0, 1;
+L_0x617c6a9be5c0 .part v0x617c6a9ac720_0, 4, 1;
+L_0x617c6a9be660 .part v0x617c6a9ac720_1, 3, 1;
+L_0x617c6a9bea00 .part v0x617c6a9ac720_2, 2, 1;
+L_0x617c6a9beca0 .part v0x617c6a9ac720_3, 1, 1;
+v0x617c6a9ac720_4 .array/port v0x617c6a9ac720, 4;
+L_0x617c6a9beec0 .part v0x617c6a9ac720_4, 0, 1;
+L_0x617c6a9bf0d0 .part v0x617c6a9ac720_0, 5, 1;
+L_0x617c6a9bf200 .part v0x617c6a9ac720_1, 4, 1;
+L_0x617c6a9bf4a0 .part v0x617c6a9ac720_2, 3, 1;
+L_0x617c6a9bf7e0 .part v0x617c6a9ac720_3, 2, 1;
+L_0x617c6a9bfa80 .part v0x617c6a9ac720_4, 1, 1;
+v0x617c6a9ac720_5 .array/port v0x617c6a9ac720, 5;
+L_0x617c6a9bf5d0 .part v0x617c6a9ac720_5, 0, 1;
+L_0x617c6a9bfeb0 .part v0x617c6a9ac720_0, 6, 1;
+L_0x617c6a9c0010 .part v0x617c6a9ac720_1, 5, 1;
+L_0x617c6a9c02b0 .part v0x617c6a9ac720_2, 4, 1;
+L_0x617c6a9c0620 .part v0x617c6a9ac720_3, 3, 1;
+L_0x617c6a9c0950 .part v0x617c6a9ac720_4, 2, 1;
+L_0x617c6a9c0cd0 .part v0x617c6a9ac720_5, 1, 1;
+v0x617c6a9ac720_6 .array/port v0x617c6a9ac720, 6;
+L_0x617c6a9c0ee0 .part v0x617c6a9ac720_6, 0, 1;
+L_0x617c6a9c11e0 .part v0x617c6a9ac720_0, 7, 1;
+L_0x617c6a9c1280 .part v0x617c6a9ac720_1, 6, 1;
+L_0x617c6a9c1590 .part v0x617c6a9ac720_2, 5, 1;
+L_0x617c6a9c1830 .part v0x617c6a9ac720_3, 4, 1;
+L_0x617c6a9c1be0 .part v0x617c6a9ac720_4, 3, 1;
+L_0x617c6a9c1f10 .part v0x617c6a9ac720_5, 2, 1;
+L_0x617c6a9c22d0 .part v0x617c6a9ac720_6, 1, 1;
+v0x617c6a9ac720_7 .array/port v0x617c6a9ac720, 7;
+L_0x617c6a9c24e0 .part v0x617c6a9ac720_7, 0, 1;
+L_0x617c6a9c2720 .part v0x617c6a9ac720_1, 7, 1;
+L_0x617c6a9c27c0 .part v0x617c6a9ac720_2, 6, 1;
+L_0x617c6a9c2b10 .part v0x617c6a9ac720_3, 5, 1;
+L_0x617c6a9c2db0 .part v0x617c6a9ac720_4, 4, 1;
+L_0x617c6a9c31a0 .part v0x617c6a9ac720_5, 3, 1;
+L_0x617c6a9c34d0 .part v0x617c6a9ac720_6, 2, 1;
+L_0x617c6a9c38d0 .part v0x617c6a9ac720_7, 1, 1;
+L_0x617c6a9c3ce0 .part v0x617c6a9ac720_2, 7, 1;
+L_0x617c6a9c3ef0 .part v0x617c6a9ac720_3, 6, 1;
+L_0x617c6a9c4100 .part v0x617c6a9ac720_4, 5, 1;
+L_0x617c6a9c4520 .part v0x617c6a9ac720_5, 4, 1;
+L_0x617c6a9c47f0 .part v0x617c6a9ac720_6, 3, 1;
+L_0x617c6a9c4d10 .part v0x617c6a9ac720_7, 2, 1;
+L_0x617c6a9c52d0 .part v0x617c6a9ac720_3, 7, 1;
+L_0x617c6a9c5620 .part v0x617c6a9ac720_4, 6, 1;
+L_0x617c6a9c5860 .part v0x617c6a9ac720_5, 5, 1;
+L_0x617c6a9c5d10 .part v0x617c6a9ac720_6, 4, 1;
+L_0x617c6a9c6010 .part v0x617c6a9ac720_7, 3, 1;
+L_0x617c6a9c6820 .part v0x617c6a9ac720_4, 7, 1;
+L_0x617c6a9c69d0 .part v0x617c6a9ac720_5, 6, 1;
+L_0x617c6a9c6de0 .part v0x617c6a9ac720_6, 5, 1;
+L_0x617c6a9c70e0 .part v0x617c6a9ac720_7, 4, 1;
+L_0x617c6a9c7880 .part v0x617c6a9ac720_5, 7, 1;
+L_0x617c6a9c7a30 .part v0x617c6a9ac720_6, 6, 1;
+L_0x617c6a9c7e60 .part v0x617c6a9ac720_7, 5, 1;
+L_0x617c6a9c8420 .part v0x617c6a9ac720_6, 7, 1;
+L_0x617c6a9c87d0 .part v0x617c6a9ac720_7, 6, 1;
+L_0x617c6a9c8d60 .part v0x617c6a9ac720_7, 7, 1;
+LS_0x617c6a9c9120_0_0 .concat8 [ 1 1 1 1], L_0x617c6a9acd60, L_0x617c6a9ace00, L_0x617c6a9bda30, L_0x617c6a9be1e0;
+LS_0x617c6a9c9120_0_4 .concat8 [ 1 1 1 1], L_0x617c6a9be790, L_0x617c6a9bfbd0, L_0x617c6a9c0d70, L_0x617c6a9c2370;
+LS_0x617c6a9c9120_0_8 .concat8 [ 1 1 1 1], L_0x617c6a9c3970, L_0x617c6a9c4db0, L_0x617c6a9c6300, L_0x617c6a9c7360;
+LS_0x617c6a9c9120_0_12 .concat8 [ 1 1 1 1], L_0x617c6a9c7f00, L_0x617c6a9c8870, L_0x617c6a9c8aa0, L_0x617c6a9c91c0;
+L_0x617c6a9c9120 .concat8 [ 4 4 4 4], LS_0x617c6a9c9120_0_0, LS_0x617c6a9c9120_0_4, LS_0x617c6a9c9120_0_8, LS_0x617c6a9c9120_0_12;
+S_0x617c6a961310 .scope module, "P10_FA_1" "FA" 2 157, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+UDP_sumOut .udp/comb "sumOut", 3
+ ,"1111"
+ ,"1001"
+ ,"0101"
+ ,"0011"
+ ,"0000"
+ ,"0110"
+ ,"1010"
+ ,"1100";
+L_0x617c6a9c50a0 .udp UDP_sumOut, L_0x617c6a9c52d0, L_0x617c6a9c5620, L_0x617c6a9c5000;
+UDP_carryOut .udp/comb "carryOut", 3
+ ,"11?1"
+ ,"1?11"
+ ,"?111"
+ ,"00?0"
+ ,"0?00"
+ ,"?000";
+L_0x617c6a9c5230 .udp UDP_carryOut, L_0x617c6a9c52d0, L_0x617c6a9c5620, L_0x617c6a9c5000;
+v0x617c6a97f070_0 .net "A", 0 0, L_0x617c6a9c52d0;  1 drivers
+v0x617c6a959810_0 .net "B", 0 0, L_0x617c6a9c5620;  1 drivers
+v0x617c6a956220_0 .net "cin", 0 0, L_0x617c6a9c5000;  alias, 1 drivers
+v0x617c6a953720_0 .net "cout", 0 0, L_0x617c6a9c5230;  alias, 1 drivers
+v0x617c6a951160_0 .net "sum", 0 0, L_0x617c6a9c50a0;  alias, 1 drivers
+S_0x617c6a98e200 .scope module, "P10_FA_2" "FA" 2 158, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c56c0 .udp UDP_sumOut, L_0x617c6a9c5860, L_0x617c6a9c50a0, L_0x617c6a9c3c70;
+L_0x617c6a9c57c0 .udp UDP_carryOut, L_0x617c6a9c5860, L_0x617c6a9c50a0, L_0x617c6a9c3c70;
+v0x617c6a9503a0_0 .net "A", 0 0, L_0x617c6a9c5860;  1 drivers
+v0x617c6a98e420_0 .net "B", 0 0, L_0x617c6a9c50a0;  alias, 1 drivers
+v0x617c6a98e4e0_0 .net "cin", 0 0, L_0x617c6a9c3c70;  alias, 1 drivers
+v0x617c6a98e5b0_0 .net "cout", 0 0, L_0x617c6a9c57c0;  alias, 1 drivers
+v0x617c6a98e650_0 .net "sum", 0 0, L_0x617c6a9c56c0;  alias, 1 drivers
+S_0x617c6a98e7e0 .scope module, "P10_FA_3" "FA" 2 159, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c5ab0 .udp UDP_sumOut, L_0x617c6a9c5d10, L_0x617c6a9c56c0, L_0x617c6a9c4090;
+L_0x617c6a9c5c70 .udp UDP_carryOut, L_0x617c6a9c5d10, L_0x617c6a9c56c0, L_0x617c6a9c4090;
+v0x617c6a98e9f0_0 .net "A", 0 0, L_0x617c6a9c5d10;  1 drivers
+v0x617c6a98eab0_0 .net "B", 0 0, L_0x617c6a9c56c0;  alias, 1 drivers
+v0x617c6a98eba0_0 .net "cin", 0 0, L_0x617c6a9c4090;  alias, 1 drivers
+v0x617c6a98ec70_0 .net "cout", 0 0, L_0x617c6a9c5c70;  alias, 1 drivers
+v0x617c6a98ed10_0 .net "sum", 0 0, L_0x617c6a9c5ab0;  alias, 1 drivers
+S_0x617c6a98eea0 .scope module, "P10_FA_4" "FA" 2 160, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c5db0 .udp UDP_sumOut, L_0x617c6a9c6010, L_0x617c6a9c5ab0, L_0x617c6a9c44b0;
+L_0x617c6a9c5f70 .udp UDP_carryOut, L_0x617c6a9c6010, L_0x617c6a9c5ab0, L_0x617c6a9c44b0;
+v0x617c6a98f080_0 .net "A", 0 0, L_0x617c6a9c6010;  1 drivers
+v0x617c6a98f160_0 .net "B", 0 0, L_0x617c6a9c5ab0;  alias, 1 drivers
+v0x617c6a98f250_0 .net "cin", 0 0, L_0x617c6a9c44b0;  alias, 1 drivers
+v0x617c6a98f320_0 .net "cout", 0 0, L_0x617c6a9c5f70;  alias, 1 drivers
+v0x617c6a98f3c0_0 .net "sum", 0 0, L_0x617c6a9c5db0;  alias, 1 drivers
+S_0x617c6a98f550 .scope module, "P10_FA_5" "FA" 2 161, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c6300 .udp UDP_sumOut, L_0x617c6a9c5db0, L_0x617c6a9c4750, L_0x617c6a9c4c70;
+L_0x617c6a9c6550 .udp UDP_carryOut, L_0x617c6a9c5db0, L_0x617c6a9c4750, L_0x617c6a9c4c70;
+v0x617c6a98f780_0 .net "A", 0 0, L_0x617c6a9c5db0;  alias, 1 drivers
+v0x617c6a98f840_0 .net "B", 0 0, L_0x617c6a9c4750;  alias, 1 drivers
+v0x617c6a98f8e0_0 .net "cin", 0 0, L_0x617c6a9c4c70;  alias, 1 drivers
+v0x617c6a98f9b0_0 .net "cout", 0 0, L_0x617c6a9c6550;  alias, 1 drivers
+v0x617c6a98fa70_0 .net "sum", 0 0, L_0x617c6a9c6300;  1 drivers
+S_0x617c6a98fc20 .scope module, "P11_FA_1" "FA" 2 165, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c65f0 .udp UDP_sumOut, L_0x617c6a9c6820, L_0x617c6a9c69d0, L_0x617c6a9c6550;
+L_0x617c6a9c6780 .udp UDP_carryOut, L_0x617c6a9c6820, L_0x617c6a9c69d0, L_0x617c6a9c6550;
+v0x617c6a98fe00_0 .net "A", 0 0, L_0x617c6a9c6820;  1 drivers
+v0x617c6a98fee0_0 .net "B", 0 0, L_0x617c6a9c69d0;  1 drivers
+v0x617c6a98ffa0_0 .net "cin", 0 0, L_0x617c6a9c6550;  alias, 1 drivers
+v0x617c6a9900a0_0 .net "cout", 0 0, L_0x617c6a9c6780;  alias, 1 drivers
+v0x617c6a990140_0 .net "sum", 0 0, L_0x617c6a9c65f0;  alias, 1 drivers
+S_0x617c6a9902d0 .scope module, "P11_FA_2" "FA" 2 166, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c6c40 .udp UDP_sumOut, L_0x617c6a9c6de0, L_0x617c6a9c65f0, L_0x617c6a9c5230;
+L_0x617c6a9c6d40 .udp UDP_carryOut, L_0x617c6a9c6de0, L_0x617c6a9c65f0, L_0x617c6a9c5230;
+v0x617c6a9904b0_0 .net "A", 0 0, L_0x617c6a9c6de0;  1 drivers
+v0x617c6a990590_0 .net "B", 0 0, L_0x617c6a9c65f0;  alias, 1 drivers
+v0x617c6a990680_0 .net "cin", 0 0, L_0x617c6a9c5230;  alias, 1 drivers
+v0x617c6a990780_0 .net "cout", 0 0, L_0x617c6a9c6d40;  alias, 1 drivers
+v0x617c6a990820_0 .net "sum", 0 0, L_0x617c6a9c6c40;  alias, 1 drivers
+S_0x617c6a990970 .scope module, "P11_FA_3" "FA" 2 167, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c6e80 .udp UDP_sumOut, L_0x617c6a9c70e0, L_0x617c6a9c6c40, L_0x617c6a9c57c0;
+L_0x617c6a9c7040 .udp UDP_carryOut, L_0x617c6a9c70e0, L_0x617c6a9c6c40, L_0x617c6a9c57c0;
+v0x617c6a990bd0_0 .net "A", 0 0, L_0x617c6a9c70e0;  1 drivers
+v0x617c6a990cb0_0 .net "B", 0 0, L_0x617c6a9c6c40;  alias, 1 drivers
+v0x617c6a990da0_0 .net "cin", 0 0, L_0x617c6a9c57c0;  alias, 1 drivers
+v0x617c6a990ea0_0 .net "cout", 0 0, L_0x617c6a9c7040;  alias, 1 drivers
+v0x617c6a990f40_0 .net "sum", 0 0, L_0x617c6a9c6e80;  alias, 1 drivers
+S_0x617c6a991090 .scope module, "P11_FA_4" "FA" 2 168, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c7360 .udp UDP_sumOut, L_0x617c6a9c6e80, L_0x617c6a9c5c70, L_0x617c6a9c5f70;
+L_0x617c6a9c75b0 .udp UDP_carryOut, L_0x617c6a9c6e80, L_0x617c6a9c5c70, L_0x617c6a9c5f70;
+v0x617c6a9912f0_0 .net "A", 0 0, L_0x617c6a9c6e80;  alias, 1 drivers
+v0x617c6a9913e0_0 .net "B", 0 0, L_0x617c6a9c5c70;  alias, 1 drivers
+v0x617c6a9914b0_0 .net "cin", 0 0, L_0x617c6a9c5f70;  alias, 1 drivers
+v0x617c6a9915b0_0 .net "cout", 0 0, L_0x617c6a9c75b0;  alias, 1 drivers
+v0x617c6a991650_0 .net "sum", 0 0, L_0x617c6a9c7360;  1 drivers
+S_0x617c6a991750 .scope module, "P12_FA_1" "FA" 2 172, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c7650 .udp UDP_sumOut, L_0x617c6a9c7880, L_0x617c6a9c7a30, L_0x617c6a9c75b0;
+L_0x617c6a9c77e0 .udp UDP_carryOut, L_0x617c6a9c7880, L_0x617c6a9c7a30, L_0x617c6a9c75b0;
+v0x617c6a9919b0_0 .net "A", 0 0, L_0x617c6a9c7880;  1 drivers
+v0x617c6a991a90_0 .net "B", 0 0, L_0x617c6a9c7a30;  1 drivers
+v0x617c6a991b50_0 .net "cin", 0 0, L_0x617c6a9c75b0;  alias, 1 drivers
+v0x617c6a991c50_0 .net "cout", 0 0, L_0x617c6a9c77e0;  alias, 1 drivers
+v0x617c6a991cf0_0 .net "sum", 0 0, L_0x617c6a9c7650;  alias, 1 drivers
+S_0x617c6a991e80 .scope module, "P12_FA_2" "FA" 2 173, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c7cc0 .udp UDP_sumOut, L_0x617c6a9c7e60, L_0x617c6a9c7650, L_0x617c6a9c6780;
+L_0x617c6a9c7dc0 .udp UDP_carryOut, L_0x617c6a9c7e60, L_0x617c6a9c7650, L_0x617c6a9c6780;
+v0x617c6a9920e0_0 .net "A", 0 0, L_0x617c6a9c7e60;  1 drivers
+v0x617c6a9921c0_0 .net "B", 0 0, L_0x617c6a9c7650;  alias, 1 drivers
+v0x617c6a9922b0_0 .net "cin", 0 0, L_0x617c6a9c6780;  alias, 1 drivers
+v0x617c6a9923b0_0 .net "cout", 0 0, L_0x617c6a9c7dc0;  alias, 1 drivers
+v0x617c6a992450_0 .net "sum", 0 0, L_0x617c6a9c7cc0;  alias, 1 drivers
+S_0x617c6a9925a0 .scope module, "P12_FA_3" "FA" 2 174, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c7f00 .udp UDP_sumOut, L_0x617c6a9c7cc0, L_0x617c6a9c6d40, L_0x617c6a9c7040;
+L_0x617c6a9c8150 .udp UDP_carryOut, L_0x617c6a9c7cc0, L_0x617c6a9c6d40, L_0x617c6a9c7040;
+v0x617c6a992800_0 .net "A", 0 0, L_0x617c6a9c7cc0;  alias, 1 drivers
+v0x617c6a9928f0_0 .net "B", 0 0, L_0x617c6a9c6d40;  alias, 1 drivers
+v0x617c6a9929c0_0 .net "cin", 0 0, L_0x617c6a9c7040;  alias, 1 drivers
+v0x617c6a992ac0_0 .net "cout", 0 0, L_0x617c6a9c8150;  alias, 1 drivers
+v0x617c6a992b60_0 .net "sum", 0 0, L_0x617c6a9c7f00;  1 drivers
+S_0x617c6a992cb0 .scope module, "P13_FA_1" "FA" 2 178, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c81f0 .udp UDP_sumOut, L_0x617c6a9c8420, L_0x617c6a9c87d0, L_0x617c6a9c8150;
+L_0x617c6a9c8380 .udp UDP_carryOut, L_0x617c6a9c8420, L_0x617c6a9c87d0, L_0x617c6a9c8150;
+v0x617c6a992f10_0 .net "A", 0 0, L_0x617c6a9c8420;  1 drivers
+v0x617c6a992ff0_0 .net "B", 0 0, L_0x617c6a9c87d0;  1 drivers
+v0x617c6a9930b0_0 .net "cin", 0 0, L_0x617c6a9c8150;  alias, 1 drivers
+v0x617c6a9931b0_0 .net "cout", 0 0, L_0x617c6a9c8380;  alias, 1 drivers
+v0x617c6a993250_0 .net "sum", 0 0, L_0x617c6a9c81f0;  alias, 1 drivers
+S_0x617c6a9933e0 .scope module, "P13_FA_2" "FA" 2 179, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c8870 .udp UDP_sumOut, L_0x617c6a9c81f0, L_0x617c6a9c7dc0, L_0x617c6a9c77e0;
+L_0x617c6a9c8a00 .udp UDP_carryOut, L_0x617c6a9c81f0, L_0x617c6a9c7dc0, L_0x617c6a9c77e0;
+v0x617c6a993640_0 .net "A", 0 0, L_0x617c6a9c81f0;  alias, 1 drivers
+v0x617c6a993730_0 .net "B", 0 0, L_0x617c6a9c7dc0;  alias, 1 drivers
+v0x617c6a993800_0 .net "cin", 0 0, L_0x617c6a9c77e0;  alias, 1 drivers
+v0x617c6a993900_0 .net "cout", 0 0, L_0x617c6a9c8a00;  alias, 1 drivers
+v0x617c6a9939a0_0 .net "sum", 0 0, L_0x617c6a9c8870;  1 drivers
+S_0x617c6a993af0 .scope module, "P14_FA_1" "FA" 2 182, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c8aa0 .udp UDP_sumOut, L_0x617c6a9c8d60, L_0x617c6a9c8a00, L_0x617c6a9c8380;
+L_0x617c6a9c8cc0 .udp UDP_carryOut, L_0x617c6a9c8d60, L_0x617c6a9c8a00, L_0x617c6a9c8380;
+v0x617c6a993d50_0 .net "A", 0 0, L_0x617c6a9c8d60;  1 drivers
+v0x617c6a993e30_0 .net "B", 0 0, L_0x617c6a9c8a00;  alias, 1 drivers
+v0x617c6a993f20_0 .net "cin", 0 0, L_0x617c6a9c8380;  alias, 1 drivers
+v0x617c6a994020_0 .net "cout", 0 0, L_0x617c6a9c8cc0;  alias, 1 drivers
+v0x617c6a9940c0_0 .net "sum", 0 0, L_0x617c6a9c8aa0;  1 drivers
+S_0x617c6a994210 .scope module, "P1_HA_1" "HA" 2 89, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+UDP_outSum .udp/comb "outSum", 2
+ ,"000"
+ ,"011"
+ ,"101"
+ ,"110";
+L_0x617c6a9ace00 .udp UDP_outSum, L_0x617c6a9bd490, L_0x617c6a9bd580;
+UDP_outCarry .udp/comb "outCarry", 2
+ ,"000"
+ ,"010"
+ ,"100"
+ ,"111";
+L_0x617c6a9bd310 .udp UDP_outCarry, L_0x617c6a9bd490, L_0x617c6a9bd580;
+v0x617c6a994460_0 .net "A", 0 0, L_0x617c6a9bd490;  1 drivers
+v0x617c6a994540_0 .net "B", 0 0, L_0x617c6a9bd580;  1 drivers
+v0x617c6a994600_0 .net "carry", 0 0, L_0x617c6a9bd310;  alias, 1 drivers
+v0x617c6a9946d0_0 .net "sum", 0 0, L_0x617c6a9ace00;  1 drivers
+S_0x617c6a994840 .scope module, "P2_FA_1" "FA" 2 93, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bd620 .udp UDP_sumOut, L_0x617c6a9bd8a0, L_0x617c6a9bd940, L_0x617c6a9bd310;
+L_0x617c6a9bd720 .udp UDP_carryOut, L_0x617c6a9bd8a0, L_0x617c6a9bd940, L_0x617c6a9bd310;
+v0x617c6a994aa0_0 .net "A", 0 0, L_0x617c6a9bd8a0;  1 drivers
+v0x617c6a994b80_0 .net "B", 0 0, L_0x617c6a9bd940;  1 drivers
+v0x617c6a994c40_0 .net "cin", 0 0, L_0x617c6a9bd310;  alias, 1 drivers
+v0x617c6a994d40_0 .net "cout", 0 0, L_0x617c6a9bd720;  alias, 1 drivers
+v0x617c6a994de0_0 .net "sum", 0 0, L_0x617c6a9bd620;  alias, 1 drivers
+S_0x617c6a994f70 .scope module, "P2_HA_1" "HA" 2 94, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+L_0x617c6a9bda30 .udp UDP_outSum, L_0x617c6a9bdb10, L_0x617c6a9bd620;
+L_0x617c6a9bdaa0 .udp UDP_outCarry, L_0x617c6a9bdb10, L_0x617c6a9bd620;
+v0x617c6a9951c0_0 .net "A", 0 0, L_0x617c6a9bdb10;  1 drivers
+v0x617c6a9952a0_0 .net "B", 0 0, L_0x617c6a9bd620;  alias, 1 drivers
+v0x617c6a995390_0 .net "carry", 0 0, L_0x617c6a9bdaa0;  alias, 1 drivers
+v0x617c6a995460_0 .net "sum", 0 0, L_0x617c6a9bda30;  1 drivers
+S_0x617c6a995590 .scope module, "P3_FA_1" "FA" 2 98, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bdbf0 .udp UDP_sumOut, L_0x617c6a9bdd20, L_0x617c6a9bde50, L_0x617c6a9bdaa0;
+L_0x617c6a9bdc60 .udp UDP_carryOut, L_0x617c6a9bdd20, L_0x617c6a9bde50, L_0x617c6a9bdaa0;
+v0x617c6a9957f0_0 .net "A", 0 0, L_0x617c6a9bdd20;  1 drivers
+v0x617c6a9958d0_0 .net "B", 0 0, L_0x617c6a9bde50;  1 drivers
+v0x617c6a995990_0 .net "cin", 0 0, L_0x617c6a9bdaa0;  alias, 1 drivers
+v0x617c6a995a90_0 .net "cout", 0 0, L_0x617c6a9bdc60;  alias, 1 drivers
+v0x617c6a995b30_0 .net "sum", 0 0, L_0x617c6a9bdbf0;  alias, 1 drivers
+S_0x617c6a995cc0 .scope module, "P3_FA_2" "FA" 2 99, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bdf40 .udp UDP_sumOut, L_0x617c6a9be140, L_0x617c6a9bdbf0, L_0x617c6a9bd720;
+L_0x617c6a9be0d0 .udp UDP_carryOut, L_0x617c6a9be140, L_0x617c6a9bdbf0, L_0x617c6a9bd720;
+v0x617c6a995f20_0 .net "A", 0 0, L_0x617c6a9be140;  1 drivers
+v0x617c6a996000_0 .net "B", 0 0, L_0x617c6a9bdbf0;  alias, 1 drivers
+v0x617c6a9960f0_0 .net "cin", 0 0, L_0x617c6a9bd720;  alias, 1 drivers
+v0x617c6a9961f0_0 .net "cout", 0 0, L_0x617c6a9be0d0;  alias, 1 drivers
+v0x617c6a996290_0 .net "sum", 0 0, L_0x617c6a9bdf40;  alias, 1 drivers
+S_0x617c6a9963e0 .scope module, "P3_HA_1" "HA" 2 100, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+L_0x617c6a9be1e0 .udp UDP_outSum, L_0x617c6a9be350, L_0x617c6a9bdf40;
+L_0x617c6a9be2e0 .udp UDP_outCarry, L_0x617c6a9be350, L_0x617c6a9bdf40;
+v0x617c6a996630_0 .net "A", 0 0, L_0x617c6a9be350;  1 drivers
+v0x617c6a996710_0 .net "B", 0 0, L_0x617c6a9bdf40;  alias, 1 drivers
+v0x617c6a996800_0 .net "carry", 0 0, L_0x617c6a9be2e0;  alias, 1 drivers
+v0x617c6a9968d0_0 .net "sum", 0 0, L_0x617c6a9be1e0;  1 drivers
+S_0x617c6a996a00 .scope module, "P4_FA_1" "FA" 2 104, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9be450 .udp UDP_sumOut, L_0x617c6a9be5c0, L_0x617c6a9be660, L_0x617c6a9be2e0;
+L_0x617c6a9be550 .udp UDP_carryOut, L_0x617c6a9be5c0, L_0x617c6a9be660, L_0x617c6a9be2e0;
+v0x617c6a996c60_0 .net "A", 0 0, L_0x617c6a9be5c0;  1 drivers
+v0x617c6a996d40_0 .net "B", 0 0, L_0x617c6a9be660;  1 drivers
+v0x617c6a996e00_0 .net "cin", 0 0, L_0x617c6a9be2e0;  alias, 1 drivers
+v0x617c6a996f00_0 .net "cout", 0 0, L_0x617c6a9be550;  alias, 1 drivers
+v0x617c6a996fa0_0 .net "sum", 0 0, L_0x617c6a9be450;  alias, 1 drivers
+S_0x617c6a997130 .scope module, "P4_FA_2" "FA" 2 105, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9be800 .udp UDP_sumOut, L_0x617c6a9bea00, L_0x617c6a9be450, L_0x617c6a9bdc60;
+L_0x617c6a9be990 .udp UDP_carryOut, L_0x617c6a9bea00, L_0x617c6a9be450, L_0x617c6a9bdc60;
+v0x617c6a997390_0 .net "A", 0 0, L_0x617c6a9bea00;  1 drivers
+v0x617c6a997470_0 .net "B", 0 0, L_0x617c6a9be450;  alias, 1 drivers
+v0x617c6a997560_0 .net "cin", 0 0, L_0x617c6a9bdc60;  alias, 1 drivers
+v0x617c6a997660_0 .net "cout", 0 0, L_0x617c6a9be990;  alias, 1 drivers
+v0x617c6a997700_0 .net "sum", 0 0, L_0x617c6a9be800;  alias, 1 drivers
+S_0x617c6a997850 .scope module, "P4_FA_3" "FA" 2 106, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9beaa0 .udp UDP_sumOut, L_0x617c6a9beca0, L_0x617c6a9be800, L_0x617c6a9be0d0;
+L_0x617c6a9bec30 .udp UDP_carryOut, L_0x617c6a9beca0, L_0x617c6a9be800, L_0x617c6a9be0d0;
+v0x617c6a997ab0_0 .net "A", 0 0, L_0x617c6a9beca0;  1 drivers
+v0x617c6a997b90_0 .net "B", 0 0, L_0x617c6a9be800;  alias, 1 drivers
+v0x617c6a997c80_0 .net "cin", 0 0, L_0x617c6a9be0d0;  alias, 1 drivers
+v0x617c6a997d80_0 .net "cout", 0 0, L_0x617c6a9bec30;  alias, 1 drivers
+v0x617c6a997e20_0 .net "sum", 0 0, L_0x617c6a9beaa0;  alias, 1 drivers
+S_0x617c6a997f70 .scope module, "P4_HA_1" "HA" 2 107, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+L_0x617c6a9be790 .udp UDP_outSum, L_0x617c6a9beec0, L_0x617c6a9beaa0;
+L_0x617c6a9bee50 .udp UDP_outCarry, L_0x617c6a9beec0, L_0x617c6a9beaa0;
+v0x617c6a9981c0_0 .net "A", 0 0, L_0x617c6a9beec0;  1 drivers
+v0x617c6a9982a0_0 .net "B", 0 0, L_0x617c6a9beaa0;  alias, 1 drivers
+v0x617c6a998390_0 .net "carry", 0 0, L_0x617c6a9bee50;  alias, 1 drivers
+v0x617c6a998460_0 .net "sum", 0 0, L_0x617c6a9be790;  1 drivers
+S_0x617c6a998590 .scope module, "P5_FA_1" "FA" 2 111, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bef60 .udp UDP_sumOut, L_0x617c6a9bf0d0, L_0x617c6a9bf200, L_0x617c6a9bee50;
+L_0x617c6a9bf060 .udp UDP_carryOut, L_0x617c6a9bf0d0, L_0x617c6a9bf200, L_0x617c6a9bee50;
+v0x617c6a9987f0_0 .net "A", 0 0, L_0x617c6a9bf0d0;  1 drivers
+v0x617c6a9988d0_0 .net "B", 0 0, L_0x617c6a9bf200;  1 drivers
+v0x617c6a998990_0 .net "cin", 0 0, L_0x617c6a9bee50;  alias, 1 drivers
+v0x617c6a998a90_0 .net "cout", 0 0, L_0x617c6a9bf060;  alias, 1 drivers
+v0x617c6a998b30_0 .net "sum", 0 0, L_0x617c6a9bef60;  alias, 1 drivers
+S_0x617c6a998cc0 .scope module, "P5_FA_2" "FA" 2 112, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bf2a0 .udp UDP_sumOut, L_0x617c6a9bf4a0, L_0x617c6a9bef60, L_0x617c6a9be550;
+L_0x617c6a9bf430 .udp UDP_carryOut, L_0x617c6a9bf4a0, L_0x617c6a9bef60, L_0x617c6a9be550;
+v0x617c6a998f20_0 .net "A", 0 0, L_0x617c6a9bf4a0;  1 drivers
+v0x617c6a999000_0 .net "B", 0 0, L_0x617c6a9bef60;  alias, 1 drivers
+v0x617c6a9990f0_0 .net "cin", 0 0, L_0x617c6a9be550;  alias, 1 drivers
+v0x617c6a9991f0_0 .net "cout", 0 0, L_0x617c6a9bf430;  alias, 1 drivers
+v0x617c6a999290_0 .net "sum", 0 0, L_0x617c6a9bf2a0;  alias, 1 drivers
+S_0x617c6a9993e0 .scope module, "P5_FA_3" "FA" 2 113, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bf670 .udp UDP_sumOut, L_0x617c6a9bf7e0, L_0x617c6a9bf2a0, L_0x617c6a9be990;
+L_0x617c6a9bf770 .udp UDP_carryOut, L_0x617c6a9bf7e0, L_0x617c6a9bf2a0, L_0x617c6a9be990;
+v0x617c6a999640_0 .net "A", 0 0, L_0x617c6a9bf7e0;  1 drivers
+v0x617c6a999720_0 .net "B", 0 0, L_0x617c6a9bf2a0;  alias, 1 drivers
+v0x617c6a999810_0 .net "cin", 0 0, L_0x617c6a9be990;  alias, 1 drivers
+v0x617c6a999910_0 .net "cout", 0 0, L_0x617c6a9bf770;  alias, 1 drivers
+v0x617c6a9999b0_0 .net "sum", 0 0, L_0x617c6a9bf670;  alias, 1 drivers
+S_0x617c6a999b00 .scope module, "P5_FA_4" "FA" 2 114, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bf880 .udp UDP_sumOut, L_0x617c6a9bfa80, L_0x617c6a9bf670, L_0x617c6a9bec30;
+L_0x617c6a9bfa10 .udp UDP_carryOut, L_0x617c6a9bfa80, L_0x617c6a9bf670, L_0x617c6a9bec30;
+v0x617c6a999d60_0 .net "A", 0 0, L_0x617c6a9bfa80;  1 drivers
+v0x617c6a999e40_0 .net "B", 0 0, L_0x617c6a9bf670;  alias, 1 drivers
+v0x617c6a999f30_0 .net "cin", 0 0, L_0x617c6a9bec30;  alias, 1 drivers
+v0x617c6a99a030_0 .net "cout", 0 0, L_0x617c6a9bfa10;  alias, 1 drivers
+v0x617c6a99a0d0_0 .net "sum", 0 0, L_0x617c6a9bf880;  alias, 1 drivers
+S_0x617c6a99a220 .scope module, "P5_HA_1" "HA" 2 115, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+L_0x617c6a9bfbd0 .udp UDP_outSum, L_0x617c6a9bf5d0, L_0x617c6a9bf880;
+L_0x617c6a9bfcd0 .udp UDP_outCarry, L_0x617c6a9bf5d0, L_0x617c6a9bf880;
+v0x617c6a99a470_0 .net "A", 0 0, L_0x617c6a9bf5d0;  1 drivers
+v0x617c6a99a550_0 .net "B", 0 0, L_0x617c6a9bf880;  alias, 1 drivers
+v0x617c6a99a640_0 .net "carry", 0 0, L_0x617c6a9bfcd0;  alias, 1 drivers
+v0x617c6a99a710_0 .net "sum", 0 0, L_0x617c6a9bfbd0;  1 drivers
+S_0x617c6a99a840 .scope module, "P6_FA_1" "FA" 2 119, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9bfd40 .udp UDP_sumOut, L_0x617c6a9bfeb0, L_0x617c6a9c0010, L_0x617c6a9bfcd0;
+L_0x617c6a9bfe40 .udp UDP_carryOut, L_0x617c6a9bfeb0, L_0x617c6a9c0010, L_0x617c6a9bfcd0;
+v0x617c6a99aaa0_0 .net "A", 0 0, L_0x617c6a9bfeb0;  1 drivers
+v0x617c6a99ab80_0 .net "B", 0 0, L_0x617c6a9c0010;  1 drivers
+v0x617c6a99ac40_0 .net "cin", 0 0, L_0x617c6a9bfcd0;  alias, 1 drivers
+v0x617c6a99ad40_0 .net "cout", 0 0, L_0x617c6a9bfe40;  alias, 1 drivers
+v0x617c6a99ade0_0 .net "sum", 0 0, L_0x617c6a9bfd40;  alias, 1 drivers
+S_0x617c6a99af70 .scope module, "P6_FA_2" "FA" 2 120, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c00b0 .udp UDP_sumOut, L_0x617c6a9c02b0, L_0x617c6a9bfd40, L_0x617c6a9bf060;
+L_0x617c6a9c0240 .udp UDP_carryOut, L_0x617c6a9c02b0, L_0x617c6a9bfd40, L_0x617c6a9bf060;
+v0x617c6a99b1d0_0 .net "A", 0 0, L_0x617c6a9c02b0;  1 drivers
+v0x617c6a99b2b0_0 .net "B", 0 0, L_0x617c6a9bfd40;  alias, 1 drivers
+v0x617c6a99b3a0_0 .net "cin", 0 0, L_0x617c6a9bf060;  alias, 1 drivers
+v0x617c6a99b4a0_0 .net "cout", 0 0, L_0x617c6a9c0240;  alias, 1 drivers
+v0x617c6a99b540_0 .net "sum", 0 0, L_0x617c6a9c00b0;  alias, 1 drivers
+S_0x617c6a99b690 .scope module, "P6_FA_3" "FA" 2 121, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c0420 .udp UDP_sumOut, L_0x617c6a9c0620, L_0x617c6a9c00b0, L_0x617c6a9bf430;
+L_0x617c6a9c05b0 .udp UDP_carryOut, L_0x617c6a9c0620, L_0x617c6a9c00b0, L_0x617c6a9bf430;
+v0x617c6a99bb00_0 .net "A", 0 0, L_0x617c6a9c0620;  1 drivers
+v0x617c6a99bbe0_0 .net "B", 0 0, L_0x617c6a9c00b0;  alias, 1 drivers
+v0x617c6a99bcd0_0 .net "cin", 0 0, L_0x617c6a9bf430;  alias, 1 drivers
+v0x617c6a99bdd0_0 .net "cout", 0 0, L_0x617c6a9c05b0;  alias, 1 drivers
+v0x617c6a99be70_0 .net "sum", 0 0, L_0x617c6a9c0420;  alias, 1 drivers
+S_0x617c6a99bfc0 .scope module, "P6_FA_4" "FA" 2 122, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c0750 .udp UDP_sumOut, L_0x617c6a9c0950, L_0x617c6a9c0420, L_0x617c6a9bf770;
+L_0x617c6a9c08e0 .udp UDP_carryOut, L_0x617c6a9c0950, L_0x617c6a9c0420, L_0x617c6a9bf770;
+v0x617c6a99c220_0 .net "A", 0 0, L_0x617c6a9c0950;  1 drivers
+v0x617c6a99c300_0 .net "B", 0 0, L_0x617c6a9c0420;  alias, 1 drivers
+v0x617c6a99c3f0_0 .net "cin", 0 0, L_0x617c6a9bf770;  alias, 1 drivers
+v0x617c6a99c4f0_0 .net "cout", 0 0, L_0x617c6a9c08e0;  alias, 1 drivers
+v0x617c6a99c590_0 .net "sum", 0 0, L_0x617c6a9c0750;  alias, 1 drivers
+S_0x617c6a99c6e0 .scope module, "P6_FA_5" "FA" 2 123, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c0ad0 .udp UDP_sumOut, L_0x617c6a9c0cd0, L_0x617c6a9c0750, L_0x617c6a9bfa10;
+L_0x617c6a9c0c60 .udp UDP_carryOut, L_0x617c6a9c0cd0, L_0x617c6a9c0750, L_0x617c6a9bfa10;
+v0x617c6a99c940_0 .net "A", 0 0, L_0x617c6a9c0cd0;  1 drivers
+v0x617c6a99ca20_0 .net "B", 0 0, L_0x617c6a9c0750;  alias, 1 drivers
+v0x617c6a99cb10_0 .net "cin", 0 0, L_0x617c6a9bfa10;  alias, 1 drivers
+v0x617c6a99cc10_0 .net "cout", 0 0, L_0x617c6a9c0c60;  alias, 1 drivers
+v0x617c6a99ccb0_0 .net "sum", 0 0, L_0x617c6a9c0ad0;  alias, 1 drivers
+S_0x617c6a99ce00 .scope module, "P6_HA_1" "HA" 2 124, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+L_0x617c6a9c0d70 .udp UDP_outSum, L_0x617c6a9c0ee0, L_0x617c6a9c0ad0;
+L_0x617c6a9c0e70 .udp UDP_outCarry, L_0x617c6a9c0ee0, L_0x617c6a9c0ad0;
+v0x617c6a99d050_0 .net "A", 0 0, L_0x617c6a9c0ee0;  1 drivers
+v0x617c6a99d130_0 .net "B", 0 0, L_0x617c6a9c0ad0;  alias, 1 drivers
+v0x617c6a99d220_0 .net "carry", 0 0, L_0x617c6a9c0e70;  alias, 1 drivers
+v0x617c6a99d2f0_0 .net "sum", 0 0, L_0x617c6a9c0d70;  1 drivers
+S_0x617c6a99d420 .scope module, "P7_FA_1" "FA" 2 128, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c1070 .udp UDP_sumOut, L_0x617c6a9c11e0, L_0x617c6a9c1280, L_0x617c6a9c0e70;
+L_0x617c6a9c1170 .udp UDP_carryOut, L_0x617c6a9c11e0, L_0x617c6a9c1280, L_0x617c6a9c0e70;
+v0x617c6a99d680_0 .net "A", 0 0, L_0x617c6a9c11e0;  1 drivers
+v0x617c6a99d760_0 .net "B", 0 0, L_0x617c6a9c1280;  1 drivers
+v0x617c6a99d820_0 .net "cin", 0 0, L_0x617c6a9c0e70;  alias, 1 drivers
+v0x617c6a99d920_0 .net "cout", 0 0, L_0x617c6a9c1170;  alias, 1 drivers
+v0x617c6a99d9c0_0 .net "sum", 0 0, L_0x617c6a9c1070;  alias, 1 drivers
+S_0x617c6a99db50 .scope module, "P7_FA_2" "FA" 2 129, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c1420 .udp UDP_sumOut, L_0x617c6a9c1590, L_0x617c6a9c1070, L_0x617c6a9bfe40;
+L_0x617c6a9c1520 .udp UDP_carryOut, L_0x617c6a9c1590, L_0x617c6a9c1070, L_0x617c6a9bfe40;
+v0x617c6a99ddb0_0 .net "A", 0 0, L_0x617c6a9c1590;  1 drivers
+v0x617c6a99de90_0 .net "B", 0 0, L_0x617c6a9c1070;  alias, 1 drivers
+v0x617c6a99df80_0 .net "cin", 0 0, L_0x617c6a9bfe40;  alias, 1 drivers
+v0x617c6a99e080_0 .net "cout", 0 0, L_0x617c6a9c1520;  alias, 1 drivers
+v0x617c6a99e120_0 .net "sum", 0 0, L_0x617c6a9c1420;  alias, 1 drivers
+S_0x617c6a99e270 .scope module, "P7_FA_3" "FA" 2 130, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c1630 .udp UDP_sumOut, L_0x617c6a9c1830, L_0x617c6a9c1420, L_0x617c6a9c0240;
+L_0x617c6a9c17c0 .udp UDP_carryOut, L_0x617c6a9c1830, L_0x617c6a9c1420, L_0x617c6a9c0240;
+v0x617c6a99e4d0_0 .net "A", 0 0, L_0x617c6a9c1830;  1 drivers
+v0x617c6a99e5b0_0 .net "B", 0 0, L_0x617c6a9c1420;  alias, 1 drivers
+v0x617c6a99e6a0_0 .net "cin", 0 0, L_0x617c6a9c0240;  alias, 1 drivers
+v0x617c6a99e7a0_0 .net "cout", 0 0, L_0x617c6a9c17c0;  alias, 1 drivers
+v0x617c6a99e840_0 .net "sum", 0 0, L_0x617c6a9c1630;  alias, 1 drivers
+S_0x617c6a99e990 .scope module, "P7_FA_4" "FA" 2 131, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c19e0 .udp UDP_sumOut, L_0x617c6a9c1be0, L_0x617c6a9c1630, L_0x617c6a9c05b0;
+L_0x617c6a9c1b70 .udp UDP_carryOut, L_0x617c6a9c1be0, L_0x617c6a9c1630, L_0x617c6a9c05b0;
+v0x617c6a99ebf0_0 .net "A", 0 0, L_0x617c6a9c1be0;  1 drivers
+v0x617c6a99ecd0_0 .net "B", 0 0, L_0x617c6a9c1630;  alias, 1 drivers
+v0x617c6a99edc0_0 .net "cin", 0 0, L_0x617c6a9c05b0;  alias, 1 drivers
+v0x617c6a99eec0_0 .net "cout", 0 0, L_0x617c6a9c1b70;  alias, 1 drivers
+v0x617c6a99ef60_0 .net "sum", 0 0, L_0x617c6a9c19e0;  alias, 1 drivers
+S_0x617c6a99f0b0 .scope module, "P7_FA_5" "FA" 2 132, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c1d10 .udp UDP_sumOut, L_0x617c6a9c1f10, L_0x617c6a9c19e0, L_0x617c6a9c08e0;
+L_0x617c6a9c1ea0 .udp UDP_carryOut, L_0x617c6a9c1f10, L_0x617c6a9c19e0, L_0x617c6a9c08e0;
+v0x617c6a99f310_0 .net "A", 0 0, L_0x617c6a9c1f10;  1 drivers
+v0x617c6a99f3f0_0 .net "B", 0 0, L_0x617c6a9c19e0;  alias, 1 drivers
+v0x617c6a99f4e0_0 .net "cin", 0 0, L_0x617c6a9c08e0;  alias, 1 drivers
+v0x617c6a99f5e0_0 .net "cout", 0 0, L_0x617c6a9c1ea0;  alias, 1 drivers
+v0x617c6a99f680_0 .net "sum", 0 0, L_0x617c6a9c1d10;  alias, 1 drivers
+S_0x617c6a99f7d0 .scope module, "P7_FA_6" "FA" 2 133, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c20d0 .udp UDP_sumOut, L_0x617c6a9c22d0, L_0x617c6a9c1d10, L_0x617c6a9c0c60;
+L_0x617c6a9c2260 .udp UDP_carryOut, L_0x617c6a9c22d0, L_0x617c6a9c1d10, L_0x617c6a9c0c60;
+v0x617c6a99fa30_0 .net "A", 0 0, L_0x617c6a9c22d0;  1 drivers
+v0x617c6a99fb10_0 .net "B", 0 0, L_0x617c6a9c1d10;  alias, 1 drivers
+v0x617c6a99fc00_0 .net "cin", 0 0, L_0x617c6a9c0c60;  alias, 1 drivers
+v0x617c6a99fd00_0 .net "cout", 0 0, L_0x617c6a9c2260;  alias, 1 drivers
+v0x617c6a99fda0_0 .net "sum", 0 0, L_0x617c6a9c20d0;  alias, 1 drivers
+S_0x617c6a99fef0 .scope module, "P7_HA_1" "HA" 2 134, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+L_0x617c6a9c2370 .udp UDP_outSum, L_0x617c6a9c24e0, L_0x617c6a9c20d0;
+L_0x617c6a9c2470 .udp UDP_outCarry, L_0x617c6a9c24e0, L_0x617c6a9c20d0;
+v0x617c6a9a0140_0 .net "A", 0 0, L_0x617c6a9c24e0;  1 drivers
+v0x617c6a9a0220_0 .net "B", 0 0, L_0x617c6a9c20d0;  alias, 1 drivers
+v0x617c6a9a0310_0 .net "carry", 0 0, L_0x617c6a9c2470;  alias, 1 drivers
+v0x617c6a9a03e0_0 .net "sum", 0 0, L_0x617c6a9c2370;  1 drivers
+S_0x617c6a9a0510 .scope module, "P8_FA_1" "FA" 2 138, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c1fb0 .udp UDP_sumOut, L_0x617c6a9c2720, L_0x617c6a9c27c0, L_0x617c6a9c2470;
+L_0x617c6a9c26b0 .udp UDP_carryOut, L_0x617c6a9c2720, L_0x617c6a9c27c0, L_0x617c6a9c2470;
+v0x617c6a9a0770_0 .net "A", 0 0, L_0x617c6a9c2720;  1 drivers
+v0x617c6a9a0850_0 .net "B", 0 0, L_0x617c6a9c27c0;  1 drivers
+v0x617c6a9a0910_0 .net "cin", 0 0, L_0x617c6a9c2470;  alias, 1 drivers
+v0x617c6a9a0a10_0 .net "cout", 0 0, L_0x617c6a9c26b0;  alias, 1 drivers
+v0x617c6a9a0ab0_0 .net "sum", 0 0, L_0x617c6a9c1fb0;  alias, 1 drivers
+S_0x617c6a9a0c40 .scope module, "P8_FA_2" "FA" 2 139, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c29a0 .udp UDP_sumOut, L_0x617c6a9c2b10, L_0x617c6a9c1fb0, L_0x617c6a9c1170;
+L_0x617c6a9c2aa0 .udp UDP_carryOut, L_0x617c6a9c2b10, L_0x617c6a9c1fb0, L_0x617c6a9c1170;
+v0x617c6a9a0ea0_0 .net "A", 0 0, L_0x617c6a9c2b10;  1 drivers
+v0x617c6a9a0f80_0 .net "B", 0 0, L_0x617c6a9c1fb0;  alias, 1 drivers
+v0x617c6a9a1070_0 .net "cin", 0 0, L_0x617c6a9c1170;  alias, 1 drivers
+v0x617c6a9a1170_0 .net "cout", 0 0, L_0x617c6a9c2aa0;  alias, 1 drivers
+v0x617c6a9a1210_0 .net "sum", 0 0, L_0x617c6a9c29a0;  alias, 1 drivers
+S_0x617c6a9a1360 .scope module, "P8_FA_3" "FA" 2 140, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c2bb0 .udp UDP_sumOut, L_0x617c6a9c2db0, L_0x617c6a9c29a0, L_0x617c6a9c1520;
+L_0x617c6a9c2d40 .udp UDP_carryOut, L_0x617c6a9c2db0, L_0x617c6a9c29a0, L_0x617c6a9c1520;
+v0x617c6a9a15c0_0 .net "A", 0 0, L_0x617c6a9c2db0;  1 drivers
+v0x617c6a9a16a0_0 .net "B", 0 0, L_0x617c6a9c29a0;  alias, 1 drivers
+v0x617c6a9a1790_0 .net "cin", 0 0, L_0x617c6a9c1520;  alias, 1 drivers
+v0x617c6a9a1890_0 .net "cout", 0 0, L_0x617c6a9c2d40;  alias, 1 drivers
+v0x617c6a9a1930_0 .net "sum", 0 0, L_0x617c6a9c2bb0;  alias, 1 drivers
+S_0x617c6a9a1a80 .scope module, "P8_FA_4" "FA" 2 141, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c2fa0 .udp UDP_sumOut, L_0x617c6a9c31a0, L_0x617c6a9c2bb0, L_0x617c6a9c17c0;
+L_0x617c6a9c3130 .udp UDP_carryOut, L_0x617c6a9c31a0, L_0x617c6a9c2bb0, L_0x617c6a9c17c0;
+v0x617c6a9a1ce0_0 .net "A", 0 0, L_0x617c6a9c31a0;  1 drivers
+v0x617c6a9a1dc0_0 .net "B", 0 0, L_0x617c6a9c2bb0;  alias, 1 drivers
+v0x617c6a9a1eb0_0 .net "cin", 0 0, L_0x617c6a9c17c0;  alias, 1 drivers
+v0x617c6a9a1fb0_0 .net "cout", 0 0, L_0x617c6a9c3130;  alias, 1 drivers
+v0x617c6a9a2050_0 .net "sum", 0 0, L_0x617c6a9c2fa0;  alias, 1 drivers
+S_0x617c6a9a21a0 .scope module, "P8_FA_5" "FA" 2 142, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c32d0 .udp UDP_sumOut, L_0x617c6a9c34d0, L_0x617c6a9c2fa0, L_0x617c6a9c1b70;
+L_0x617c6a9c3460 .udp UDP_carryOut, L_0x617c6a9c34d0, L_0x617c6a9c2fa0, L_0x617c6a9c1b70;
+v0x617c6a9a2400_0 .net "A", 0 0, L_0x617c6a9c34d0;  1 drivers
+v0x617c6a9a24e0_0 .net "B", 0 0, L_0x617c6a9c2fa0;  alias, 1 drivers
+v0x617c6a9a25d0_0 .net "cin", 0 0, L_0x617c6a9c1b70;  alias, 1 drivers
+v0x617c6a9a26d0_0 .net "cout", 0 0, L_0x617c6a9c3460;  alias, 1 drivers
+v0x617c6a9a2770_0 .net "sum", 0 0, L_0x617c6a9c32d0;  alias, 1 drivers
+S_0x617c6a9a28c0 .scope module, "P8_FA_6" "FA" 2 143, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c36d0 .udp UDP_sumOut, L_0x617c6a9c38d0, L_0x617c6a9c32d0, L_0x617c6a9c1ea0;
+L_0x617c6a9c3860 .udp UDP_carryOut, L_0x617c6a9c38d0, L_0x617c6a9c32d0, L_0x617c6a9c1ea0;
+v0x617c6a9a2b20_0 .net "A", 0 0, L_0x617c6a9c38d0;  1 drivers
+v0x617c6a9a2c00_0 .net "B", 0 0, L_0x617c6a9c32d0;  alias, 1 drivers
+v0x617c6a9a2cf0_0 .net "cin", 0 0, L_0x617c6a9c1ea0;  alias, 1 drivers
+v0x617c6a9a2df0_0 .net "cout", 0 0, L_0x617c6a9c3860;  alias, 1 drivers
+v0x617c6a9a2e90_0 .net "sum", 0 0, L_0x617c6a9c36d0;  alias, 1 drivers
+S_0x617c6a9a2fe0 .scope module, "P8_HA_1" "HA" 2 144, 2 65 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "carry";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+L_0x617c6a9c3970 .udp UDP_outSum, L_0x617c6a9c36d0, L_0x617c6a9c2260;
+L_0x617c6a9c3b00 .udp UDP_outCarry, L_0x617c6a9c36d0, L_0x617c6a9c2260;
+v0x617c6a9a3230_0 .net "A", 0 0, L_0x617c6a9c36d0;  alias, 1 drivers
+v0x617c6a9a3320_0 .net "B", 0 0, L_0x617c6a9c2260;  alias, 1 drivers
+v0x617c6a9a33f0_0 .net "carry", 0 0, L_0x617c6a9c3b00;  alias, 1 drivers
+v0x617c6a9a34c0_0 .net "sum", 0 0, L_0x617c6a9c3970;  1 drivers
+S_0x617c6a9a35f0 .scope module, "P9_FA_1" "FA" 2 148, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c3b70 .udp UDP_sumOut, L_0x617c6a9c3ce0, L_0x617c6a9c3ef0, L_0x617c6a9c3b00;
+L_0x617c6a9c3c70 .udp UDP_carryOut, L_0x617c6a9c3ce0, L_0x617c6a9c3ef0, L_0x617c6a9c3b00;
+v0x617c6a9a3850_0 .net "A", 0 0, L_0x617c6a9c3ce0;  1 drivers
+v0x617c6a9a3930_0 .net "B", 0 0, L_0x617c6a9c3ef0;  1 drivers
+v0x617c6a9a39f0_0 .net "cin", 0 0, L_0x617c6a9c3b00;  alias, 1 drivers
+v0x617c6a9a3af0_0 .net "cout", 0 0, L_0x617c6a9c3c70;  alias, 1 drivers
+v0x617c6a9a3bc0_0 .net "sum", 0 0, L_0x617c6a9c3b70;  alias, 1 drivers
+S_0x617c6a9a3d10 .scope module, "P9_FA_2" "FA" 2 149, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c3f90 .udp UDP_sumOut, L_0x617c6a9c4100, L_0x617c6a9c3b70, L_0x617c6a9c26b0;
+L_0x617c6a9c4090 .udp UDP_carryOut, L_0x617c6a9c4100, L_0x617c6a9c3b70, L_0x617c6a9c26b0;
+v0x617c6a9a3f70_0 .net "A", 0 0, L_0x617c6a9c4100;  1 drivers
+v0x617c6a9a4050_0 .net "B", 0 0, L_0x617c6a9c3b70;  alias, 1 drivers
+v0x617c6a9a4140_0 .net "cin", 0 0, L_0x617c6a9c26b0;  alias, 1 drivers
+v0x617c6a9a4240_0 .net "cout", 0 0, L_0x617c6a9c4090;  alias, 1 drivers
+v0x617c6a9a4310_0 .net "sum", 0 0, L_0x617c6a9c3f90;  alias, 1 drivers
+S_0x617c6a9a4420 .scope module, "P9_FA_3" "FA" 2 150, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c4320 .udp UDP_sumOut, L_0x617c6a9c4520, L_0x617c6a9c3f90, L_0x617c6a9c2aa0;
+L_0x617c6a9c44b0 .udp UDP_carryOut, L_0x617c6a9c4520, L_0x617c6a9c3f90, L_0x617c6a9c2aa0;
+v0x617c6a9a4680_0 .net "A", 0 0, L_0x617c6a9c4520;  1 drivers
+v0x617c6a9a4760_0 .net "B", 0 0, L_0x617c6a9c3f90;  alias, 1 drivers
+v0x617c6a9a4850_0 .net "cin", 0 0, L_0x617c6a9c2aa0;  alias, 1 drivers
+v0x617c6a9a4950_0 .net "cout", 0 0, L_0x617c6a9c44b0;  alias, 1 drivers
+v0x617c6a9a4a20_0 .net "sum", 0 0, L_0x617c6a9c4320;  alias, 1 drivers
+S_0x617c6a9a4b30 .scope module, "P9_FA_4" "FA" 2 151, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c45c0 .udp UDP_sumOut, L_0x617c6a9c47f0, L_0x617c6a9c4320, L_0x617c6a9c2d40;
+L_0x617c6a9c4750 .udp UDP_carryOut, L_0x617c6a9c47f0, L_0x617c6a9c4320, L_0x617c6a9c2d40;
+v0x617c6a9a4d90_0 .net "A", 0 0, L_0x617c6a9c47f0;  1 drivers
+v0x617c6a9a4e70_0 .net "B", 0 0, L_0x617c6a9c4320;  alias, 1 drivers
+v0x617c6a9a4f60_0 .net "cin", 0 0, L_0x617c6a9c2d40;  alias, 1 drivers
+v0x617c6a9a5060_0 .net "cout", 0 0, L_0x617c6a9c4750;  alias, 1 drivers
+v0x617c6a9a5130_0 .net "sum", 0 0, L_0x617c6a9c45c0;  alias, 1 drivers
+S_0x617c6a9a5240 .scope module, "P9_FA_5" "FA" 2 152, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c4ab0 .udp UDP_sumOut, L_0x617c6a9c4d10, L_0x617c6a9c45c0, L_0x617c6a9c3130;
+L_0x617c6a9c4c70 .udp UDP_carryOut, L_0x617c6a9c4d10, L_0x617c6a9c45c0, L_0x617c6a9c3130;
+v0x617c6a9a54a0_0 .net "A", 0 0, L_0x617c6a9c4d10;  1 drivers
+v0x617c6a9a5580_0 .net "B", 0 0, L_0x617c6a9c45c0;  alias, 1 drivers
+v0x617c6a9a5670_0 .net "cin", 0 0, L_0x617c6a9c3130;  alias, 1 drivers
+v0x617c6a9a5770_0 .net "cout", 0 0, L_0x617c6a9c4c70;  alias, 1 drivers
+v0x617c6a9a5840_0 .net "sum", 0 0, L_0x617c6a9c4ab0;  alias, 1 drivers
+S_0x617c6a9a5950 .scope module, "P9_FA_6" "FA" 2 153, 2 58 0, S_0x617c6a951790;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "cin";
+L_0x617c6a9c4db0 .udp UDP_sumOut, L_0x617c6a9c4ab0, L_0x617c6a9c3460, L_0x617c6a9c3860;
+L_0x617c6a9c5000 .udp UDP_carryOut, L_0x617c6a9c4ab0, L_0x617c6a9c3460, L_0x617c6a9c3860;
+v0x617c6a9a5bb0_0 .net "A", 0 0, L_0x617c6a9c4ab0;  alias, 1 drivers
+v0x617c6a9a5ca0_0 .net "B", 0 0, L_0x617c6a9c3460;  alias, 1 drivers
+v0x617c6a9a5d70_0 .net "cin", 0 0, L_0x617c6a9c3860;  alias, 1 drivers
+v0x617c6a9a5e70_0 .net "cout", 0 0, L_0x617c6a9c5000;  alias, 1 drivers
+v0x617c6a9a5f40_0 .net "sum", 0 0, L_0x617c6a9c4db0;  1 drivers
+    .scope S_0x617c6a951790;
+T_0 ;
+    %wait E_0x617c6a8fd8f0;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x617c6a9ac5e0_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x617c6a9ac5e0_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x617c6a9ac680_0, 0, 32;
+T_0.2 ;
+    %load/vec4 v0x617c6a9ac680_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_0.3, 5;
+    %load/vec4 v0x617c6a9a6050_0;
+    %load/vec4 v0x617c6a9ac5e0_0;
+    %part/s 1;
+    %load/vec4 v0x617c6a9a6150_0;
+    %load/vec4 v0x617c6a9ac680_0;
+    %part/s 1;
+    %and;
+    %ix/getv/s 4, v0x617c6a9ac5e0_0;
+    %flag_mov 8, 4;
+    %ix/getv/s 5, v0x617c6a9ac680_0;
+    %flag_or 4, 8;
+    %store/vec4a v0x617c6a9ac720, 4, 5;
+    %load/vec4 v0x617c6a9ac680_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x617c6a9ac680_0, 0, 32;
+    %jmp T_0.2;
+T_0.3 ;
+    %load/vec4 v0x617c6a9ac5e0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x617c6a9ac5e0_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x617c6a962b80;
+T_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x617c6a9accc0_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x617c6a9acc20_0, 0, 32;
+    %end;
+    .thread T_1;
+    .scope S_0x617c6a962b80;
+T_2 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x617c6a9aca90_0, 0, 32;
+T_2.0 ;
+    %load/vec4 v0x617c6a9aca90_0;
+    %cmpi/s 256, 0, 32;
+    %jmp/0xz T_2.1, 5;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x617c6a9acb80_0, 0, 32;
+T_2.2 ;
+    %load/vec4 v0x617c6a9acb80_0;
+    %cmpi/s 256, 0, 32;
+    %jmp/0xz T_2.3, 5;
+    %load/vec4 v0x617c6a9aca90_0;
+    %pad/s 8;
+    %store/vec4 v0x617c6a9ac810_0, 0, 8;
+    %load/vec4 v0x617c6a9acb80_0;
+    %pad/s 8;
+    %store/vec4 v0x617c6a9ac8b0_0, 0, 8;
+    %load/vec4 v0x617c6a9ac810_0;
+    %pad/u 16;
+    %load/vec4 v0x617c6a9ac8b0_0;
+    %pad/u 16;
+    %mul;
+    %store/vec4 v0x617c6a9ac9f0_0, 0, 16;
+    %delay 2000, 0;
+    %load/vec4 v0x617c6a9ac950_0;
+    %load/vec4 v0x617c6a9ac9f0_0;
+    %cmp/ne;
+    %jmp/0xz  T_2.4, 6;
+    %load/vec4 v0x617c6a9acc20_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x617c6a9acc20_0, 0, 32;
+    %vpi_call 2 220 "$display", "Mismatch: A=%d, B=%d, Expected=%d, Got=%d", v0x617c6a9ac810_0, v0x617c6a9ac8b0_0, v0x617c6a9ac9f0_0, v0x617c6a9ac950_0 {0 0 0};
+T_2.4 ;
+    %load/vec4 v0x617c6a9accc0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x617c6a9accc0_0, 0, 32;
+    %load/vec4 v0x617c6a9acb80_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x617c6a9acb80_0, 0, 32;
+    %jmp T_2.2;
+T_2.3 ;
+    %load/vec4 v0x617c6a9aca90_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x617c6a9aca90_0, 0, 32;
+    %jmp T_2.0;
+T_2.1 ;
+    %vpi_call 2 226 "$display", "Total tests: %d", v0x617c6a9accc0_0 {0 0 0};
+    %vpi_call 2 227 "$display", "Mismatches: %d", v0x617c6a9acc20_0 {0 0 0};
+    %pushi/real 1677721600, 4072; load=100.000
+    %load/vec4 v0x617c6a9accc0_0;
+    %load/vec4 v0x617c6a9acc20_0;
+    %sub;
+    %cvt/rv/s;
+    %mul/wr;
+    %load/vec4 v0x617c6a9accc0_0;
+    %cvt/rv/s;
+    %div/wr;
+    %vpi_call 2 228 "$display", "Accuracy: %f%%", W<0,r> {0 1 0};
+    %vpi_call 2 230 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0x617c6a962b80;
+T_3 ;
+    %vpi_call 2 234 "$monitor", "At time %t, A = %d, B = %d, P = %d, correct = %d", $time, v0x617c6a9ac810_0, v0x617c6a9ac8b0_0, v0x617c6a9ac950_0, v0x617c6a9ac9f0_0 {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "./wallace_multiplier.v";

@@ -1,0 +1,250 @@
+
+8. Printing statistics.
+
+=== ArrayCell ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     FullBitAdder                    1
+
+=== ArrayRow ===
+
+   Number of wires:                 14
+   Number of wire bits:             39
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     AND2_X1                         2
+     ArrayCell                       6
+     HalfBitAdder                    2
+
+=== ArrayRow_type2 ===
+
+   Number of wires:                 12
+   Number of wire bits:             37
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     AND2_X1                         1
+     ArrayCell                       7
+     HalfBitAdder                    1
+
+=== EightBitArrayMultiplier ===
+
+   Number of wires:                 33
+   Number of wire bits:            104
+   Number of public wires:          16
+   Number of public wire bits:      87
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     AND2_X1                         8
+     ArrayRow                        1
+     ArrayRow_type2                  6
+
+=== FullBitAdder ===
+
+   Number of wires:                 16
+   Number of wire bits:             16
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     INV_X1                          1
+     NAND2_X1                        1
+     OAI21_X1                        1
+     XNOR2_X1                        2
+
+=== HalfBitAdder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     XOR2_X1                         1
+
+=== design hierarchy ===
+
+   EightBitArrayMultiplier           1
+     ArrayRow                        1
+       ArrayCell                     6
+         FullBitAdder                1
+       HalfBitAdder                  2
+     ArrayRow_type2                  6
+       ArrayCell                     7
+         FullBitAdder                1
+       HalfBitAdder                  1
+
+   Number of wires:               1431
+   Number of wire bits:           1677
+   Number of public wires:         831
+   Number of public wire bits:    1077
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                320
+     AND2_X1                        72
+     INV_X1                         48
+     NAND2_X1                       48
+     OAI21_X1                       48
+     XNOR2_X1                       96
+     XOR2_X1                         8
+
+9. Printing statistics.
+
+=== ArrayCell ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     FullBitAdder                    1
+
+   Area for cell type \FullBitAdder is unknown!
+
+   Chip area for module '\ArrayCell': 1.064000
+
+=== ArrayRow ===
+
+   Number of wires:                 14
+   Number of wire bits:             39
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     AND2_X1                         2
+     ArrayCell                       6
+     HalfBitAdder                    2
+
+   Area for cell type \HalfBitAdder is unknown!
+   Area for cell type \ArrayCell is unknown!
+
+   Chip area for module '\ArrayRow': 2.128000
+
+=== ArrayRow_type2 ===
+
+   Number of wires:                 12
+   Number of wire bits:             37
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     AND2_X1                         1
+     ArrayCell                       7
+     HalfBitAdder                    1
+
+   Area for cell type \HalfBitAdder is unknown!
+   Area for cell type \ArrayCell is unknown!
+
+   Chip area for module '\ArrayRow_type2': 1.064000
+
+=== EightBitArrayMultiplier ===
+
+   Number of wires:                 33
+   Number of wire bits:            104
+   Number of public wires:          16
+   Number of public wire bits:      87
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     AND2_X1                         8
+     ArrayRow                        1
+     ArrayRow_type2                  6
+
+   Area for cell type \ArrayRow is unknown!
+   Area for cell type \ArrayRow_type2 is unknown!
+
+   Chip area for module '\EightBitArrayMultiplier': 8.512000
+
+=== FullBitAdder ===
+
+   Number of wires:                 16
+   Number of wire bits:             16
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     INV_X1                          1
+     NAND2_X1                        1
+     OAI21_X1                        1
+     XNOR2_X1                        2
+
+   Chip area for module '\FullBitAdder': 5.586000
+
+=== HalfBitAdder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     XOR2_X1                         1
+
+   Chip area for module '\HalfBitAdder': 2.660000
+
+=== design hierarchy ===
+
+   EightBitArrayMultiplier           1
+     ArrayRow                        1
+       ArrayCell                     6
+         FullBitAdder                1
+       HalfBitAdder                  2
+     ArrayRow_type2                  6
+       ArrayCell                     7
+         FullBitAdder                1
+       HalfBitAdder                  1
+
+   Number of wires:               1431
+   Number of wire bits:           1677
+   Number of public wires:         831
+   Number of public wire bits:    1077
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                320
+     AND2_X1                        72
+     INV_X1                         48
+     NAND2_X1                       48
+     OAI21_X1                       48
+     XNOR2_X1                       96
+     XOR2_X1                         8
+
+   Chip area for top module '\EightBitArrayMultiplier': 357.504000
+
