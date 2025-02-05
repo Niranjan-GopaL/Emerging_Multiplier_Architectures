@@ -99,7 +99,7 @@ def parse_multiplier_string(s):
         dims = current_token.split('x')
         x = int(dims[0][2:]) 
         y = int(dims[1])
-        key = [x, y, 'rr' if is_recursive else 'nr', dummy_value]
+        key = [dummy_value, x, y, 'rr' if is_recursive else 'nr']
         dummy_value += 1
         
         result = {tuple(key): {}}
@@ -130,16 +130,8 @@ def parse_multiplier_string(s):
 def main():
 
     test_strings = [
-        "rr4x4__B__nr2x2__nr2x2__nr2x2__nr2x2__B__",
-        "rr8x8__B__rr6x6__B__nr3x3__nr3x3__nr3x3__nr3x3__B__nr6x2__nr2x6__nr2x2__B__",
-        "rr8x8__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr4x4__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__nr6x2__nr2x6__nr2x2__B__",
-        "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__nr1x1__nr1x4__nr4x1__rr4x4__B__nr1x1__nr1x3__nr3x1__nr3x3__B__B__B__",
-        "rr8x8__B__nr3x3__nr3x5__nr5x3__rr5x5__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__nr4x1__nr1x4__nr1x1__B__B__",
-        "rr8x8__B__rr5x5__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x2__nr2x3__nr2x2__B__nr5x3__nr3x5__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__B__"
+        "rr16x16__B__rr12x12__B__nr2x2__nr2x10__nr10x2__rr10x10__B__rr6x6__B__nr1x1__nr1x5__nr5x1__rr5x5__B__rr3x3__B__nr1x1__nr1x2__nr2x1__nr2x2__B__nr3x2__nr2x3__nr2x2__B__B__nr6x4__nr4x6__rr4x4__B__nr2x2__nr2x2__nr2x2__nr2x2__B__B__B__nr12x4__nr4x12__rr4x4__B__nr2x2__nr2x2__nr2x2__nr2x2__B__B__",
     ]
-    
-    test_strings = ["rr8x8__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__rr4x4__B__rr3x3__B__nr2x2__nr2x1__nr1x2__nr1x1__B__nr3x1__nr1x3__nr1x1__B__B__"]
-
     for test in test_strings:
         result = parse_multiplier_string(test)
         # print(f"\nInput: {test}")

@@ -22,7 +22,7 @@ def write_complete_verilog(multiplier, n_bits, Z):
     
     topflag = True 
     code = ""      
-    code = oc.generate_config(config=mult_dict, code=code, key=(8, 8, 'rr', 0), topflag=True, name=module_name[0])
+    code = oc.generate_config(config=mult_dict, code=code, key=(0, 8, 8, 'rr'), topflag=True, name="rr_8x8")
     # oc.generate_config_recursive(config=mult_dict, key=(8, 8, 'rr', 0), topflag=True, name=module_name[0]) 
     # print("Finished")  
     # code = oc.code                         
@@ -92,24 +92,25 @@ def get_values(data, Z):
     n_bits = 8
 
     data = str(data)
+    # print(f"This is the complete array :- \n\n{data}\n\n")
     # data = "[[7, 7], [7, 1], [1, 7], [1, 1]]"
     iteration = 10  # whatever solution of nsga, for a given 
     multiplier = eval(data.strip())
     # print((multiplier))
-    module_name = write_complete_verilog(multiplier, n_bits,Z)
+    module_name = write_complete_verilog(multiplier, n_bits, Z)
 
-    subprocess.run(["python3", "yosys_synth_automate.py", f"{n_bits}", str(Z), module_name], check=True, 
+    subprocess.run(["python3", "yosys_synth_automate.py", f"{n_bits}", str(Z), "rr_8x8"], check=True, 
                 #    stdout=subprocess.DEVNULL, 
                 #    stderr=subprocess.DEVNULL
-                   )
-    subprocess.run(["python3", "yosys_area_automate.py",  f"{n_bits}", str(Z), module_name], 
-                   check=True, stdout=subprocess.DEVNULL, 
-                   stderr=subprocess.DEVNULL
-                   )
-    subprocess.run(["python3", "sta_delay_power_automate.py",  f"{n_bits}", str(Z), module_name], check=True, 
-                   stdout=subprocess.DEVNULL, 
-                   stderr=subprocess.DEVNULL
-                   )
+                    )
+    subprocess.run(["python3", "yosys_area_automate.py",  f"{n_bits}", str(Z), "rr_8x8"], 
+                    check=True, stdout=subprocess.DEVNULL, 
+                    stderr=subprocess.DEVNULL
+                    )
+    subprocess.run(["python3", "sta_delay_power_automate.py",  f"{n_bits}", str(Z), "rr_8x8"], check=True, 
+                    stdout=subprocess.DEVNULL, 
+                    stderr=subprocess.DEVNULL
+                    )
 
     with open("area.txt", 'r') as f:
         area = f.read().strip()

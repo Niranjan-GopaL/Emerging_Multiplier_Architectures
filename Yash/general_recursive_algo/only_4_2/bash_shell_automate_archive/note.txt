@@ -1,2 +1,0 @@
-Just drop these files in the folder with all the verilogs, and each one will work flawlessly.
-This was our initial approach, before having to move to python for better modularity and ease with regex

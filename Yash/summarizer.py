@@ -60,23 +60,24 @@ import re
 import config_validator as cv
 import generate_final_config as gfc
 import get_values as gv
-import custom_mutation as cm
+import custom_mutation_updated as cm2
 
 #--------------- custom mutation  --------------------------
 class CustomMutation(Mutation):
 
+    global N_BITS
     def _do(self, problem, X, params=None, **kwargs):
         X = X.astype(float)
 
-        Xp = cm.custom_mutation(X)
+        Xp = cm2.mutate(N_BITS, X)
         
         return Xp
 #--------------- global variables --------------------------
-THREADS=1
+THREADS=9
 pool=ThreadPool(THREADS)
 
-GENERATIONS=100
-POPULATION=20
+GENERATIONS=108
+POPULATION=9
 CURRENT_GEN=0
 SEED=0
 N_BITS = 8
@@ -104,25 +105,25 @@ class CustomProblemClass(Problem):
         self.xl=[-1]*16
         self.xu=[]
         COUNT = 0
-        print("Starting")
+        # print("Starting")
         for i in range(0, 16):
-            if COUNT <=7 :
+            if COUNT <= 7:
                 if COUNT >= 6:
                     self.xu.append(-1)
                     COUNT +=1
                     continue
-                print(N_BITS - i - 1)
+                # print(N_BITS - i - 1)
                 self.xu.append(N_BITS - i - 1)
-                print(self.xu)
+                # print(self.xu)
                 COUNT +=1
                 continue
             
             self.xu.append(int(N_BITS / 2))
         
-        print("Over")
-        print(self.xu)
+        # print("Over")
+        # print(self.xu)
         
-        super().__init__(n_var=16, n_obj=3, n_ieq_constr=1,n_constr=0,elementwise_evaluation=False, xl=self.xl, xu=self.xu,vtype=int,**kwargs)
+        super().__init__(n_var=16, n_obj=3, n_ieq_constr=1,n_constr=0,elementwise_evaluation=True, xl=self.xl, xu=self.xu,vtype=int,**kwargs)
 
         # elementwise_evaluation=True: At each time it will give 1 solution instead of all 10 solutions.
         # n_var: each solution should have 10 numbers
@@ -136,6 +137,7 @@ class CustomProblemClass(Problem):
         genFile.write(str(CURRENT_GEN))
         genFile.close()
         CURRENT_GEN=CURRENT_GEN+1
+        # print("CURRENTGEN=", CURRENT_GEN)
         
         
         # This part handles multithreading
@@ -176,13 +178,16 @@ class CustomProblemClass(Problem):
             print(f"Config={x}")
             final_configuration = gfc.generate_final_config(n_bits=N_BITS, array=x)
             f1, f2, f3 = gv.get_values(final_configuration, Z)
+            
+            if f1 == "" or f2 == "" or f3 == "":
+                f1, f2, f3 = 10000, 10000, 100000
         # f1 = np.sum(x)
         # f2 = np.prod(x)
         # f3 = 0
         
         else:
             
-            print("Invalid Config=",x)
+            # print("Invalid Config=",x)
             f1, f2, f3 = 10000, 10000, 100000
 
         #constraint/violation evaluation
@@ -220,38 +225,47 @@ def runFramework():
     solution7 = np.array([3, -1, -1, 3, -1, 0, -1, -1, 1, 1, -1, -1, -1, -1, -1, -1])
     solution8 = np.array([4, -1, -1, -1, 0, 0, -1, -1, 2, 3, 2, -1, -1, -1, -1, -1])
     solution9 = np.array([4, 2, -1, -1, 0, 0, -1, -1, 2, -1, 2, -1, -1, -1, -1, -1])
-    solution10 = np.array([6, 2, 4, -3, 0, 1, 1, -1, 2, 3, 2, -1, -1, 1, -1, -1])
-    solution11 = np.array([5, -1, -1, -1, 0, 1, -1, -1, 2, 3, 2, -1, -1, -1, -1, -1])
-    solution12 = np.array([4, 4, -1, -1, 3, 0, -1, -1, 2, 2, 2, -1, -1, -1, 4, -1])
-    solution13 = np.array([3, 6, -1, -1, 3, 2, -1, -1, 2, 3, 2, -1, -1, -1, 2, -1])
-    solution14 = np.array([2, 1, -1, -1, 2, 0, -1, -1, 2, 1, 2, -1, -1, -1, 1, -1])
-    solution15 = np.array([1, 1, -1, -1, 1, 1, -1, -1, 2, 1, 2, -1, -1, -1, 3, -1])
-    solution16 = np.array([1, 4, -1, -1, 1, 2, -1, -1, 2, 2, 2, -1, -1, -1, 4, -1])
-    solution17 = np.array([1, 3, -1, -1, 2, 2, -1, -1, 2, 1, 2, -1, -1, -1, 4, -1])
-    solution18 = np.array([3, 2, -1, -1, -1, 0, -1, -1, 2, 3, 2, -1, -1, -1, 4, -1])
-    solution19 = np.array([4, 3, -1, 3, 3, 0, -1, -1, 2, 3, 2, -1, 1, -1, -1, -1])
-    solution20 = np.array([5, 6, -1, -1, 0, 0, -1, -1, 2, 3, 2, -1, 3, 4, -1, -1])
+    # solution10 = np.array([6, 2, 4, -3, 0, 1, 1, -1, 2, 3, 2, -1, -1, 1, -1, -1])
+    # solution1 = np.array([4, -1, -1, -1, 2, -1, 7, -1, -1, 5, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution2 = np.array([10, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution3 = np.array([12, -1, -1, -1, 4, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, -1, 2, 1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution4 = np.array([11, -1, -1, -1, -1, 7, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution5 = np.array([12, -1, -1, -1, 7, -1, -1, -1, -1, 2, -1, 0, 2, -1, -1, -1, 2, 1, 2, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution6 = np.array([10, -1, -1, -1, -1, -1, 3, -1, -1, 3, 4, -1, 0, 0, -1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution7 = np.array([12, -1, -1, -1, 10, -1, 4, -1, -1, -1, 1, 3, 0, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution8 = np.array([3, -1, -1, 4, -1, -1, -1, 6, -1, -1, 4, -1, 0, 0, -1, -1, 1, -1, 2, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution9 = np.array([10, -1, -1, -1, -1, -1, 7, -1, -1, 2, 2, -1, 1, 0, -1, -1, -1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+    # solution10 = np.array([5, 6, -1, -1, 0, 0, -1, -1, 2, 3, 2, -1, 3, 4, -1, -1])
     
     sampling = np.vstack([solution1,
-                         solution2,
-                         solution3, 
-                         solution4, 
-                         solution5,
-                         solution6,
-                         solution7,
-                         solution8,
-                         solution9,
-                         solution10,
-                         solution11,
-                         solution12,
-                         solution13,
-                         solution14,
-                         solution15,
-                         solution16,
-                         solution17,
-                         solution18,
-                         solution19,
-                         solution20])
+                        solution2,
+                        solution3,
+                        solution4,
+                        solution5,
+                        solution6,
+                        solution7,
+                        solution8,
+                        solution9])
+    # sampling = np.vstack([solution1,
+    #                      solution2,
+    #                      solution3, 
+    #                      solution4, 
+    #                      solution5,
+    #                      solution6,
+    #                      solution7,
+    #                      solution8,
+    #                      solution9,
+    #                      solution10,
+    #                      solution11,
+    #                      solution12,
+    #                      solution13,
+    #                      solution14,
+    #                      solution15,
+    #                      solution16,
+    #                      solution17,
+    #                      solution18,
+    #                      solution19,
+    #                      solution20])
 
     
     algorithm = NSGA2(pop_size=POPULATION,sampling=sampling,crossover=PointCrossover(n_points=5, prob=0),

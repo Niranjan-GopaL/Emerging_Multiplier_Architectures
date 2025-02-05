@@ -6,7 +6,7 @@ n_bits = int(sys.argv[1])
 verbose = int(sys.argv[2])
 module_name = sys.argv[3]
 
-LIB_PATH = "/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+LIB_PATH = "/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
 GATE_LEVEL_DIR = f"./{n_bits}x{n_bits}/gate_level_netlists"
 TEMP_FOLDER = f"./{n_bits}x{n_bits}/rtl"  
 SCRIPT_DIR = f"./{n_bits}x{n_bits}/scripts/synth_scripts"
@@ -25,14 +25,14 @@ def create_synth_script(script_path, design, basename:str):
     basename = basename.split("-")[1] # the name of the module does not have VERBOSEJ
     with open(script_path, "w") as script_file:
         script_file.write(f"""
-read_verilog /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/rtl/{design}
+read_verilog /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/rtl/{design}
 hierarchy -check -top {module_name}
 flatten
 synth -top {module_name}
 dfflibmap -liberty {LIB_PATH}
 abc -liberty {LIB_PATH}
-write_json /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/netlists/{verbose}-{basename}_netlist.json
-write_verilog -noattr /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists/{verbose}-temp_gate_level.v
+write_json /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/netlists/{verbose}-{basename}_netlist.json
+write_verilog -noattr /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists/{verbose}-temp_gate_level.v
 """)
 
 

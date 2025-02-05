@@ -7,13 +7,13 @@ n_bits = int(sys.argv[1])
 verbose = int(sys.argv[2])
 module_name = sys.argv[3]
 
-LIB_PATH = f"/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
-POWER_REPORTS_DIR = f"/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/reports/power_reports"
-DELAY_REPORTS_DIR = f"/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/reports/delay_reports"
-SUMMARY_FILE = f"/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/summary/summary_timing.txt"
-SCRIPT_DIR = f"/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/scripts/delay_power_scripts"
-GATE_LEVEL_NETLIST_DIR = f"/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists"
-SDC_FILE = f"/home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/global/test.sdc"
+LIB_PATH = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+POWER_REPORTS_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/reports/power_reports"
+DELAY_REPORTS_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/reports/delay_reports"
+SUMMARY_FILE = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/summary/summary_timing.txt"
+SCRIPT_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/scripts/delay_power_scripts"
+GATE_LEVEL_NETLIST_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists"
+SDC_FILE = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/test.sdc"
 
 
 def create_directories():
@@ -24,7 +24,7 @@ def create_timing_script(basename, design):
     basename = basename.split("-")[1] # the name of the module does not have VERBOSE
     script_content = f"""
 read_liberty {LIB_PATH}
-read_verilog /home/asus/Desktop/MR_PE/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists/{design}
+read_verilog /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists/{design}
 link_design {module_name}
 read_sdc {SDC_FILE}
 report_power > {os.path.join(POWER_REPORTS_DIR, f"{verbose}-{basename}_power.txt")}

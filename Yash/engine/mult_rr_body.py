@@ -103,44 +103,45 @@ def generate_config_recursive(config, code, key, topflag, name ):
     # pprint(config)
     # print(f"Key={key}")
     
-    if key[2] == 'nr':
+    if key[3] == 'nr':
         return
     
     
     new_config_full = config[key]
     new_config = {key: [keys for keys in config[key]]}
+    # print(new_config)
                 
     # Extracting all the parameters
-    top_nature = key[2]
+    top_nature = key[3]
     
-    size_x = key[0]
+    size_x = key[1]
     
-    top_index = key[3]
+    top_index = key[0]
     
-    hi = new_config[key][0][0]
+    hi = new_config[key][0][1]
     lo = size_x - hi
     
-    M1_nature = new_config[key][0][2]
-    M2_nature = new_config[key][1][2]
-    M3_nature = new_config[key][2][2]
-    M4_nature = new_config[key][3][2]
+    M1_nature = new_config[key][0][3]
+    M2_nature = new_config[key][1][3]
+    M3_nature = new_config[key][2][3]
+    M4_nature = new_config[key][3][3]
     
-    M1_index = new_config[key][0][3]
-    M2_index = new_config[key][1][3]
-    M3_index = new_config[key][2][3]
-    M4_index = new_config[key][3][3]
+    M1_index = new_config[key][0][0]
+    M2_index = new_config[key][1][0]
+    M3_index = new_config[key][2][0]
+    M4_index = new_config[key][3][0]
     
-    size_11 = new_config[key][0][0]
-    size_12 = new_config[key][0][1]
+    size_11 = new_config[key][0][1]
+    size_12 = new_config[key][0][2]
     
-    size_21 = new_config[key][1][0]
-    size_22 = new_config[key][1][1]
+    size_21 = new_config[key][1][1]
+    size_22 = new_config[key][1][2]
     
-    size_31 = new_config[key][2][0]
-    size_32 = new_config[key][2][1]
+    size_31 = new_config[key][2][1]
+    size_32 = new_config[key][2][2]
     
-    size_41 = new_config[key][3][0]
-    size_42 = new_config[key][3][1]
+    size_41 = new_config[key][3][1]
+    size_42 = new_config[key][3][2]
     
     code = write_main_verilog(top_nature, top_index, size_x, hi, lo, M1_nature, M1_index, M2_nature, M2_index, M3_nature, M3_index, M4_nature, M4_index, size_11, size_12, size_21, size_22, size_31, size_32, size_41, size_42, topflag, name)
     # print(f"Code={code}")
@@ -154,7 +155,7 @@ def generate_config_recursive(config, code, key, topflag, name ):
     
     return code
     
-def generate_config(config, code, key=(8, 8, 'rr', 0), topflag=True, name="lol"):
+def generate_config(config, code, key=(0, 8, 8, 'rr'), topflag=True, name="lol"):
     
     code = generate_config_recursive(config, code, key, topflag, name)
     
@@ -162,20 +163,31 @@ def generate_config(config, code, key=(8, 8, 'rr', 0), topflag=True, name="lol")
     
     
 def main():
-    config = {(8, 8, 'rr', 0): {(3, 3, 'rr', 12): {(1, 1, 'nr', 16): {},
-                                                   (1, 2, 'nr', 15): {},
-                                                   (2, 1, 'nr', 14): {},
-                                                   (2, 2, 'nr', 13): {}},
-                                (3, 5, 'nr', 11): {},
-                                (5, 3, 'nr', 10): {},
-                                (5, 5, 'rr', 1):  {(2, 2, 'nr', 9): {},
-                                                   (2, 3, 'nr', 8): {},
-                                                   (3, 2, 'nr', 7): {},
-                                                   (3, 3, 'rr', 2): {(1, 1, 'nr', 6): {},
-                                                                     (1, 2, 'nr', 5): {},
-                                                                     (2, 1, 'nr', 4): {},
-                                                                     (2, 2, 'nr', 3): {}}}}}
-     
+    config = {(0, 16, 16, 'rr'): {(1, 12, 12, 'rr'): {(2, 2, 2, 'nr'): {},
+                                        (3, 2, 10, 'nr'): {},
+                                        (4, 10, 2, 'nr'): {},
+                                        (5, 10, 10, 'rr'): {(6, 6, 6, 'rr'): {(7, 1, 1, 'nr'): {},
+                                                                            (8, 1, 5, 'nr'): {},
+                                                                            (9, 5, 1, 'nr'): {},
+                                                                            (10, 5, 5, 'rr'): {(11, 3, 3, 'rr'): {(12, 1, 1, 'nr'): {},
+                                                                                                                    (13, 1, 2, 'nr'): {},
+                                                                                                                    (14, 2, 1, 'nr'): {},
+                                                                                                                    (15, 2, 2, 'nr'): {}},
+                                                                                                (16, 3, 2, 'nr'): {},
+                                                                                                (17, 2, 3, 'nr'): {},
+                                                                                                (18, 2, 2, 'nr'): {}}},
+                                                            (19, 6, 4, 'nr'): {},
+                                                            (20, 4, 6, 'nr'): {},
+                                                            (21, 4, 4, 'rr'): {(22, 2, 2, 'nr'): {},
+                                                                                (23, 2, 2, 'nr'): {},
+                                                                                (24, 2, 2, 'nr'): {},
+                                                                                (25, 2, 2, 'nr'): {}}}},
+                        (26, 12, 4, 'nr'): {},
+                        (27, 4, 12, 'nr'): {},
+                        (28, 4, 4, 'rr'): {(29, 2, 2, 'nr'): {},
+                                            (30, 2, 2, 'nr'): {},
+                                            (31, 2, 2, 'nr'): {},
+                                            (32, 2, 2, 'nr'): {}}}}
     topflag = True                                 
     # while True:
         
@@ -219,7 +231,7 @@ def main():
     #     if tval == False:
     #         break
     code = ""
-    code = generate_config(config=config, key=(8, 8, 'rr', 0), topflag=True, name="lol", code=code)
+    code = generate_config(config=config, key=(0, 16, 16, 'rr'), topflag=True, name="lol", code=code)
     # code = generate_config_recursive(config=config, key=(8, 8, 'rr', 0), topflag=True, name="lol", code=code)
     print(code)
     
