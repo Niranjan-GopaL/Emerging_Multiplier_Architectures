@@ -25,14 +25,14 @@ def create_synth_script(script_path, design, basename:str):
     basename = basename.split("-")[1] # the name of the module does not have VERBOSEJ
     with open(script_path, "w") as script_file:
         script_file.write(f"""
-read_verilog /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/rtl/{design}
+read_verilog /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/rtl/{design}
 hierarchy -check -top {module_name}
 flatten
 synth -top {module_name}
 dfflibmap -liberty {LIB_PATH}
 abc -liberty {LIB_PATH}
-write_json /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/netlists/{verbose}-{basename}_netlist.json
-write_verilog -noattr /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/Yash/{n_bits}x{n_bits}/gate_level_netlists/{verbose}-temp_gate_level.v
+write_json /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/netlists/{verbose}-{basename}_netlist.json
+write_verilog -noattr /home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/gate_level_netlists/{verbose}-temp_gate_level.v
 """)
 
 
@@ -49,10 +49,10 @@ def main():
         create_synth_script(script_path, hdl, basename)
 
         subprocess.run(["yosys", "-s", script_path], check=True, 
-                       stdout=subprocess.DEVNULL, 
-                       stderr=subprocess.DEVNULL
-                       )
-        
+                        stdout=subprocess.DEVNULL, 
+                        stderr=subprocess.DEVNULL
+                        )
+            
         # This npm package converts netlist.json to SVG
         # subprocess.run(["netlistsvg", 
         #                 os.path.join(NETLIST_DIR, f"{basename}_netlist.json"), 

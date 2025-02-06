@@ -1,0 +1,3 @@
+Error extracting slack for ./stat/reports/delay_reports/array_8_delay.txt
+Error extracting slack for ./stat/reports/delay_reports/wallace_multiplier_8_delay.txt
+Error extracting slack for ./stat/reports/delay_reports/dadda_8_delay.txt

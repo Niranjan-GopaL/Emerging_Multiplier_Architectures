@@ -64,19 +64,16 @@ import custom_mutation_updated as cm2
 
 #--------------- custom mutation  --------------------------
 class CustomMutation(Mutation):
-
     global N_BITS
     def _do(self, problem, X, params=None, **kwargs):
         X = X.astype(float)
-
         Xp = cm2.mutate(N_BITS, X)
         
         return Xp
 #--------------- global variables --------------------------
 THREADS=9
 pool=ThreadPool(THREADS)
-
-GENERATIONS=108
+GENERATIONS=109
 POPULATION=9
 CURRENT_GEN=0
 SEED=0

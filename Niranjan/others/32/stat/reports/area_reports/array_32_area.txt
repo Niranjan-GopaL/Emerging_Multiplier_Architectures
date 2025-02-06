@@ -1,0 +1,372 @@
+
+8. Printing statistics.
+
+=== ArrayCell ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     FullBitAdder                    1
+
+=== ArrayRow ===
+
+   Number of wires:                 14
+   Number of wire bits:             39
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     AND2_X1                         2
+     ArrayCell                       6
+     HalfBitAdder                    2
+
+=== ArrayRow_type2 ===
+
+   Number of wires:                 12
+   Number of wire bits:             37
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     AND2_X1                         1
+     ArrayCell                       7
+     HalfBitAdder                    1
+
+=== FullBitAdder ===
+
+   Number of wires:                 16
+   Number of wire bits:             16
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     INV_X1                          1
+     NAND2_X1                        1
+     OAI21_X1                        1
+     XNOR2_X1                        2
+
+=== HalfBitAdder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     XOR2_X1                         1
+
+=== array_16 ===
+
+   Number of wires:                368
+   Number of wire bits:            954
+   Number of public wires:          11
+   Number of public wire bits:     256
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                191
+     AND2_X1                         4
+     AND3_X1                         1
+     AOI21_X1                       15
+     INV_X1                         16
+     NAND2_X1                       29
+     NAND3_X1                        3
+     NAND4_X1                        2
+     NOR2_X1                        18
+     NOR3_X1                         1
+     OAI211_X1                       1
+     OAI21_X1                       17
+     OR2_X1                          2
+     XNOR2_X1                       51
+     XOR2_X1                        27
+     array_8                         4
+
+=== array_32 ===
+
+   Number of wires:                315
+   Number of wire bits:           1098
+   Number of public wires:          10
+   Number of public wire bits:     352
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                157
+     AND2_X1                        11
+     AOI21_X1                       14
+     INV_X1                          4
+     NAND2_X1                       22
+     NOR2_X1                        19
+     OAI21_X1                       16
+     OR2_X1                          5
+     XNOR2_X1                       38
+     XOR2_X1                        25
+     array_16                        3
+
+=== array_8 ===
+
+   Number of wires:                 33
+   Number of wire bits:            104
+   Number of public wires:          16
+   Number of public wire bits:      87
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     AND2_X1                         8
+     ArrayRow                        1
+     ArrayRow_type2                  6
+
+=== design hierarchy ===
+
+   array_32                          1
+     array_16                        3
+       array_8                       4
+         ArrayRow                    1
+           ArrayCell                 6
+             FullBitAdder            1
+           HalfBitAdder              2
+         ArrayRow_type2              6
+           ArrayCell                 7
+             FullBitAdder            1
+           HalfBitAdder              1
+
+   Number of wires:              18591
+   Number of wire bits:          24084
+   Number of public wires:       10015
+   Number of public wire bits:   14044
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4555
+     AND2_X1                       887
+     AND3_X1                         3
+     AOI21_X1                       59
+     INV_X1                        628
+     NAND2_X1                      685
+     NAND3_X1                        9
+     NAND4_X1                        6
+     NOR2_X1                        73
+     NOR3_X1                         3
+     OAI211_X1                       3
+     OAI21_X1                      643
+     OR2_X1                         11
+     XNOR2_X1                     1343
+     XOR2_X1                       202
+
+9. Printing statistics.
+
+=== ArrayCell ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     FullBitAdder                    1
+
+   Area for cell type \FullBitAdder is unknown!
+
+   Chip area for module '\ArrayCell': 1.064000
+
+=== ArrayRow ===
+
+   Number of wires:                 14
+   Number of wire bits:             39
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     AND2_X1                         2
+     ArrayCell                       6
+     HalfBitAdder                    2
+
+   Area for cell type \HalfBitAdder is unknown!
+   Area for cell type \ArrayCell is unknown!
+
+   Chip area for module '\ArrayRow': 2.128000
+
+=== ArrayRow_type2 ===
+
+   Number of wires:                 12
+   Number of wire bits:             37
+   Number of public wires:           9
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     AND2_X1                         1
+     ArrayCell                       7
+     HalfBitAdder                    1
+
+   Area for cell type \HalfBitAdder is unknown!
+   Area for cell type \ArrayCell is unknown!
+
+   Chip area for module '\ArrayRow_type2': 1.064000
+
+=== FullBitAdder ===
+
+   Number of wires:                 16
+   Number of wire bits:             16
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     INV_X1                          1
+     NAND2_X1                        1
+     OAI21_X1                        1
+     XNOR2_X1                        2
+
+   Chip area for module '\FullBitAdder': 5.586000
+
+=== HalfBitAdder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     AND2_X1                         1
+     XOR2_X1                         1
+
+   Chip area for module '\HalfBitAdder': 2.660000
+
+=== array_16 ===
+
+   Number of wires:                368
+   Number of wire bits:            954
+   Number of public wires:          11
+   Number of public wire bits:     256
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                191
+     AND2_X1                         4
+     AND3_X1                         1
+     AOI21_X1                       15
+     INV_X1                         16
+     NAND2_X1                       29
+     NAND3_X1                        3
+     NAND4_X1                        2
+     NOR2_X1                        18
+     NOR3_X1                         1
+     OAI211_X1                       1
+     OAI21_X1                       17
+     OR2_X1                          2
+     XNOR2_X1                       51
+     XOR2_X1                        27
+     array_8                         4
+
+   Area for cell type \array_8 is unknown!
+
+   Chip area for module '\array_16': 220.514000
+
+=== array_32 ===
+
+   Number of wires:                315
+   Number of wire bits:           1098
+   Number of public wires:          10
+   Number of public wire bits:     352
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                157
+     AND2_X1                        11
+     AOI21_X1                       14
+     INV_X1                          4
+     NAND2_X1                       22
+     NOR2_X1                        19
+     OAI21_X1                       16
+     OR2_X1                          5
+     XNOR2_X1                       38
+     XOR2_X1                        25
+     array_16                        3
+
+   Area for cell type \array_16 is unknown!
+
+   Chip area for module '\array_32': 184.338000
+
+=== array_8 ===
+
+   Number of wires:                 33
+   Number of wire bits:            104
+   Number of public wires:          16
+   Number of public wire bits:      87
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     AND2_X1                         8
+     ArrayRow                        1
+     ArrayRow_type2                  6
+
+   Area for cell type \ArrayRow is unknown!
+   Area for cell type \ArrayRow_type2 is unknown!
+
+   Chip area for module '\array_8': 8.512000
+
+=== design hierarchy ===
+
+   array_32                          1
+     array_16                        3
+       array_8                       4
+         ArrayRow                    1
+           ArrayCell                 6
+             FullBitAdder            1
+           HalfBitAdder              2
+         ArrayRow_type2              6
+           ArrayCell                 7
+             FullBitAdder            1
+           HalfBitAdder              1
+
+   Number of wires:              18591
+   Number of wire bits:          24084
+   Number of public wires:       10015
+   Number of public wire bits:   14044
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4555
+     AND2_X1                       887
+     AND3_X1                         3
+     AOI21_X1                       59
+     INV_X1                        628
+     NAND2_X1                      685
+     NAND3_X1                        9
+     NAND4_X1                        6
+     NOR2_X1                        73
+     NOR3_X1                         3
+     OAI211_X1                       3
+     OAI21_X1                      643
+     OR2_X1                         11
+     XNOR2_X1                     1343
+     XOR2_X1                       202
+
+   Chip area for top module '\array_32': 5135.928000
+

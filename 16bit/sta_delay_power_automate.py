@@ -93,7 +93,7 @@ def main():
             subprocess.run(["sta", script_path], check=True, 
                         #    stdout=subprocess.DEVNULL, 
                         #    stderr=subprocess.DEVNULL
-                           )
+                        )
             print(f"Static timing analysis for {basename} completed.")
         except subprocess.CalledProcessError as e:
             print(f"Error running STA for {basename}: {e}")

@@ -1,0 +1,9 @@
+array_8 | N/A | 0.000458
+wallace_multiplier_8 | N/A | 0.000274
+dadda_8 | N/A | 0.000155
+array_8 | 981.69 | 0.000458
+wallace_multiplier_8 | 985.06 | 0.000274
+dadda_8 | 981.23 | 0.000155
+array_8 | 1.69 | 0.000458
+wallace_multiplier_8 | 5.06 | 0.000274
+dadda_8 | 1.23 | 0.000155

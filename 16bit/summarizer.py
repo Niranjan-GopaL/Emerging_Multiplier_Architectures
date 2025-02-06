@@ -73,11 +73,11 @@ class CustomMutation(Mutation):
         
         return Xp
 #--------------- global variables --------------------------
-THREADS=9
+THREADS=10
 pool=ThreadPool(THREADS)
 
 GENERATIONS=108
-POPULATION=9
+POPULATION=20
 CURRENT_GEN=0
 SEED=0
 N_BITS = 16

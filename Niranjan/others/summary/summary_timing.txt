@@ -1,5 +1,0 @@
-dadda_8 | 1.28 | 1e-05
-EightBitArrayMultiplier | 1.74 | 1.24e-05
-wallace_multiplier_8 | 5.12 | 1.24e-05
-dadda_8 | 1.28 | 1e-05
-EightBitArrayMultiplier | 1.74 | 1.24e-05
