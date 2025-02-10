@@ -10,10 +10,10 @@ module_name = sys.argv[3]
 
 class AreaAnalyzer:
     def __init__(self):
-        self.LIB_PATH = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
-        self.AREA_REPORTS_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/reports/area_reports"
-        self.SCRIPT_DIR = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/scripts/area_script"
-        self.SUMMARY_FILE = f"/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/summary/{verbose}_summary_area.txt"
+        self.LIB_PATH = f"/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+        self.AREA_REPORTS_DIR = f"/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/reports/area_reports"
+        self.SCRIPT_DIR = f"/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/scripts/area_script"
+        self.SUMMARY_FILE = f"/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/16bit/{n_bits}x{n_bits}/summary/{verbose}_summary_area.txt"
 
     def create_directories(self):
         for directory in [self.AREA_REPORTS_DIR, self.SCRIPT_DIR, f"./{n_bits}x{n_bits}/summary"]:

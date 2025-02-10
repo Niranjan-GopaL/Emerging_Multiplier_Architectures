@@ -58,7 +58,7 @@ def main():
         delay_file = os.path.join(DELAY_REPORTS_DIR, f"{basename}_delay.txt")
         slack, total_power = extract_metrics(power_file, delay_file)
 
-        max_delay = round((995.0 - slack) - 5.000, 6) if slack else None
+        max_delay = round((10.0 - slack), 6) if slack else None
         chip_area = round(float(extract_area(basename)), 6)
         print(f"{basename} ===> Total power: {total_power}, Slack: {slack}, Area : {chip_area} ")
         with open(SUMMARY_FILE, "a") as summary:

@@ -3,13 +3,13 @@ import os
 import subprocess
 
 
-LIB_PATH = "/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+LIB_PATH = "/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
 POWER_REPORTS_DIR = "./stat/reports/power_reports"
 DELAY_REPORTS_DIR = "./stat/reports/delay_reports"
 SUMMARY_FILE = "./stat/summary/summary_timing.txt"
 SCRIPT_DIR = "./stat/scripts/delay_power_scripts"
 GATE_LEVEL_NETLIST_DIR = "./stat/gate_level_netlists"
-SDC_FILE = "/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/test.sdc"
+SDC_FILE = "/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/global/test.sdc"
 
 
 def create_directories():
@@ -95,7 +95,7 @@ def main():
         delay_file = os.path.join(DELAY_REPORTS_DIR, f"{basename}_delay.txt")
         slack, total_power = extract_metrics(power_file, delay_file)
         print(f"Total power: {total_power}, Slack: {slack}")
-        max_delay = round((10.0 - slack), 3) if slack else None
+        max_delay = round((995.0 - slack) - 5.000, 3) if slack else None
         with open(SUMMARY_FILE, "a") as summary:
             summary.write(f"{basename} | {(max_delay) or 'N/A'} | {total_power or 'N/A'}\n")
 

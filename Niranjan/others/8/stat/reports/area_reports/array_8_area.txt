@@ -7,6 +7,8 @@
    Number of wire bits:             10
    Number of public wires:           7
    Number of public wire bits:       7
+   Number of ports:                  6
+   Number of port bits:              6
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -20,6 +22,8 @@
    Number of wire bits:             39
    Number of public wires:           9
    Number of public wire bits:      34
+   Number of ports:                  6
+   Number of port bits:             25
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -34,6 +38,8 @@
    Number of wire bits:             37
    Number of public wires:           9
    Number of public wire bits:      34
+   Number of ports:                  7
+   Number of port bits:             26
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -48,6 +54,8 @@
    Number of wire bits:             16
    Number of public wires:           8
    Number of public wire bits:       8
+   Number of ports:                  5
+   Number of port bits:              5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -63,6 +71,8 @@
    Number of wire bits:              8
    Number of public wires:           4
    Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -76,6 +86,8 @@
    Number of wire bits:            104
    Number of public wires:          16
    Number of public wire bits:      87
+   Number of ports:                  3
+   Number of port bits:             32
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -100,6 +112,8 @@
    Number of wire bits:           1677
    Number of public wires:         831
    Number of public wire bits:    1077
+   Number of ports:                611
+   Number of port bits:            773
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -119,6 +133,8 @@
    Number of wire bits:             10
    Number of public wires:           7
    Number of public wire bits:       7
+   Number of ports:                  6
+   Number of port bits:              6
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -129,6 +145,7 @@
    Area for cell type \FullBitAdder is unknown!
 
    Chip area for module '\ArrayCell': 1.064000
+     of which used for sequential elements: 0.000000 (0.00%)
 
 === ArrayRow ===
 
@@ -136,6 +153,8 @@
    Number of wire bits:             39
    Number of public wires:           9
    Number of public wire bits:      34
+   Number of ports:                  6
+   Number of port bits:             25
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -148,6 +167,7 @@
    Area for cell type \ArrayCell is unknown!
 
    Chip area for module '\ArrayRow': 2.128000
+     of which used for sequential elements: 0.000000 (0.00%)
 
 === ArrayRow_type2 ===
 
@@ -155,6 +175,8 @@
    Number of wire bits:             37
    Number of public wires:           9
    Number of public wire bits:      34
+   Number of ports:                  7
+   Number of port bits:             26
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -167,6 +189,7 @@
    Area for cell type \ArrayCell is unknown!
 
    Chip area for module '\ArrayRow_type2': 1.064000
+     of which used for sequential elements: 0.000000 (0.00%)
 
 === FullBitAdder ===
 
@@ -174,6 +197,8 @@
    Number of wire bits:             16
    Number of public wires:           8
    Number of public wire bits:       8
+   Number of ports:                  5
+   Number of port bits:              5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -184,6 +209,7 @@
      XNOR2_X1                        2
 
    Chip area for module '\FullBitAdder': 5.586000
+     of which used for sequential elements: 0.000000 (0.00%)
 
 === HalfBitAdder ===
 
@@ -191,6 +217,8 @@
    Number of wire bits:              8
    Number of public wires:           4
    Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -199,6 +227,7 @@
      XOR2_X1                         1
 
    Chip area for module '\HalfBitAdder': 2.660000
+     of which used for sequential elements: 0.000000 (0.00%)
 
 === array_8 ===
 
@@ -206,6 +235,8 @@
    Number of wire bits:            104
    Number of public wires:          16
    Number of public wire bits:      87
+   Number of ports:                  3
+   Number of port bits:             32
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -218,6 +249,7 @@
    Area for cell type \ArrayRow_type2 is unknown!
 
    Chip area for module '\array_8': 8.512000
+     of which used for sequential elements: 0.000000 (0.00%)
 
 === design hierarchy ===
 
@@ -235,6 +267,8 @@
    Number of wire bits:           1677
    Number of public wires:         831
    Number of public wire bits:    1077
+   Number of ports:                611
+   Number of port bits:            773
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -247,4 +281,5 @@
      XOR2_X1                         8
 
    Chip area for top module '\array_8': 357.504000
+     of which used for sequential elements: 0.000000 (0.00%)
 

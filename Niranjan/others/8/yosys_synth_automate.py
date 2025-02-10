@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-LIB_PATH = "/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+LIB_PATH = "/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
 GATE_LEVEL_DIR = "./stat/gate_level_netlists"
 SCRIPT_DIR = "./stat/scripts/synth_scripts"
 NETLIST_DIR = "./stat/netlists"
@@ -22,9 +22,8 @@ read_verilog ./{design}
 hierarchy -check -top {basename}
 flatten
 synth -top {basename}
-dfflibmap -liberty {LIB_PATH}
 abc -liberty {LIB_PATH}
-write_json {os.path.join(NETLIST_DIR, f"{basename}_netlist.json")}
+# write_json {os.path.join(NETLIST_DIR, f"{basename}_netlist.json")}
 write_verilog -noattr {os.path.join(GATE_LEVEL_DIR, f"{basename}_gate_level.v")}
 """)
 
@@ -46,9 +45,9 @@ def main():
         subprocess.run(["yosys", "-s", script_path], check=True)
 
         # This npm pakcage converts netlist.json to SVG
-        subprocess.run(["netlistsvg", 
-                        os.path.join(NETLIST_DIR, f"{basename}_netlist.json"), 
-                        "-o", os.path.join(SVG_DIR, f"{basename}_netlist.svg")], check=True)
+        # subprocess.run(["netlistsvg", 
+        #                 os.path.join(NETLIST_DIR, f"{basename}_netlist.json"), 
+        #                 "-o", os.path.join(SVG_DIR, f"{basename}_netlist.svg")], check=True)
 
     print("Automation complete!")
 

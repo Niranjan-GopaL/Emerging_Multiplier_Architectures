@@ -5,7 +5,7 @@ import re
 
 class AreaAnalyzer:
     def __init__(self):
-        self.LIB_PATH = "/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+        self.LIB_PATH = "/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
         self.AREA_REPORTS_DIR = "./stat/reports/area_reports"
         self.SCRIPT_DIR = "./stat/scripts/area_script"
         self.SUMMARY_FILE = f"stat/summary/summary_area.txt"

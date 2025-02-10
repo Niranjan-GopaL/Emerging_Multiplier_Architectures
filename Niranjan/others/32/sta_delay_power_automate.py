@@ -3,13 +3,13 @@ import os
 import subprocess
 
 
-LIB_PATH = "/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
+LIB_PATH = "/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/global/NangateOpenCellLibrary_typical.lib"
 POWER_REPORTS_DIR = "./stat/reports/power_reports"
 DELAY_REPORTS_DIR = "./stat/reports/delay_reports"
 SUMMARY_FILE = "./stat/summary/summary_timing.txt"
 SCRIPT_DIR = "./stat/scripts/delay_power_scripts"
 GATE_LEVEL_NETLIST_DIR = "./stat/gate_level_netlists"
-SDC_FILE = "/home/nira/Documents/code/ece/Emerging_Multiplier_Architectures/global/test.sdc"
+SDC_FILE = "/home/niranjan_yash/Emergin_Mult/Emerging_Multiplier_Architectures/global/test.sdc"
 
 
 def create_directories():
